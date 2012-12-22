@@ -1,0 +1,48 @@
+﻿<Window x:Class="SecurityManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Security Management" Height="848" Width="862" xmlns:my="clr-namespace:SecurityManagementSystem">
+    <DockPanel LastChildFill="True">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File"></MenuItem>
+            <MenuItem Header="Settings"></MenuItem>
+            <MenuItem Header="Help"></MenuItem>
+        </Menu>
+        <ToolBar Margin="5" DockPanel.Dock="Top">
+            <Button Name="loginBtn" Click="loginBtn_Click" Margin="5">Login</Button>
+            <Separator></Separator>
+            <Button Name="permBtn" Click="permBtn_Click"  Margin="5">Permission</Button>
+            <Separator></Separator>
+            <Button Name="reportBtn" Click="reportBtn_Click"  Margin="5">Reporting</Button>
+            <Separator></Separator>
+            <Button Name="regBtn" Click="regBtn_Click" Margin="5">Register Visitor</Button>
+            <Separator></Separator>
+            <Button Name="visitorBtn" Click="visitorBtn_Click"  Margin="5">Manage Visitors</Button>
+            <Separator></Separator>
+            <Button  Margin="5">Print</Button>
+            <Separator></Separator>
+            <Button  Margin="5">Security</Button>
+            <Separator></Separator>
+            <Button Name="vidBtn" Click="vidBtn_Click"  Margin="5">Video Surveillance</Button>
+            <Separator></Separator>
+            <Button  Margin="5">Internet</Button>
+        </ToolBar>
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <UniformGrid Rows="1">
+
+                <Button Margin="5" Content="Total Zone Online: 4"></Button>
+                <Button Margin="5" Content="Visitors: 12"></Button>
+                <Button Margin="5" Content="Employees: 810"></Button>
+                <Button Margin="5" Content="Total Area: 12560 Sq Ft"></Button>
+                <Button Margin="5" Content="Time: 12:00"></Button>
+
+            </UniformGrid>
+        </StatusBar>
+        <UniformGrid>
+            <my:VideoSurveillanceControl x:Name="videoSurveillanceControl1" Margin="5"/><my:VideoSurveillanceControl />
+            <my:VideoSurveillanceControl x:Name="videoSurveillanceControl2"  Margin="5"/>
+            <my:VideoSurveillanceControl x:Name="videoSurveillanceControl3"  Margin="5"/>
+        </UniformGrid>
+    </DockPanel>
+</Window>
