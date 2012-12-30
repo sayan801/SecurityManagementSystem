@@ -7,28 +7,43 @@ namespace SecurityManagementSystemEngine
 {
     public class SecurityManagementController
     {
-        public EmployeeManager employeeController;
+        public VisitorManager employeeController;
         public MemberManager customerController;
-        public List<ReportInfo> reports;
-        public List<VisitInfo> payments;
+        public EmployeeManager empController;
+        public NotificationController notificator;
+        public RequestController requestHandler;
+        
     }
 
     public class EmployeeManager
     {
         public List<EmployeeInfo> employees;
+        public List<RequestInfo> reqHandled;
     }
 
     public class MemberManager
     {
-        public List<MemberInfo> customers;
+        public List<MemberInfo> members;
+        public List<PreferenceInfo> prefs;        
     }
 
-    public class PhotoEditController
+    public class VisitorManager
     {
-        public List<PhotoEditInfo> edits;
+        public List<VisitorInfo> visitors;
+        public List<VisitInfo> visits;
     }
 
-    public enum PostType
+    public class NotificationController
+    {
+        public List<NotificationInfo> notifications;
+    }
+
+    public class RequestController
+    {
+        public List<RequestInfo> requests;
+    }
+
+    public enum VisitType
     {
         Technician,
         Admin,
@@ -41,9 +56,8 @@ namespace SecurityManagementSystemEngine
         public string name { get; set; }
         public string address { get; set; }
         public string contact { get; set; }        
-        public DateTime doj { get; set; }
-        public string department { get; set; }
-        public List<PreferenceInfo> photos;
+        public List<PreferenceInfo> prefs;
+        public List<RequestInfo> reqs;
     }
 
     public class EmployeeInfo
@@ -52,7 +66,6 @@ namespace SecurityManagementSystemEngine
         public string name { get; set; }
         public string address { get; set; }
         public string contact { get; set; }
-        public PostType postType { get; set; }
         public DateTime doj { get; set; }
         public string department { get; set; }
     }
@@ -60,68 +73,64 @@ namespace SecurityManagementSystemEngine
     public class VisitorInfo
     {
         public string id { get; set; }
+        public string photoIdNo { get; set; }
+        public string photoFilePath { get; set; }
         public string name { get; set; }
         public string address { get; set; }
         public string contact { get; set; }
-        public PostType postType { get; set; }
-        public List<VisitInfo> payements;
+        public VisitType postType { get; set; }
+        public List<VisitInfo> lastVisits;
     }
 
     public class VisitInfo
     {
         public string id { get; set; }
         public string name { get; set; }
-        public string customerId { get; set; }
-        public double amount { get; set; }
-        public DateTime dop { get; set; }
+        public MemberInfo memberTargeted { get; set; }
+        public EmployeeInfo employeeAuthroized { get; set; }      
+        public DateTime start { get; set; }
+        public DateTime duration { get; set; }
     }
     public class PreferenceInfo
     {
         string name;
-        string softwareUsedForCapture;
-        EmployeeInfo technicianTaken;
-        string ImageFile;
-        double size;
-        DateTime dateTaken;
-        List<PhotoEditInfo> edits;
+        EmployeeInfo technicianTargeted;
+        string Description;
+        DateTime date;
     }
 
-    public enum PhotoEditType
+    public enum NotificationType
     {
-        Rotate,
-        Crop,
-        Stretch,
-        Brighten,
-        Sepia
+        Visit,
+        Timeout,
+        Issue,
+        Other
     }
 
-    public class PhotoEditInfo
+    public class NotificationInfo
     {
         string name;
-        string softwareUsedtoEdit;
-        EmployeeInfo technicianEdited;
-        string OriginalImageFile;
-        string EditedImageFile;
-        double size;
-        DateTime dateEdited;
-        PhotoEditType type;
+        EmployeeInfo employeeEdited;
+        MemberInfo memberTargeted;
+        VisitorInfo visitorRelated;
+        string description;
+        DateTime date;
+        NotificationType type;
     }
 
-    public enum ReportType
+    public enum RequestType
     {
-        Single,
-        Daily,
-        Weekly,
-        Monthly,
-        Quarterly,
-        Yearly
+        Emergency,
+        Distress,
+        Household,
+        other
     }
 
-    public class ReportInfo
+    public class RequestInfo
     {
         public string id { get; set; }
         public DateTime date { get; set; }
-        public ReportType type { get; set; }
+        public RequestType type { get; set; }
         public string description { get; set; }
     }
 
