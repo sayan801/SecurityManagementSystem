@@ -1,0 +1,320 @@
+<Project>
+  <Name>SecurityMS</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities />
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>SecurityManagementSystemEngine.dll</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>SecurityManagementController</Name>
+        <Access>Public</Access>
+        <Location left="779" top="1119" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public VisitorManager employeeController</Member>
+        <Member type="Field">public MemberManager customerController</Member>
+        <Member type="Field">public EmployeeManager empController</Member>
+        <Member type="Field">public NotificationController notificator</Member>
+        <Member type="Field">public RequestController requestHandler</Member>
+        <Member type="Constructor">public SecurityManagementController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EmployeeManager</Name>
+        <Access>Public</Access>
+        <Location left="1124" top="1320" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;EmployeeInfo&gt; employees</Member>
+        <Member type="Field">public List&lt;RequestInfo&gt; reqHandled</Member>
+        <Member type="Constructor">public EmployeeManager()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MemberManager</Name>
+        <Access>Public</Access>
+        <Location left="471" top="1367" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;MemberInfo&gt; members</Member>
+        <Member type="Field">public List&lt;PreferenceInfo&gt; prefs</Member>
+        <Member type="Constructor">public MemberManager()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>VisitorManager</Name>
+        <Access>Public</Access>
+        <Location left="471" top="1051" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;VisitorInfo&gt; visitors</Member>
+        <Member type="Field">public List&lt;VisitInfo&gt; visits</Member>
+        <Member type="Constructor">public VisitorManager()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>NotificationController</Name>
+        <Access>Public</Access>
+        <Location left="807" top="1422" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;NotificationInfo&gt; notifications</Member>
+        <Member type="Constructor">public NotificationController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RequestController</Name>
+        <Access>Public</Access>
+        <Location left="831" top="816" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;RequestInfo&gt; requests</Member>
+        <Member type="Constructor">public RequestController()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MemberInfo</Name>
+        <Access>Public</Access>
+        <Location left="620" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;PreferenceInfo&gt; prefs</Member>
+        <Member type="Field">public List&lt;RequestInfo&gt; reqs</Member>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String address { get; set; }</Member>
+        <Member type="Property">public String contact { get; set; }</Member>
+        <Member type="Constructor">public MemberInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EmployeeInfo</Name>
+        <Access>Public</Access>
+        <Location left="620" top="624" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String address { get; set; }</Member>
+        <Member type="Property">public String contact { get; set; }</Member>
+        <Member type="Property">public DateTime doj { get; set; }</Member>
+        <Member type="Property">public String department { get; set; }</Member>
+        <Member type="Constructor">public EmployeeInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>VisitorInfo</Name>
+        <Access>Public</Access>
+        <Location left="971" top="102" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;VisitInfo&gt; lastVisits</Member>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String photoIdNo { get; set; }</Member>
+        <Member type="Property">public String photoFilePath { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String address { get; set; }</Member>
+        <Member type="Property">public String contact { get; set; }</Member>
+        <Member type="Property">public VisitType postType { get; set; }</Member>
+        <Member type="Constructor">public VisitorInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>VisitInfo</Name>
+        <Access>Public</Access>
+        <Location left="423" top="537" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public MemberInfo memberTargeted { get; set; }</Member>
+        <Member type="Property">public EmployeeInfo employeeAuthroized { get; set; }</Member>
+        <Member type="Property">public DateTime start { get; set; }</Member>
+        <Member type="Property">public DateTime duration { get; set; }</Member>
+        <Member type="Constructor">public VisitInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PreferenceInfo</Name>
+        <Access>Public</Access>
+        <Location left="1063" top="548" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private EmployeeInfo technicianTargeted</Member>
+        <Member type="Field">private String Description</Member>
+        <Member type="Field">private DateTime date</Member>
+        <Member type="Constructor">public PreferenceInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>NotificationInfo</Name>
+        <Access>Public</Access>
+        <Location left="690" top="284" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private EmployeeInfo employeeEdited</Member>
+        <Member type="Field">private MemberInfo memberTargeted</Member>
+        <Member type="Field">private VisitorInfo visitorRelated</Member>
+        <Member type="Field">private String description</Member>
+        <Member type="Field">private DateTime date</Member>
+        <Member type="Field">private NotificationType type</Member>
+        <Member type="Constructor">public NotificationInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RequestInfo</Name>
+        <Access>Public</Access>
+        <Location left="1124" top="1002" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public DateTime date { get; set; }</Member>
+        <Member type="Property">public RequestType type { get; set; }</Member>
+        <Member type="Property">public String description { get; set; }</Member>
+        <Member type="Constructor">public RequestInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>VisitType</Name>
+        <Access>Public</Access>
+        <Location left="423" top="781" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>Technician = 0</Value>
+        <Value>Admin = 1</Value>
+        <Value>Owner = 2</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>NotificationType</Name>
+        <Access>Public</Access>
+        <Location left="423" top="285" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>Visit = 0</Value>
+        <Value>Timeout = 1</Value>
+        <Value>Issue = 2</Value>
+        <Value>Other = 3</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>RequestType</Name>
+        <Access>Public</Access>
+        <Location left="423" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>Emergency = 0</Value>
+        <Value>Distress = 1</Value>
+        <Value>Household = 2</Value>
+        <Value>other = 3</Value>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>employeeController</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>customerController</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>empController</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>notificator</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>requestHandler</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="10" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>technicianTargeted</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>employeeEdited</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>memberTargeted</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>visitorRelated</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="14">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>type</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
