@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityManagementSystemGUI", "SecurityManagementSystem\SecurityManagementSystemGUI.csproj", "{3F342B07-004E-408E-8F25-2692FAE8E48B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityManagementSystemEngine", "SecurityManagementSystemEngine\SecurityManagementSystemEngine.csproj", "{1F80D3BB-D318-47BA-8F90-3DE6FD35721B}"
@@ -8,6 +8,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityManagementSystemStorage", "SecurityManagementSystemStorage\SecurityManagementSystemStorage.csproj", "{265E8B0A-F76B-4D04-A10F-190D8B36C2EF}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SecurityManagementSystemInstaller", "SecurityManagementSystemInstaller\SecurityManagementSystemInstaller.vdproj", "{6367E615-8C56-4E2E-8602-684D0EAB1DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityManagementSystemStyle", "SecurityManagementSystemStyle\SecurityManagementSystemStyle.csproj", "{C51CEAE6-FB23-4796-97D1-E01181B314F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,16 @@ Global
 		{6367E615-8C56-4E2E-8602-684D0EAB1DDA}.Release|Any CPU.ActiveCfg = Release
 		{6367E615-8C56-4E2E-8602-684D0EAB1DDA}.Release|Mixed Platforms.ActiveCfg = Release
 		{6367E615-8C56-4E2E-8602-684D0EAB1DDA}.Release|x86.ActiveCfg = Release
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Debug|x86.ActiveCfg = Debug|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Debug|x86.Build.0 = Debug|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Release|Any CPU.ActiveCfg = Release|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Release|x86.ActiveCfg = Release|x86
+		{C51CEAE6-FB23-4796-97D1-E01181B314F6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

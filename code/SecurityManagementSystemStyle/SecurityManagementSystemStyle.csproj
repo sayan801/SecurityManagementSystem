@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3F342B07-004E-408E-8F25-2692FAE8E48B}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{C51CEAE6-FB23-4796-97D1-E01181B314F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SecurityManagementSystem</RootNamespace>
-    <AssemblyName>SecurityManagementSystem</AssemblyName>
+    <RootNamespace>SecurityManagementSystemStyle</RootNamespace>
+    <AssemblyName>SecurityManagementSystemStyle</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -49,59 +52,6 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-  </ItemGroup>
-  <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Compile Include="Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ManageVisitors.xaml.cs">
-      <DependentUpon>ManageVisitors.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="RegisterVisitor.xaml.cs">
-      <DependentUpon>RegisterVisitor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="VideoSurveillance.xaml.cs">
-      <DependentUpon>VideoSurveillance.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="VideoSurveillanceControl.xaml.cs">
-      <DependentUpon>VideoSurveillanceControl.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Login.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="ManageVisitors.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="RegisterVisitor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="VideoSurveillance.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="VideoSurveillanceControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -128,18 +78,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SecurityManagementSystemEngine\SecurityManagementSystemEngine.csproj">
-      <Project>{1F80D3BB-D318-47BA-8F90-3DE6FD35721B}</Project>
-      <Name>SecurityManagementSystemEngine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SecurityManagementSystemStorage\SecurityManagementSystemStorage.csproj">
-      <Project>{265E8B0A-F76B-4D04-A10F-190D8B36C2EF}</Project>
-      <Name>SecurityManagementSystemStorage</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SecurityManagementSystemStyle\SecurityManagementSystemStyle.csproj">
-      <Project>{C51CEAE6-FB23-4796-97D1-E01181B314F6}</Project>
-      <Name>SecurityManagementSystemStyle</Name>
-    </ProjectReference>
+    <Page Include="ControlStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

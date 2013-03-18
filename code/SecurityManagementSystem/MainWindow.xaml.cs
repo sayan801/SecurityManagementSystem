@@ -24,9 +24,11 @@ namespace SecurityManagementSystem
             InitializeComponent();
         }
 
-        private void visitorBtn_Click(object sender, RoutedEventArgs e)
+        private void visitorMngBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            SecurityManagementSystem.ManageVisitors ManageVisitorsobj = new SecurityManagementSystem.ManageVisitors();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(ManageVisitorsobj);
         }
 
         private void reportBtn_Click(object sender, RoutedEventArgs e)
@@ -41,17 +43,37 @@ namespace SecurityManagementSystem
 
         private void regBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            SecurityManagementSystem.RegisterVisitor RegisterVisitorobj = new SecurityManagementSystem.RegisterVisitor();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(RegisterVisitorobj);
         }
 
         private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            SecurityManagementSystem.Login Loginobj = new SecurityManagementSystem.Login();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(Loginobj);
         }
 
         private void vidBtn_Click(object sender, RoutedEventArgs e)
         {
+            SecurityManagementSystem.VideoSurveillance VideoSurveillanceObj = new SecurityManagementSystem.VideoSurveillance();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(VideoSurveillanceObj);
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            SecurityManagementSystem.Login Loginobj = new SecurityManagementSystem.Login();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(Loginobj);
 
+         
+         
+        }
+
+        private void internetMnu_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("iexplore.exe", "http://www.msn.com");
         }
     }
 }

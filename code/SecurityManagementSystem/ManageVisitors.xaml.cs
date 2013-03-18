@@ -9,16 +9,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SecurityManagementSystem
 {
     /// <summary>
-    /// Interaction logic for TestWindow.xaml
+    /// Interaction logic for ManageVisitors.xaml
     /// </summary>
-    public partial class TestWindow : Window
+    public partial class ManageVisitors : UserControl
     {
-        public TestWindow()
+        public ManageVisitors()
         {
             InitializeComponent();
         }
