@@ -61,6 +61,9 @@
     <Compile Include="ManageVisitors.xaml.cs">
       <DependentUpon>ManageVisitors.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Permission.xaml.cs">
+      <DependentUpon>Permission.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegisterVisitor.xaml.cs">
       <DependentUpon>RegisterVisitor.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ManageVisitors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Permission.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

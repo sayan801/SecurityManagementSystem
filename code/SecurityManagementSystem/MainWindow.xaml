@@ -11,11 +11,11 @@
         <ToolBar Margin="5" DockPanel.Dock="Top">
             <Button Name="loginBtn" Click="loginBtn_Click" Margin="5">Login</Button>
             <Separator></Separator>
-            <Button Name="permBtn" Click="permBtn_Click"  Margin="5" IsEnabled="False">Permission</Button>
-            <Separator></Separator>
             <Button Name="reportBtn" Click="reportBtn_Click"  Margin="5" IsEnabled="False">Reporting</Button>
             <Separator></Separator>
             <Button Name="regBtn" Click="regBtn_Click" Margin="5" >Register Visitor</Button>
+            <Separator></Separator>
+            <Button Name="permBtn" Click="permBtn_Click"  Margin="5" >Permission</Button>
             <Separator></Separator>
             <Button Name="visitorMngBtn" Click="visitorMngBtn_Click"  Margin="5" >Manage Visitors</Button>
             <Separator></Separator>

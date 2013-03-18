@@ -38,7 +38,9 @@ namespace SecurityManagementSystem
 
         private void permBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            SecurityManagementSystem.Permission objPermission = new SecurityManagementSystem.Permission();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(objPermission);
         }
 
         private void regBtn_Click(object sender, RoutedEventArgs e)
