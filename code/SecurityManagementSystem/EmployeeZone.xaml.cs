@@ -15,16 +15,13 @@ using System.Windows.Shapes;
 namespace SecurityManagementSystem
 {
     /// <summary>
-    /// Interaction logic for VideoSurveillance.xaml
+    /// Interaction logic for EmployeeZone.xaml
     /// </summary>
-    public partial class VideoSurveillance : UserControl
+    public partial class EmployeeZone : UserControl
     {
-        public VideoSurveillance()
+        public EmployeeZone()
         {
             InitializeComponent();
         }
-
-
-        
     }
 }

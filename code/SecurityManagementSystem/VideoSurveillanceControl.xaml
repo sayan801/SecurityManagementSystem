@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="338" d:DesignWidth="402">
-    <Border CornerRadius="25" Background="Bisque" BorderBrush="Chocolate" BorderThickness="4">
+    <Border CornerRadius="25" Background="Bisque" BorderBrush="Chocolate" BorderThickness="4" >
     <Grid Height="270" >
         <Grid.RowDefinitions>
             <RowDefinition Height="36*" />
@@ -33,7 +33,7 @@
                     Width="50" Height="25"/>
             <Button x:Name="btnMoveForward" Content="Forward" Click="btnMoveForward_Click"  
                     Width="50" Height="25"/>
-            <Button x:Name="btnOpen" Content="Open" Click="btnOpen_Click"  
+            <Button x:Name="btnOpen" Content="Open"   
                     Width="50" Height="25"/>
         </StackPanel>
     </Grid>

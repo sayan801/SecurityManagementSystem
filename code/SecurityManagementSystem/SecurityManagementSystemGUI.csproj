@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EmployeeZone.xaml.cs">
+      <DependentUpon>EmployeeZone.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -67,12 +70,19 @@
     <Compile Include="RegisterVisitor.xaml.cs">
       <DependentUpon>RegisterVisitor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ResidenceZone.xaml.cs">
+      <DependentUpon>ResidenceZone.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VideoSurveillance.xaml.cs">
       <DependentUpon>VideoSurveillance.xaml</DependentUpon>
     </Compile>
     <Compile Include="VideoSurveillanceControl.xaml.cs">
       <DependentUpon>VideoSurveillanceControl.xaml</DependentUpon>
     </Compile>
+    <Page Include="EmployeeZone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -98,6 +108,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegisterVisitor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResidenceZone.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
