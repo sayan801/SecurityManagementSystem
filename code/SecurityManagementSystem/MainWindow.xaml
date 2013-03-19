@@ -19,7 +19,7 @@
         </Menu>
         <ToolBar Margin="5" DockPanel.Dock="Top">
             <Button Name="loginBtn" Margin="5">Login</Button>
-            <Separator Name="fstsptr"></Separator>
+            <Separator Name="fstsptr" Visibility="Visible"></Separator>
             <!--<Button Name="reportBtn" Click="reportBtn_Click"  Margin="5" IsEnabled="False">Reporting</Button>
             <Separator></Separator>-->
             <Button Name="regBtn" Click="regBtn_Click" Margin="5" IsEnabled="False">Register Visitor</Button>
@@ -28,9 +28,9 @@
             <Separator></Separator>
             <Button Name="visitorMngBtn" Click="visitorMngBtn_Click"  Margin="5" IsEnabled="False">Manage Visitors</Button>
             <Separator></Separator>
-            <Button Name="residenceZoneBtn" Margin="5" IsEnabled="False">Residence Zone</Button>
+            <Button Name="residenceZoneBtn" Margin="5" IsEnabled="False" Click="residenceZoneBtn_Click">Residence Zone</Button>
             <Separator></Separator>
-            <Button Name="employeeZoneBtn" Margin="5" IsEnabled="False">Employee Zone</Button>
+            <Button Name="employeeZoneBtn" Margin="5" IsEnabled="False" Click="employeeZoneBtn_Click">Employee Zone</Button>
             <Separator></Separator>
             <!--<Button  Margin="5" IsEnabled="False">Print</Button>
             <Separator></Separator>
@@ -39,6 +39,7 @@
             <Button Name="vidBtn" Click="vidBtn_Click"  Margin="5" IsEnabled="False">Video Surveillance</Button>
             <Separator></Separator>
             <Button  Margin="5" Name="internetMnu" Click="internetMnu_Click" IsEnabled="False">Internet</Button>
+            <Separator Name="logoutsptr" Visibility="Collapsed"></Separator>
             <Button Name="logoutBtn" Margin="5" Visibility="Collapsed" Click="logoutBtn_Click">Logout</Button>
         </ToolBar>
 

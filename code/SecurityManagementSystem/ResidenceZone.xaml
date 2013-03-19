@@ -4,8 +4,92 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="354" d:DesignWidth="527">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/SecurityManagementSystemStyle;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UniformGrid>
+        <TabControl>
+            <TabItem Header="All Residence">
+                <DockPanel LastChildFill="True">
+                    <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                        <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
+                        <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
+                    </UniformGrid>
+                    <UniformGrid DockPanel.Dock="Top">
+                        <ListView Name="passView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+
+
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Width="100" Header="Family Head's Name" />
+                                    <GridViewColumn Width="150" Header="House Number" />
+                                    <GridViewColumn Width="100" Header="Room Number" />
+                                    <GridViewColumn Width="120" Header="Contact Number" />
+                                    <GridViewColumn Width="160" Header="Email" />
+                                    <GridViewColumn Width="100" Header="Family Members" />
+                                    <GridViewColumn Width="100" Header="Visiting Hour" />
+                                    <GridViewColumn Width="160" Header="Remark" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </UniformGrid>
+                </DockPanel>
+                
+            </TabItem>
+            <TabItem Header="Add Residence">
+                <DockPanel>
+                    <UniformGrid Columns="4" DockPanel.Dock="Bottom">
+
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Family Head's Name</Label>
+                        <TextBox   Name="headsNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >House No.</Label>
+                        <TextBox   Name="houseNoNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Room No.</Label>
+                        <TextBox   Name="roomNoTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Contact No</Label>
+                        <TextBox   Name="contactTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}">Email Address</Label>
+                        <TextBox   Name="emailTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Family Members</Label>
+                        <TextBox   Name="fmlyMbrsTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}">Visiting Hour</Label>
+                        <TextBox   Name="visitingHourTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+
+                        
+                        
+                        <Label  Style="{StaticResource labelStyle}">Remark</Label>
+                        <TextBox   Name="remarkTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                       
+                        <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
+                        <Button Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Register</Button>
+
+
+                    </UniformGrid>
+                </DockPanel>
+            </TabItem>
+        </TabControl>
+    </UniformGrid>
 </UserControl>

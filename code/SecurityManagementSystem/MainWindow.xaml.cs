@@ -84,6 +84,7 @@ namespace SecurityManagementSystem
                 mainUG.Children.Add(RegisterVisitorobj);
                 logoutBtn.Visibility = Visibility.Visible;
                 fstsptr.Visibility = Visibility.Collapsed;
+                logoutsptr.Visibility = Visibility.Visible;
             }
             else
             {
@@ -104,6 +105,7 @@ namespace SecurityManagementSystem
             userNameTxtbox.Text = string.Empty;
             passwordBox.Password = string.Empty;
             fstsptr.Visibility = Visibility.Visible;
+            logoutsptr.Visibility = Visibility.Collapsed;
             msgShow.Content = "";
 
         }
@@ -114,6 +116,20 @@ namespace SecurityManagementSystem
             userNameTxtbox.Text = string.Empty;
             passwordBox.Password = string.Empty;
             msgShow.Content = "Field Reseted";
+        }
+
+        private void residenceZoneBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityManagementSystem.ResidenceZone ResidenceZoneObj = new SecurityManagementSystem.ResidenceZone();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(ResidenceZoneObj);
+        }
+
+        private void employeeZoneBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityManagementSystem.EmployeeZone EmployeeZoneobj = new SecurityManagementSystem.EmployeeZone();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(EmployeeZoneobj);
         }
 
         

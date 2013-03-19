@@ -5,7 +5,84 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
-    </Grid>
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/SecurityManagementSystemStyle;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UniformGrid>
+        <TabControl>
+            <TabItem Header="All Employee">
+                <DockPanel LastChildFill="True">
+                    <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                        <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
+                        <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
+                    </UniformGrid>
+                    <UniformGrid DockPanel.Dock="Top">
+                        <ListView Name="passView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+
+
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Width="100" Header="Employee Name" />
+                                    <GridViewColumn Width="150" Header="Address" />
+                                    <GridViewColumn Width="120" Header="Contact Number" />
+                                    <GridViewColumn Width="160" Header="Email" />
+                                    <GridViewColumn Width="100" Header="Home Number" />
+                                    <GridViewColumn Width="160" Header="Remark" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </UniformGrid>
+                </DockPanel>
+
+            </TabItem>
+            <TabItem Header="Add Employee">
+                <DockPanel>
+                    <UniformGrid Columns="4" DockPanel.Dock="Bottom">
+
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Employee Name</Label>
+                        <TextBox   Name="employeeNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Address</Label>
+                        <TextBox   Name="AddressNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        
+                        <Label  Style="{StaticResource labelStyle}" >Contact No</Label>
+                        <TextBox   Name="contactTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}">Email Address</Label>
+                        <TextBox   Name="emailTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Home Number</Label>
+                        <TextBox   Name="homeNumberTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        
+
+
+
+                        <Label  Style="{StaticResource labelStyle}">Remark</Label>
+                        <TextBox   Name="remarkTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+
+                        <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
+                        <Button Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Register</Button>
+
+
+                    </UniformGrid>
+                </DockPanel>
+            </TabItem>
+        </TabControl>
+    </UniformGrid>
 </UserControl>
