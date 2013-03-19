@@ -50,12 +50,7 @@ namespace SecurityManagementSystem
             mainUG.Children.Add(RegisterVisitorobj);
         }
 
-        private void loginBtn_Click(object sender, RoutedEventArgs e)
-        {
-            SecurityManagementSystem.Login Loginobj = new SecurityManagementSystem.Login();
-            mainUG.Children.Clear();
-            mainUG.Children.Add(Loginobj);
-        }
+        
 
         private void vidBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -63,19 +58,66 @@ namespace SecurityManagementSystem
             mainUG.Children.Clear();
             mainUG.Children.Add(VideoSurveillanceObj);
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            SecurityManagementSystem.Login Loginobj = new SecurityManagementSystem.Login();
-            mainUG.Children.Clear();
-            mainUG.Children.Add(Loginobj);
+        //private void Window_Loaded(object sender, RoutedEventArgs e)
+        //{
+        //    SecurityManagementSystem.Login Loginobj = new SecurityManagementSystem.Login();
+        //    mainUG.Children.Clear();
+        //    mainUG.Children.Add(Loginobj);
 
          
          
-        }
+        //}
 
         private void internetMnu_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("iexplore.exe", "http://www.msn.com");
         }
+
+        private void dologinBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (userNameTxtbox.Text == "1" && passwordBox.Password == "1")
+            {
+                regBtn.IsEnabled = permBtn.IsEnabled = visitorMngBtn.IsEnabled = residenceZoneBtn.IsEnabled = employeeZoneBtn.IsEnabled = vidBtn.IsEnabled = internetMnu.IsEnabled = true;
+                loginBtn.Visibility = Visibility.Collapsed;
+                SecurityManagementSystem.RegisterVisitor RegisterVisitorobj = new SecurityManagementSystem.RegisterVisitor();
+                mainUG.Children.Clear();
+                mainUG.Children.Add(RegisterVisitorobj);
+                logoutBtn.Visibility = Visibility.Visible;
+                fstsptr.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                msgShow.Content = "Wrong Info";
+                
+            }
+            
+        }
+
+        private void logoutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            regBtn.IsEnabled = permBtn.IsEnabled = visitorMngBtn.IsEnabled = residenceZoneBtn.IsEnabled = employeeZoneBtn.IsEnabled = vidBtn.IsEnabled = internetMnu.IsEnabled = false;
+            logoutBtn.Visibility = Visibility.Collapsed;
+            loginBtn.Visibility = Visibility.Visible;
+            mainUG.Children.Clear();
+            mainUG.Children.Add(mainLoginDoc);
+            userTypeCombobox.SelectedIndex = 1;
+            userNameTxtbox.Text = string.Empty;
+            passwordBox.Password = string.Empty;
+            fstsptr.Visibility = Visibility.Visible;
+            msgShow.Content = "";
+
+        }
+
+        private void resetBtn_Click(object sender, RoutedEventArgs e)
+        {
+            userTypeCombobox.SelectedIndex = 2;
+            userNameTxtbox.Text = string.Empty;
+            passwordBox.Password = string.Empty;
+            msgShow.Content = "Field Reseted";
+        }
+
+        
+
+        
     }
 }

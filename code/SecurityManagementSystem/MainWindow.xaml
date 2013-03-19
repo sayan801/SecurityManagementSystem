@@ -1,7 +1,16 @@
 ﻿<Window x:Class="SecurityManagementSystem.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Security Management" WindowState="Maximized" xmlns:my="clr-namespace:SecurityManagementSystem" Loaded="Window_Loaded" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" >
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"   
+        Title="Security Management" WindowState="Maximized" xmlns:my="clr-namespace:SecurityManagementSystem" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/SecurityManagementSystemStyle;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
     <DockPanel LastChildFill="True">
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File"></MenuItem>
@@ -9,27 +18,28 @@
             <MenuItem Header="Help"></MenuItem>
         </Menu>
         <ToolBar Margin="5" DockPanel.Dock="Top">
-            <Button Name="loginBtn" Click="loginBtn_Click" Margin="5">Login</Button>
-            <Separator></Separator>
+            <Button Name="loginBtn" Margin="5">Login</Button>
+            <Separator Name="fstsptr"></Separator>
             <!--<Button Name="reportBtn" Click="reportBtn_Click"  Margin="5" IsEnabled="False">Reporting</Button>
             <Separator></Separator>-->
-            <Button Name="regBtn" Click="regBtn_Click" Margin="5" >Register Visitor</Button>
+            <Button Name="regBtn" Click="regBtn_Click" Margin="5" IsEnabled="False">Register Visitor</Button>
             <Separator></Separator>
-            <Button Name="permBtn" Click="permBtn_Click"  Margin="5" >Permission</Button>
+            <Button Name="permBtn" Click="permBtn_Click"  Margin="5" IsEnabled="False">Permission</Button>
             <Separator></Separator>
-            <Button Name="visitorMngBtn" Click="visitorMngBtn_Click"  Margin="5" >Manage Visitors</Button>
+            <Button Name="visitorMngBtn" Click="visitorMngBtn_Click"  Margin="5" IsEnabled="False">Manage Visitors</Button>
             <Separator></Separator>
-            <Button Name="residenceZoneBtn" Margin="5" >Residence Zone</Button>
+            <Button Name="residenceZoneBtn" Margin="5" IsEnabled="False">Residence Zone</Button>
             <Separator></Separator>
-            <Button Name="employeeZoneBtn" Margin="5" >Employee Zone</Button>
+            <Button Name="employeeZoneBtn" Margin="5" IsEnabled="False">Employee Zone</Button>
             <Separator></Separator>
             <!--<Button  Margin="5" IsEnabled="False">Print</Button>
             <Separator></Separator>
             <Button  Margin="5" IsEnabled="False">Security</Button>
             <Separator></Separator>-->
-            <Button Name="vidBtn" Click="vidBtn_Click"  Margin="5">Video Surveillance</Button>
+            <Button Name="vidBtn" Click="vidBtn_Click"  Margin="5" IsEnabled="False">Video Surveillance</Button>
             <Separator></Separator>
-            <Button  Margin="5" Name="internetMnu" Click="internetMnu_Click">Internet</Button>
+            <Button  Margin="5" Name="internetMnu" Click="internetMnu_Click" IsEnabled="False">Internet</Button>
+            <Button Name="logoutBtn" Margin="5" Visibility="Collapsed" Click="logoutBtn_Click">Logout</Button>
         </ToolBar>
 
         <StatusBar DockPanel.Dock="Bottom">
@@ -39,12 +49,42 @@
                 <Button Margin="5" Content="Visitors: 12"></Button>
                 <Button Margin="5" Content="Employees: 810"></Button>
                 <Button Margin="5" Content="Total Area: 12560 Sq Ft"></Button>
-                <Button Margin="5" Content="Time: 12:00"></Button>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Source={x:Static sys:DateTime.Today}, StringFormat='{}{0:dddd, MMMM dd, yyyy}'}" Foreground="Black" ></TextBlock>
 
             </UniformGrid>
         </StatusBar>
         <UniformGrid Name="mainUG">
-            
+            <DockPanel Name="mainLoginDoc">
+                <UniformGrid Width="700" Height="300" Columns="4" DockPanel.Dock="Bottom">
+
+                    <Label></Label>
+                    <Label  Style="{StaticResource labelStyle}" >User Name</Label>
+                    <TextBox Height="40"  Name="userNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                    <Label></Label>
+                    <Label></Label>
+                    <Label  Style="{StaticResource labelStyle}" >User Type</Label>
+                    <ComboBox Height="40" Name="userTypeCombobox" IsEditable="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" SelectedIndex="1">
+
+                        <ComboBoxItem>Admin</ComboBoxItem>
+                        <ComboBoxItem>Employee</ComboBoxItem>
+                        <ComboBoxItem>Others</ComboBoxItem>
+                    </ComboBox>
+                    <Label></Label>
+                    <Label></Label>
+                    <Label  Style="{StaticResource labelStyle}">Enter Password</Label>
+                    <PasswordBox Height="40" Name="passwordBox" Style="{StaticResource passwordboxStyle}"></PasswordBox>
+                    <Label></Label>
+                    <Label></Label>
+                    <Label  Style="{StaticResource labelStyle}" Name="msgShow"></Label>
+                    <Label></Label>
+                    <Label></Label>
+                    <Label></Label>
+                    <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="2"  Click="resetBtn_Click">Reset</Button>
+                    <Button Name="dologinBtn" Style="{StaticResource MainBtnStyle}" Margin="2" Click="dologinBtn_Click">Sign In</Button>
+
+
+                </UniformGrid>
+            </DockPanel>
         </UniformGrid>
     </DockPanel>
 </Window>
