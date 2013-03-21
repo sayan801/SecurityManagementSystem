@@ -38,7 +38,6 @@ CREATE TABLE `employee` (
   `homenumber` varchar(100) DEFAULT NULL,
   `address` varchar(150) DEFAULT NULL,
   `joiningdate` varchar(100) DEFAULT NULL,
-  `salary` varchar(100) DEFAULT NULL,
   `remark` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -50,6 +49,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
+INSERT INTO `employee` VALUES ('41354.8450012269','cn','','nc f','f n','fcn ','2013-02-28 00:00:00','d n');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -154,4 +154,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-03-21 19:44:05
+-- Dump completed on 2013-03-21 20:24:39

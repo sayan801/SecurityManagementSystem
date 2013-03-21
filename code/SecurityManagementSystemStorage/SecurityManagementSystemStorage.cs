@@ -77,7 +77,7 @@ namespace SecurityManagementSystemStorage
 
         #endregion
 
-        #region Visitor
+        #region Residence
 
         public static int DoEnterResidence(ResidenceInformation Newresidence)
         {
@@ -109,6 +109,56 @@ namespace SecurityManagementSystemStorage
                 msqlCommand.Parameters.AddWithValue("@fmlymebrs", NewResidence.fmlyMbrs);
                 msqlCommand.Parameters.AddWithValue("@visitinghrs", NewResidence.visitingHour);
                 msqlCommand.Parameters.AddWithValue("@remark", NewResidence.remark);
+
+                msqlCommand.ExecuteNonQuery();
+
+                returnVal = 1;
+            }
+            catch (Exception er)
+            {
+                returnVal = 0;
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+            return returnVal;
+        }
+
+        #endregion
+
+        #region Employee
+
+        public static int DoEnterEmployee(EmployeeInformation NewEmployee)
+        {
+            return DoRegisterNewEmployeeindb(NewEmployee);
+        }
+
+        private static int DoRegisterNewEmployeeindb(EmployeeInformation Newemployee)
+        {
+            int returnVal = 0;
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+
+                //define the connection used by the command object
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "INSERT INTO employee(id,name,address,contact,joiningdate,email,homenumber,remark) "
+                                    + "VALUES(@id,@name,@address,@contact,@joiningdate,@email,@homenumber,@remark)";
+
+                msqlCommand.Parameters.AddWithValue("@id", Newemployee.id);
+                msqlCommand.Parameters.AddWithValue("@name", Newemployee.name);
+                msqlCommand.Parameters.AddWithValue("@address", Newemployee.addres);
+                msqlCommand.Parameters.AddWithValue("@contact", Newemployee.contact);
+                msqlCommand.Parameters.AddWithValue("@joiningdate", Newemployee.joiningdate);
+                msqlCommand.Parameters.AddWithValue("@email", Newemployee.email);
+                msqlCommand.Parameters.AddWithValue("@homenumber", Newemployee.homeNumber);
+                msqlCommand.Parameters.AddWithValue("@remark", Newemployee.remark);
 
                 msqlCommand.ExecuteNonQuery();
 

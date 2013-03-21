@@ -51,7 +51,7 @@
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Sign In Time</Label>
-            <DatePicker Name="signinDp"></DatePicker>
+            <DatePicker Name="signinDp" Style="{StaticResource datePickerStyle}"></DatePicker>
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Remark</Label>

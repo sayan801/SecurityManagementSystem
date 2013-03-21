@@ -11,6 +11,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SecurityManagementSystemEngine;
+using SecurityManagementSystemStorage;
+
 
 namespace SecurityManagementSystem
 {
@@ -22,6 +25,31 @@ namespace SecurityManagementSystem
         public EmployeeZone()
         {
             InitializeComponent();
+        }
+
+        private void doregBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+            SecurityManagementSystemEngine.EmployeeInformation newEmployee = new SecurityManagementSystemEngine.EmployeeInformation();
+
+            newEmployee.id = GenerateId();
+
+            newEmployee.name = employeeNameTxtbox.Text;
+            newEmployee.addres = AddressNameTxtbox.Text;
+            newEmployee.contact = contactTxtbox.Text;
+            newEmployee.email = emailTxtbox.Text;
+            newEmployee.homeNumber = homeNumberTxtbox.Text;
+            newEmployee.joiningdate = joiningdateP.SelectedDate.Value;
+            newEmployee.remark = remarkTxtbox.Text;
+
+            SecurityManagementSystemStorage.SecurityManagementSystemStorage.DoEnterEmployee(newEmployee);
+
+
+        }
+
+        private string GenerateId()
+        {
+            return DateTime.Now.ToOADate().ToString();
         }
     }
 }
