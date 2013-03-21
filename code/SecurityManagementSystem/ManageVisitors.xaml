@@ -36,6 +36,11 @@
                         <GridViewColumn Width="100" Header="Visit to Whom" />
                         <GridViewColumn Width="100" Header="Sign In Time" />
                         <GridViewColumn Width="160" Header="Remark" />
+                        <GridViewColumn Width="160" Header="Expected Time Will Take" />
+                        <GridViewColumn Width="160" Header="Permission Granted By" />
+                        <GridViewColumn Width="160" Header="Allow Visit By" />
+                        <GridViewColumn Width="160" Header="Employee Id" />
+                        
                     </GridView>
                 </ListView.View>
             </ListView>

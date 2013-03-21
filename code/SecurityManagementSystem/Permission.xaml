@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="610" Style="{DynamicResource UserCntrlStyle}">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -17,37 +17,34 @@
 
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}" >Visitor Name</Label>
-            <TextBox   Name="visitorNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+            <ComboBox   Name="visitorNameCB"  Style="{StaticResource comboboxStyle}" IsEditable="True"></ComboBox>
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}" >Visitor Address</Label>
-            <TextBox   Name="visitorAddressNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+            <TextBox   Name="visitorAddressNameTxtbox"  Style="{StaticResource textboxStyle}" IsEnabled="False"></TextBox>
             <Label></Label>
             <Label></Label>
             
             <Label  Style="{StaticResource labelStyle}" >Id Proof With Number</Label>
-            <TextBox   Name="idproofwithNoTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+            <TextBox   Name="idproofwithNoTxtbox"  Style="{StaticResource textboxStyle}" IsEnabled="False" ></TextBox>
             <Label></Label>
             <Label></Label>
 
 
 
             <Label  Style="{StaticResource labelStyle}">Permission Granted By</Label>
-            <TextBox   Name="toWhomTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+            <ComboBox   Name="toWhomCB"  Style="{StaticResource comboboxStyle}" IsEditable="True"></ComboBox>
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Allow Visit By</Label>
-            <TextBox   Name="signinTimeTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+            <ComboBox   Name="allowbyCBCB"  Style="{StaticResource comboboxStyle}" IsEditable="True"></ComboBox>
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Employee Id</Label>
-            <TextBox   Name="employeeIdTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+            <TextBox   Name="employeeIdTxtbox"  Style="{StaticResource textboxStyle}" IsEnabled="False"></TextBox>
             <Label></Label>
             <Label></Label>
-            <Label  Style="{StaticResource labelStyle}">Remark</Label>
-            <TextBox   Name="remarkTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
-            <Label></Label>
-            <Label></Label>
+            
            
             <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
             <Button Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Allow</Button>

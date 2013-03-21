@@ -72,6 +72,10 @@ CREATE TABLE `regvisitor` (
   `signtime` datetime DEFAULT NULL,
   `remark` varchar(150) DEFAULT NULL,
   `timewilltake` varchar(45) DEFAULT NULL,
+  `prmsnGrntdby` varchar(45) DEFAULT 'N/A',
+  `allowvisitBy` varchar(45) DEFAULT 'N/A',
+  `employId` varchar(45) DEFAULT 'N/A',
+  `regvisitorcol` varchar(45) DEFAULT 'N/A',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -82,7 +86,7 @@ CREATE TABLE `regvisitor` (
 
 LOCK TABLES `regvisitor` WRITE;
 /*!40000 ALTER TABLE `regvisitor` DISABLE KEYS */;
-INSERT INTO `regvisitor` VALUES ('41354.7833968056','fg','fh','fg','fgjfg','Unknown','gjg','fgj','2013-03-15 00:00:00','fgj','fjg'),('41354.7852696644','segs','sdg','sdgd','sgd','Unknown','dsg','sd','2013-03-05 00:00:00','sdg','sg');
+INSERT INTO `regvisitor` VALUES ('41354.7833968056','fg','fh','fg','fgjfg','Unknown','gjg','fgj','2013-03-15 00:00:00','fgj','fjg','N/A','N/A','N/A','N/A'),('41354.7852696644','segs','sdg','sdgd','sgd','Unknown','dsg','sd','2013-03-05 00:00:00','sdg','sg','N/A','N/A','N/A','N/A');
 /*!40000 ALTER TABLE `regvisitor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,7 +117,7 @@ CREATE TABLE `residence` (
 
 LOCK TABLES `residence` WRITE;
 /*!40000 ALTER TABLE `residence` DISABLE KEYS */;
-INSERT INTO `residence` VALUES ('41354.8181759606','scs','sas','safssafs','asf','saf','safas','fsfsa','fasa'),('41354.8192685532',' ccc','c b','c ','c ','vc ','cv vc',' ',' '),('41354.819300463',' ccc','c b','c ','c ','vc ','cv vc',' v ','  v');
+INSERT INTO `residence` VALUES ('41354.8181759606','scs','sas','safssafs','asf','saf','safas','fsfsa','fasa'),('41354.8192685532',' ccc','c b','c ','c ','vc ','cv vc',' ',' '),('41354.819300463',' ccc','c b','c ','c ','vc ','cv vc',' v ','  v'),('41354.9883948032','ghjfg','fgjf','jfgjgf','jgfj','fgjfgj','fgjfg','jfjfg','jfgfjfg');
 /*!40000 ALTER TABLE `residence` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -154,4 +158,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-03-21 21:51:08
+-- Dump completed on 2013-03-22  0:12:28
