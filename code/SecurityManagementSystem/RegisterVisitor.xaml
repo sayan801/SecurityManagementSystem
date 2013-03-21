@@ -51,7 +51,7 @@
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Sign In Time</Label>
-            <TextBox   Name="signinTimeTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+            <DatePicker Name="signinDp"></DatePicker>
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Remark</Label>
@@ -63,7 +63,7 @@
             <Label></Label>
             <Label></Label>
             <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
-            <Button Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Register</Button>
+            <Button  Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="doregBtn_Click">Register</Button>
             
 
         </UniformGrid>
