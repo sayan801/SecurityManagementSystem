@@ -1,5 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    
     <Style x:Key="labelStyle" TargetType="Label">
         <Setter Property="Foreground" Value="#FF0A2525" />
         <Setter Property="FontSize" Value="16" />
@@ -30,7 +32,7 @@
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="Height" Value="60" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
-        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" /> 
         <Setter Property="Margin" Value="10"/>
         <Setter Property="SelectedIndex" Value="0"/>
     </Style>
@@ -54,9 +56,9 @@
     <Style x:Key="MainBtnStyle" TargetType="Button">
 
 
-        <Setter Property="Background" Value="CadetBlue" />
+        <Setter Property="Background" Value="#FFADA4A4" />
             <Setter Property="Foreground" Value="#FF72633F" />
-        <Setter Property="FontSize" Value="32" />
+        <Setter Property="FontSize" Value="28" />
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="BorderBrush" Value="#FF001900" />
         <Setter Property="Template">
@@ -73,8 +75,8 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="border" Property="BorderBrush" Value="#FF87742D" />
-                            <Setter Property="Button.Background" Value="#FFE0EADB" />
-                            <Setter Property="Button.Foreground" Value="Green" />
+                            <Setter Property="Button.Background" Value="#FF72633F" />
+                            <Setter Property="Button.Foreground" Value="#FFADA4A4" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter TargetName="border" Property="BorderBrush" Value="White" />
@@ -93,4 +95,14 @@
         <Setter Property="Margin" Value="10"/>
     </Style>
 
+    <Style x:Key="UserCntrlStyle" TargetType="UserControl">
+        <Setter Property="Background" Value="#FFCBB972" />
+        
+    </Style>
+
+
+    <Style x:Key="wincntrlStyle" TargetType="Window">
+        <Setter Property="Background" Value="#FFCBB972" />
+
+    </Style>
 </ResourceDictionary>
