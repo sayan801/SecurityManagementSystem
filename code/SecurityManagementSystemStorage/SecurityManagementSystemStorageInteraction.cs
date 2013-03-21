@@ -6,7 +6,7 @@ using SecurityManagementSystemEngine;
 
 namespace SecurityManagementSystemStorage
 {
-    public class SecurityManagementSystemStorage
+    public class SecurityManagementSystemStorageInteraction
     {
         static string passwordCurrent = "technicise";
         static string dbmsCurrent = "securitydb";
@@ -176,6 +176,53 @@ namespace SecurityManagementSystemStorage
             return returnVal;
         }
 
+
+        public static List<EmployeeInformation> GetAllEmployeeList()
+        {
+            return QueryAllEmployeeList();
+        }
+        private static List<EmployeeInformation> QueryAllEmployeeList()
+        {
+            List<EmployeeInformation> EmployeeList = new List<EmployeeInformation>();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From employee ;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    EmployeeInformation Employee = new EmployeeInformation();
+
+                    Employee.id = msqlReader.GetString("id");
+                    Employee.name = msqlReader.GetString("name");
+                    Employee.addres = msqlReader.GetString("address");
+                    Employee.contact = msqlReader.GetString("contact");
+                    Employee.joiningdate = msqlReader.GetDateTime("joiningdate");
+                    Employee.email = msqlReader.GetString("email");
+                    Employee.homeNumber = msqlReader.GetString("homenumber");
+                    Employee.remark = msqlReader.GetString("remark");
+
+                    EmployeeList.Add(Employee);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return EmployeeList;
+        }
         #endregion
     }
 }

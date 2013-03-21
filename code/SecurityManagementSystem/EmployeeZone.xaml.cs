@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SecurityManagementSystemEngine;
 using SecurityManagementSystemStorage;
+using System.Collections.ObjectModel;
 
 
 namespace SecurityManagementSystem
@@ -26,7 +27,10 @@ namespace SecurityManagementSystem
         {
             InitializeComponent();
         }
-
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            fetchEmployeeData();
+        }
         private void doregBtn_Click(object sender, RoutedEventArgs e)
         {
 
@@ -42,7 +46,7 @@ namespace SecurityManagementSystem
             newEmployee.joiningdate = joiningdateP.SelectedDate.Value;
             newEmployee.remark = remarkTxtbox.Text;
 
-            SecurityManagementSystemStorage.SecurityManagementSystemStorage.DoEnterEmployee(newEmployee);
+            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterEmployee(newEmployee);
 
 
         }
@@ -51,5 +55,34 @@ namespace SecurityManagementSystem
         {
             return DateTime.Now.ToOADate().ToString();
         }
+
+
+
+
+        ObservableCollection<EmployeeInformation> _allemployeeCollection = new ObservableCollection<EmployeeInformation>();
+
+
+        public ObservableCollection<EmployeeInformation> allemployeeCollection
+        {
+            get
+            {
+                return _allemployeeCollection;
+            }
+        }
+
+        private void fetchEmployeeData()
+        {
+            List<EmployeeInformation> Employees = SecurityManagementSystemStorageInteraction.GetAllEmployeeList();
+
+            _allemployeeCollection.Clear();
+
+            foreach (EmployeeInformation employee in Employees)
+            {
+                _allemployeeCollection.Add(employee);
+            }
+        }
+
+
+
     }
 }

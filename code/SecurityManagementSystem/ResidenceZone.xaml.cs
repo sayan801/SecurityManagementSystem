@@ -41,7 +41,7 @@ namespace SecurityManagementSystem
             newResidence.visitingHour = visitingHourTxtbox.Text;
             newResidence.remark = remarkTxtbox.Text;
 
-            SecurityManagementSystemStorage.SecurityManagementSystemStorage.DoEnterResidence(newResidence);
+            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterResidence(newResidence);
         }
         private string GenerateId()
         {

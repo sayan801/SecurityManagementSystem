@@ -43,7 +43,7 @@ namespace SecurityManagementSystem
             newVisitor.remark = remarkTxtbox.Text;
             newVisitor.expcttie = etwtTxtbox.Text;
 
-            SecurityManagementSystemStorage.SecurityManagementSystemStorage.DoEnterVisetor(newVisitor);
+            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterVisetor(newVisitor);
 
             
         }
