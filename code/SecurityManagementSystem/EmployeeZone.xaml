@@ -16,7 +16,7 @@
     </UserControl.Resources>
     <UniformGrid>
         <TabControl>
-            <TabItem Header="All Employee">
+            <TabItem Header="All Employee" Style="{StaticResource TabItemStyle}">
                 <DockPanel LastChildFill="True">
                     <UniformGrid DockPanel.Dock="Bottom" Rows="1">
                         <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
@@ -42,7 +42,7 @@
                 </DockPanel>
 
             </TabItem>
-            <TabItem Header="Add Employee">
+            <TabItem Header="Add Employee" Style="{StaticResource TabItemStyle}">
                 <DockPanel>
                     <UniformGrid Columns="4" DockPanel.Dock="Bottom">
 

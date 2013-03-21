@@ -105,4 +105,12 @@
         <Setter Property="Background" Value="#FFCBB972" />
 
     </Style>
+
+    <Style x:Key="TabItemStyle" TargetType="TabItem">
+        <Setter Property="Background" Value="#FFADA4A4" />
+    <Setter Property="Foreground" Value="#FF72633F" />
+    <Setter Property="FontSize" Value="14" />
+    <Setter Property="FontWeight" Value="Bold" />
+    <Setter Property="BorderBrush" Value="#FF001900" />
+    </Style>
 </ResourceDictionary>
