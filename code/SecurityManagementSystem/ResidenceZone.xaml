@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
              mc:Ignorable="d" 
              d:DesignHeight="354" d:DesignWidth="527" Style="{DynamicResource UserCntrlStyle}">
     <UserControl.Resources>
@@ -21,19 +22,19 @@
                         <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
-                        <ListView Name="passView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                        <ListView Name="passView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding allresidenceCollection}" Loaded="Window_Loaded" >
 
 
                             <ListView.View>
                                 <GridView>
-                                    <GridViewColumn Width="100" Header="Family Head's Name" />
-                                    <GridViewColumn Width="150" Header="House Number" />
-                                    <GridViewColumn Width="100" Header="Room Number" />
-                                    <GridViewColumn Width="120" Header="Contact Number" />
-                                    <GridViewColumn Width="160" Header="Email" />
-                                    <GridViewColumn Width="100" Header="Family Members" />
-                                    <GridViewColumn Width="100" Header="Visiting Hour" />
-                                    <GridViewColumn Width="160" Header="Remark" />
+                                    <GridViewColumn Width="100" Header="Family Head's Name" DisplayMemberBinding="{Binding name}"/>
+                                    <GridViewColumn Width="150" Header="House Number" DisplayMemberBinding="{Binding houseNo}"/>
+                                    <GridViewColumn Width="100" Header="Room Number" DisplayMemberBinding="{Binding roomNo}"/>
+                                    <GridViewColumn Width="120" Header="Contact Number" DisplayMemberBinding="{Binding contact}" />
+                                    <GridViewColumn Width="160" Header="Email" DisplayMemberBinding="{Binding email}"/>
+                                    <GridViewColumn Width="100" Header="Family Members" DisplayMemberBinding="{Binding fmlyMbrs}"/>
+                                    <GridViewColumn Width="100" Header="Visiting Hour" DisplayMemberBinding="{Binding visitingHour}"/>
+                                    <GridViewColumn Width="160" Header="Remark" DisplayMemberBinding="{Binding remark}"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>

@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SecurityManagementSystemEngine;
 using SecurityManagementSystemStorage;
+using System.Collections.ObjectModel;
 
 namespace SecurityManagementSystem
 {
@@ -24,6 +25,11 @@ namespace SecurityManagementSystem
         public ResidenceZone()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            fetchResidenceData();
         }
 
         private void doregBtn_Click(object sender, RoutedEventArgs e)
@@ -47,5 +53,32 @@ namespace SecurityManagementSystem
         {
             return DateTime.Now.ToOADate().ToString();
         }
+
+
+
+        ObservableCollection<ResidenceInformation> _allresidenceCollection = new ObservableCollection<ResidenceInformation>();
+
+
+        public ObservableCollection<ResidenceInformation> allresidenceCollection
+        {
+            get
+            {
+                return _allresidenceCollection;
+            }
+        }
+
+        private void fetchResidenceData()
+        {
+            List<ResidenceInformation> Residences = SecurityManagementSystemStorageInteraction.GetAllResidenceList();
+
+            _allresidenceCollection.Clear();
+
+            foreach (ResidenceInformation residence in Residences)
+            {
+                _allresidenceCollection.Add(residence);
+            }
+        }
+
+
     }
 }

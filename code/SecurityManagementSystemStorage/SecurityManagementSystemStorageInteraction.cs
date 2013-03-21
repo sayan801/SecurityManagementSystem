@@ -126,6 +126,53 @@ namespace SecurityManagementSystemStorage
             return returnVal;
         }
 
+        public static List<ResidenceInformation> GetAllResidenceList()
+        {
+            return QueryAllResidenceList();
+        }
+        private static List<ResidenceInformation> QueryAllResidenceList()
+        {
+            List<ResidenceInformation> ResidenceList = new List<ResidenceInformation>();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From residence ;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    ResidenceInformation Residence = new ResidenceInformation();
+
+                    Residence.id = msqlReader.GetString("id");
+                    Residence.name = msqlReader.GetString("fmlyhadsname");
+                    Residence.houseNo = msqlReader.GetString("houseno");
+                    Residence.roomNo = msqlReader.GetString("roomno");
+                    Residence.contact = msqlReader.GetString("contact");
+                    Residence.email = msqlReader.GetString("emailaddrs");
+                    Residence.fmlyMbrs = msqlReader.GetString("fmlymebrs");
+                    Residence.visitingHour = msqlReader.GetString("visitinghrs");
+                    Residence.remark = msqlReader.GetString("remark");
+                    
+                    ResidenceList.Add(Residence);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return ResidenceList;
+        }
         #endregion
 
         #region Employee
