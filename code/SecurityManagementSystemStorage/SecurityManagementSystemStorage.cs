@@ -76,5 +76,56 @@ namespace SecurityManagementSystemStorage
         }
 
         #endregion
+
+        #region Visitor
+
+        public static int DoEnterResidence(ResidenceInformation Newresidence)
+        {
+            return DoRegisterNewResidenceindb(Newresidence);
+        }
+
+        private static int DoRegisterNewResidenceindb(ResidenceInformation NewResidence)
+        {
+            int returnVal = 0;
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+
+                //define the connection used by the command object
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "INSERT INTO residence(id,fmlyhadsname,houseno,roomno,contact,emailaddrs,fmlymebrs,visitinghrs,remark) "
+                                    + "VALUES(@id,@fmlyhadsname,@houseno,@roomno,@contact,@emailaddrs,@fmlymebrs,@visitinghrs,@remark)";
+
+                msqlCommand.Parameters.AddWithValue("@id", NewResidence.id);
+                msqlCommand.Parameters.AddWithValue("@fmlyhadsname", NewResidence.name);
+                msqlCommand.Parameters.AddWithValue("@houseno", NewResidence.houseNo);
+                msqlCommand.Parameters.AddWithValue("@roomno", NewResidence.roomNo);
+                msqlCommand.Parameters.AddWithValue("@contact", NewResidence.contact);
+                msqlCommand.Parameters.AddWithValue("@emailaddrs", NewResidence.email);
+                msqlCommand.Parameters.AddWithValue("@fmlymebrs", NewResidence.fmlyMbrs);
+                msqlCommand.Parameters.AddWithValue("@visitinghrs", NewResidence.visitingHour);
+                msqlCommand.Parameters.AddWithValue("@remark", NewResidence.remark);
+
+                msqlCommand.ExecuteNonQuery();
+
+                returnVal = 1;
+            }
+            catch (Exception er)
+            {
+                returnVal = 0;
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+            return returnVal;
+        }
+
+        #endregion
     }
 }
