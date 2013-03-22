@@ -17,7 +17,7 @@
             <MenuItem Header="Settings"></MenuItem>
             <MenuItem Header="Help"></MenuItem>
         </Menu>
-        <ToolBar Margin="5" DockPanel.Dock="Top" Background="#FF9AADAF">
+        <ToolBar Name="mainToolbar" Margin="5" DockPanel.Dock="Top" Background="#FF9AADAF">
             <Button Name="loginBtn" Margin="5" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Login</Button>
             <Separator Name="fstsptr" Visibility="Visible"></Separator>
             <!--<Button Name="reportBtn" Click="reportBtn_Click"  Margin="5" IsEnabled="False">Reporting</Button>
@@ -38,7 +38,7 @@
             <Separator></Separator>-->
             <Button Name="vidBtn" Click="vidBtn_Click"  Margin="5" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Video Surveillance</Button>
             <Separator></Separator>
-            <Button  Margin="5" Name="internetMnu" Click="internetMnu_Click" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Internet</Button>
+            <Button  Margin="5" Name="securityGuardZone" Click="securityGuardZone_Click" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Security Guard Zone</Button>
             <Separator Name="logoutsptr" Visibility="Collapsed"></Separator>
             <Button Name="logoutBtn" Margin="5" Visibility="Collapsed" Click="logoutBtn_Click" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Logout</Button>
         </ToolBar>

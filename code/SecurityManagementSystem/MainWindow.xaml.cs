@@ -68,16 +68,16 @@ namespace SecurityManagementSystem
          
         //}
 
-        private void internetMnu_Click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("iexplore.exe", "http://www.msn.com");
-        }
+        //private void internetMnu_Click(object sender, RoutedEventArgs e)
+        //{
+        //    System.Diagnostics.Process.Start("iexplore.exe", "http://www.msn.com");
+        //}
 
         private void dologinBtn_Click(object sender, RoutedEventArgs e)
         {
             if (userNameTxtbox.Text == "1" && passwordBox.Password == "1")
             {
-                regBtn.IsEnabled = permBtn.IsEnabled = visitorMngBtn.IsEnabled = residenceZoneBtn.IsEnabled = employeeZoneBtn.IsEnabled = vidBtn.IsEnabled = internetMnu.IsEnabled = true;
+                regBtn.IsEnabled = permBtn.IsEnabled = visitorMngBtn.IsEnabled = residenceZoneBtn.IsEnabled = employeeZoneBtn.IsEnabled = vidBtn.IsEnabled = true;
                 loginBtn.Visibility = Visibility.Collapsed;
                 SecurityManagementSystem.RegisterVisitor RegisterVisitorobj = new SecurityManagementSystem.RegisterVisitor();
                 mainUG.Children.Clear();
@@ -96,7 +96,7 @@ namespace SecurityManagementSystem
 
         private void logoutBtn_Click(object sender, RoutedEventArgs e)
         {
-            regBtn.IsEnabled = permBtn.IsEnabled = visitorMngBtn.IsEnabled = residenceZoneBtn.IsEnabled = employeeZoneBtn.IsEnabled = vidBtn.IsEnabled = internetMnu.IsEnabled = false;
+            regBtn.IsEnabled = permBtn.IsEnabled = visitorMngBtn.IsEnabled = residenceZoneBtn.IsEnabled = employeeZoneBtn.IsEnabled = vidBtn.IsEnabled = false;
             logoutBtn.Visibility = Visibility.Collapsed;
             loginBtn.Visibility = Visibility.Visible;
             mainUG.Children.Clear();
@@ -130,6 +130,12 @@ namespace SecurityManagementSystem
             SecurityManagementSystem.EmployeeZone EmployeeZoneobj = new SecurityManagementSystem.EmployeeZone();
             mainUG.Children.Clear();
             mainUG.Children.Add(EmployeeZoneobj);
+        }
+
+        private void securityGuardZone_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityGuardZone sgz = new SecurityGuardZone();
+            
         }
 
         

@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="SecurityManagementSystem.SecurityGuardZone"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Style="{DynamicResource UserCntrlStyle}">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/SecurityManagementSystemStyle;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UniformGrid>
+        <TabControl>
+            <TabItem Header="All Employee" Style="{StaticResource TabItemStyle}">
+                <DockPanel LastChildFill="True">
+                    <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                        <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
+                        <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
+                    </UniformGrid>
+                    <UniformGrid DockPanel.Dock="Top">
+                        <ListView Name="employeeView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" Background="Transparent" ItemsSource="{Binding allemployeeCollection}" Loaded="Window_Loaded">
+
+
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Width="100" Header="Employee ID" DisplayMemberBinding="{Binding id}" />
+                                    <GridViewColumn Width="100" Header="Employee Name" DisplayMemberBinding="{Binding name}" />
+                                    <GridViewColumn Width="150" Header="Address" DisplayMemberBinding="{Binding addres}" />
+                                    <GridViewColumn Width="120" Header="Contact Number" DisplayMemberBinding="{Binding contact}" />
+                                    <GridViewColumn Width="160" Header="Email" DisplayMemberBinding="{Binding email}" />
+                                    <GridViewColumn Width="100" Header="Home Number" DisplayMemberBinding="{Binding homeNumber}"/>
+                                    <GridViewColumn Width="160" Header="Joining Date" DisplayMemberBinding="{Binding joiningdate}"/>
+                                    <GridViewColumn Width="160" Header="Remark" DisplayMemberBinding="{Binding remark}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </UniformGrid>
+                </DockPanel>
+
+            </TabItem>
+            <TabItem Header="Add Employee" Style="{StaticResource TabItemStyle}">
+                <DockPanel>
+                    <UniformGrid Columns="4" DockPanel.Dock="Bottom">
+
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Employee Name</Label>
+                        <TextBox   Name="employeeNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Address</Label>
+                        <TextBox   Name="AddressNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        
+                        <Label  Style="{StaticResource labelStyle}" >Contact No</Label>
+                        <TextBox   Name="contactTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Home Number</Label>
+                        <DatePicker   Name="joiningdateP" Style="{StaticResource datePickerStyle}"  ></DatePicker>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}">Email Address</Label>
+                        <TextBox   Name="emailTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Home Number</Label>
+                        <TextBox   Name="homeNumberTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        
+
+
+
+                        <Label  Style="{StaticResource labelStyle}">Remark</Label>
+                        <TextBox   Name="remarkTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+
+                        <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
+                        <Button Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="doregBtn_Click">Register</Button>
+
+
+                    </UniformGrid>
+                </DockPanel>
+            </TabItem>
+        </TabControl>
+    </UniformGrid>
+</UserControl>

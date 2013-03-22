@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SecurityGuardZone.xaml.cs">
+      <DependentUpon>SecurityGuardZone.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeZone.xaml.cs">
       <DependentUpon>EmployeeZone.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,10 @@
     <Compile Include="VideoSurveillanceControl.xaml.cs">
       <DependentUpon>VideoSurveillanceControl.xaml</DependentUpon>
     </Compile>
+    <Page Include="SecurityGuardZone.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="EmployeeZone.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
