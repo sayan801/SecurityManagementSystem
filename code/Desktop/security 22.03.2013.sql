@@ -38,6 +38,7 @@ CREATE TABLE `employee` (
   `homenumber` varchar(100) DEFAULT NULL,
   `address` varchar(150) DEFAULT NULL,
   `joiningdate` varchar(100) DEFAULT NULL,
+  `employeeType` varchar(45) DEFAULT NULL,
   `remark` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -49,7 +50,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES ('41354.8450012269','cn','','nc f','f n','fcn ','2013-02-28 00:00:00','d n');
+INSERT INTO `employee` VALUES ('41355.871353044','11','11','11','11','111','2013-03-14 00:00:00','Others','11');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -122,6 +123,36 @@ INSERT INTO `residence` VALUES ('41354.8181759606','scs','sas','safssafs','asf',
 UNLOCK TABLES;
 
 --
+-- Table structure for table `security`
+--
+
+DROP TABLE IF EXISTS `security`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `security` (
+  `id` varchar(100) NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `address` varchar(145) DEFAULT NULL,
+  `contact` varchar(45) DEFAULT NULL,
+  `joiningdate` datetime DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `homenumber` varchar(45) DEFAULT NULL,
+  `remark` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `security`
+--
+
+LOCK TABLES `security` WRITE;
+/*!40000 ALTER TABLE `security` DISABLE KEYS */;
+INSERT INTO `security` VALUES ('41355.8732802431','gf','gfg','ff','2013-03-08 00:00:00','gf','fgf','f');
+/*!40000 ALTER TABLE `security` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `user`
 --
 
@@ -158,4 +189,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-03-22  0:12:28
+-- Dump completed on 2013-03-22 21:13:46
