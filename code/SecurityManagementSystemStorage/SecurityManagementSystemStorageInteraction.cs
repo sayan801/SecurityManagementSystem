@@ -54,7 +54,7 @@ namespace SecurityManagementSystemStorage
                 msqlCommand.Parameters.AddWithValue("@idcardno", NewVisitor.idinfo);
                 msqlCommand.Parameters.AddWithValue("@visitortype", NewVisitor.viitortype);
                 msqlCommand.Parameters.AddWithValue("@purpose", NewVisitor.purpose);
-                msqlCommand.Parameters.AddWithValue("@visitwhom", NewVisitor.towhom);
+                msqlCommand.Parameters.AddWithValue("@visitwhom", NewVisitor.empId);
                 msqlCommand.Parameters.AddWithValue("@signtime", NewVisitor.signintime);
                 msqlCommand.Parameters.AddWithValue("@remark", NewVisitor.remark);
                 msqlCommand.Parameters.AddWithValue("@timewilltake", NewVisitor.expcttie);
@@ -73,6 +73,64 @@ namespace SecurityManagementSystemStorage
                 msqlConnection.Close();
             }
             return returnVal;
+        }
+
+
+        public static List<VisitorInformation> GetAllVisitorList()
+        {
+            return QueryAllVisitorList();
+        }
+
+        private static List<VisitorInformation> QueryAllVisitorList()
+        {
+            List<VisitorInformation> VisitorList = new List<VisitorInformation>();
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+
+
+                msqlCommand.CommandText = "Select * From regvisitor;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    VisitorInformation Visitor = new VisitorInformation();
+
+                    Visitor.id = msqlReader.GetString("id");
+                    Visitor.name = msqlReader.GetString("name");
+                    Visitor.addres = msqlReader.GetString("address");
+                    Visitor.contact = msqlReader.GetString("phone");
+                    Visitor.idinfo = msqlReader.GetString("idcardno");
+                    Visitor.viitortype = msqlReader.GetString("visitortype");
+                    Visitor.purpose = msqlReader.GetString("purpose");
+                    Visitor.empId = msqlReader.GetString("visitwhom");
+                    Visitor.signintime = msqlReader.GetDateTime("signtime");
+                    Visitor.remark = msqlReader.GetString("remark");
+                    Visitor.expcttie = msqlReader.GetString("timewilltake");
+
+                    Visitor.permisionBy = msqlReader.GetString("prmsnGrntdby");
+                    Visitor.allowBy = msqlReader.GetString("allowvisitBy");
+                    Visitor.empId = msqlReader.GetString("employId");
+
+                    VisitorList.Add(Visitor);
+                }
+            }
+
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return VisitorList;
+
         }
 
         #endregion

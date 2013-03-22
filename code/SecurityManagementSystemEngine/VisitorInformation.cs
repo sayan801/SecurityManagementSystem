@@ -18,7 +18,9 @@ namespace SecurityManagementSystemEngine
         public DateTime signintime { get; set; }
         public string remark { get; set; }
         public string expcttie { get; set; }
-
+        public string permisionBy { get; set; }
+        public string allowBy { get; set; }
+        public string empId { get; set; }
 
 
         

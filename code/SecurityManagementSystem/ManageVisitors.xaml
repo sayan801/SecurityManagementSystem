@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.Resources>
@@ -22,24 +23,24 @@
             <Button Name="updateBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Update</Button>
         </UniformGrid>
         <UniformGrid DockPanel.Dock="Top">
-            <ListView Name="passView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+            <ListView Name="passView"  Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding visitorCollection}" Loaded="Window_Loaded">
 
 
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Width="100" Header="Visitor Name" />
-                        <GridViewColumn Width="150" Header="Visitor Address" />
-                        <GridViewColumn Width="100" Header="Contact No" />
-                        <GridViewColumn Width="120" Header="Id Proof With Number" />
-                        <GridViewColumn Width="160" Header="Visitor Type" />
-                        <GridViewColumn Width="100" Header="Visiting Purpose" />
-                        <GridViewColumn Width="100" Header="Visit to Whom" />
-                        <GridViewColumn Width="100" Header="Sign In Time" />
-                        <GridViewColumn Width="160" Header="Remark" />
-                        <GridViewColumn Width="160" Header="Expected Time Will Take" />
-                        <GridViewColumn Width="160" Header="Permission Granted By" />
-                        <GridViewColumn Width="160" Header="Allow Visit By" />
-                        <GridViewColumn Width="160" Header="Employee Id" />
+                        <GridViewColumn Width="100" Header="Visitor Name"  DisplayMemberBinding="{Binding name}" />
+                        <GridViewColumn Width="150" Header="Visitor Address"  DisplayMemberBinding="{Binding addres}"/>
+                        <GridViewColumn Width="100" Header="Contact No"  DisplayMemberBinding="{Binding contact}" />
+                        <GridViewColumn Width="120" Header="Id Proof With Number"  DisplayMemberBinding="{Binding idinfo}"/>
+                        <GridViewColumn Width="160" Header="Visitor Type"  DisplayMemberBinding="{Binding viitortype}"/>
+                        <GridViewColumn Width="100" Header="Visiting Purpose"  DisplayMemberBinding="{Binding purpose}"/>
+                        <GridViewColumn Width="100" Header="Visit to Whom"  DisplayMemberBinding="{Binding towhom}"/>
+                        <GridViewColumn Width="100" Header="Sign In Time"  DisplayMemberBinding="{Binding signintime}"/>
+                        <GridViewColumn Width="160" Header="Remark"  DisplayMemberBinding="{Binding remark}"/>
+                        <GridViewColumn Width="160" Header="Expected Time Will Take"  DisplayMemberBinding="{Binding expcttie}"/>
+                        <GridViewColumn Width="160" Header="Permission Granted By"  DisplayMemberBinding="{Binding permisionBy}"/>
+                        <GridViewColumn Width="160" Header="Allow Visit By"  DisplayMemberBinding="{Binding allowBy}"/>
+                        <GridViewColumn Width="160" Header="Employee Id"  DisplayMemberBinding="{Binding empId}"/>
                         
                     </GridView>
                 </ListView.View>

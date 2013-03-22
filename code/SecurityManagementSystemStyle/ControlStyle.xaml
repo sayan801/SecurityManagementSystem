@@ -30,10 +30,11 @@
         <Setter Property="Foreground" Value="Black" />
         <Setter Property="FontSize" Value="16" />
         <Setter Property="FontWeight" Value="Bold" />
-        <Setter Property="Height" Value="60" />
+        <Setter Property="IsEditable" Value="True" />
+        <Setter Property="Margin" Value="10"/>
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="HorizontalContentAlignment" Value="Left" /> 
-        <Setter Property="Margin" Value="10"/>
+        
         <Setter Property="SelectedIndex" Value="0"/>
     </Style>
     <Style x:Key="ControlBtnStyle" TargetType="Button">
@@ -113,4 +114,11 @@
     <Setter Property="FontWeight" Value="Bold" />
     <Setter Property="BorderBrush" Value="#FF001900" />
     </Style>
+    <Style x:Key="ListViewStyle" TargetType="ListView">
+        <Setter Property="Background" Value="#FFDEDEC2" />
+        <Setter Property="Foreground" Value="#FF72633F" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="BorderBrush" Value="#FF001900" />
+    </Style>
+    
 </ResourceDictionary>

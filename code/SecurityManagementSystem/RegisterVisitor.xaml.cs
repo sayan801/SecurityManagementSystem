@@ -38,7 +38,7 @@ namespace SecurityManagementSystem
             newVisitor.idinfo = idproofwithNoTxtbox.Text;
             newVisitor.viitortype = VisitorTypeCombobox.Text;
             newVisitor.purpose = purposeTxtbox.Text;
-            newVisitor.towhom = toWhomTxtbox.Text;
+            newVisitor.empId = toWhomTxtbox.Text;
             newVisitor.signintime = signinDp.SelectedDate.Value;
             newVisitor.remark = remarkTxtbox.Text;
             newVisitor.expcttie = etwtTxtbox.Text;

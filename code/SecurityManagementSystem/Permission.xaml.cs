@@ -11,6 +11,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SecurityManagementSystemEngine;
+using SecurityManagementSystemStorage;
+using System.Collections.ObjectModel;
 
 namespace SecurityManagementSystem
 {
@@ -23,5 +26,30 @@ namespace SecurityManagementSystem
         {
             InitializeComponent();
         }
+
+        ObservableCollection<VisitorInformation> _visitorCollection = new ObservableCollection<VisitorInformation>();
+
+
+        public ObservableCollection<VisitorInformation> visitorCollection
+        {
+            get
+            {
+                return _visitorCollection;
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<VisitorInformation> visitors = SecurityManagementSystemStorageInteraction.GetAllVisitorList();
+
+            _visitorCollection.Clear();
+
+            foreach (VisitorInformation visitor in visitors)
+            {
+                _visitorCollection.Add(visitor);
+            }
+        }
+
+
     }
 }
