@@ -68,13 +68,49 @@
 
 
 <div>
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
+
+<table>
+<tr>
+<td>
+
+<video width="320" height="240" controls autoplay>
   
-  <object data="movie.mp4" width="320" height="240">
+  <object data="sample.mp4" width="320" height="240">
+    <embed width="320" height="240" src="sample.mp4">
+  </object>
+</video></td>
+<td><video width="320" height="240" value="livecam" controls>
+  <source src="sample.mp4" type="video/mp4">
+  
+  <object data="sample.mp4" width="320" height="240">
     <embed src="movie.swf" width="320" height="240">
   </object> 
 </video>
+</td>
+</tr>
+<tr>
+<td>
+<video width="320" height="240" value="livecam" controls>
+  <source src="sample.mp4" type="video/mp4">
+  
+  <object data="sample.mp4" width="320" height="240">
+    <embed src="movie.swf" width="320" height="240">
+  </object> 
+</video>
+</td>
+<td><video width="320" height="240" value="livecam" controls>
+  <source src="sample.mp4" type="video/mp4">
+  
+  <object data="sample.mp4" width="320" height="240">
+    <embed src="movie.swf" width="320" height="240">
+  </object> 
+</video>
+</td>
+</tr>
+
+</table>
+
+
 </div>
 
 
