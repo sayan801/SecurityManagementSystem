@@ -12,33 +12,35 @@
     </Window.Resources>
     
     <DockPanel LastChildFill="True">
-        <Menu DockPanel.Dock="Top">
-            <MenuItem Header="File"></MenuItem>
-            <MenuItem Header="Settings"></MenuItem>
-            <MenuItem Header="Help"></MenuItem>
-        </Menu>
-        <ToolBar Name="mainToolbar" Margin="5" DockPanel.Dock="Top" Background="#FF9AADAF">
-            <Button Name="loginBtn" Margin="5" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Login</Button>
-            <Separator Name="fstsptr" Visibility="Visible"></Separator>
+       
+        <ToolBar Name="mainToolbar" Margin="5" DockPanel.Dock="Top" Background="#FF9AADAF" IsEnabled="False">
+            <!--<Button Name="loginBtn" Margin="5" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Login</Button>
+            <Separator Name="fstsptr" Visibility="Visible"></Separator>-->
             <!--<Button Name="reportBtn" Click="reportBtn_Click"  Margin="5" IsEnabled="False">Reporting</Button>
             <Separator></Separator>-->
-            <Button Name="regBtn" Click="regBtn_Click" Margin="5" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Register Visitor</Button>
+            <Button Name="regBtn" Click="regBtn_Click" Margin="5"  FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Register Visitor</Button>
             <Separator></Separator>
-            <Button Name="permBtn" Click="permBtn_Click"  Margin="5" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Permission</Button>
+            <Button Name="permBtn" Click="permBtn_Click"  Margin="5"  FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Permission</Button>
             <Separator></Separator>
-            <Button Name="visitorMngBtn" Click="visitorMngBtn_Click"  Margin="5" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Manage Visitors</Button>
+            <Button Name="visitorMngBtn" Click="visitorMngBtn_Click"  Margin="5"  FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Manage Visitors</Button>
             <Separator></Separator>
-            <Button Name="residenceZoneBtn" Margin="5" IsEnabled="False" Click="residenceZoneBtn_Click" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Residence Zone</Button>
+            <Button Name="printVisitingCardBtn" Margin="5"  FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}" Click="printVisitingCardBtn_Click">Print Visiting Card</Button>
             <Separator></Separator>
-            <Button Name="employeeZoneBtn" Margin="5" IsEnabled="False" Click="employeeZoneBtn_Click" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Employee Zone</Button>
+            <Button Name="residenceZoneBtn" Margin="5"  Click="residenceZoneBtn_Click" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Residence Zone</Button>
             <Separator></Separator>
-            <!--<Button  Margin="5" IsEnabled="False">Print</Button>
+            <Button Name="employeeZoneBtn" Margin="5"  Click="employeeZoneBtn_Click" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Employee Zone</Button>
             <Separator></Separator>
-            <Button  Margin="5" IsEnabled="False">Security</Button>
+            <Button  Margin="5" Name="securityGuardZone" Click="securityGuardZone_Click"  FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Security Guard Zone</Button>
+            <Separator></Separator>
+            <Button  Margin="5" Name="workorderZone"  FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}" Click="workorderZone_Click">Work Order</Button>
+            <Separator></Separator>
+            <Button  Margin="5" Name="NotificationBtn"  FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}" Click="NotificationBtn_Click">Notification</Button>
+            <Separator></Separator>
+
+            <!--<Button  Margin="5" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Security</Button>
             <Separator></Separator>-->
-            <Button Name="vidBtn" Click="vidBtn_Click"  Margin="5" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Video Surveillance</Button>
-            <Separator></Separator>
-            <Button  Margin="5" Name="securityGuardZone" Click="securityGuardZone_Click" IsEnabled="False" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Security Guard Zone</Button>
+            <Button Name="vidBtn" Click="vidBtn_Click"  Margin="5"  FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Video Surveillance</Button>
+            
             <Separator Name="logoutsptr" Visibility="Collapsed"></Separator>
             <Button Name="logoutBtn" Margin="5" Visibility="Collapsed" Click="logoutBtn_Click" FontSize="12" Height="25" Style="{StaticResource MainBtnStyle}">Logout</Button>
         </ToolBar>

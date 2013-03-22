@@ -15,10 +15,10 @@
     </UserControl.Resources>
     <DockPanel LastChildFill="True">
         <UniformGrid DockPanel.Dock="Bottom" Rows="1">
-            <Label></Label>
-            <Label></Label>
-            <Label></Label>
-            <Label></Label>
+            
+            <Label Style="{StaticResource labelStyle}" >By Name:</Label>
+            <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
+            <Button Name="searchVisitorsBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
             <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete</Button>
             <Button Name="updateBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Update</Button>
         </UniformGrid>

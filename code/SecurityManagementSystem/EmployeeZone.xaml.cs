@@ -44,6 +44,7 @@ namespace SecurityManagementSystem
             newEmployee.email = emailTxtbox.Text;
             newEmployee.homeNumber = homeNumberTxtbox.Text;
             newEmployee.joiningdate = joiningdateP.SelectedDate.Value;
+            newEmployee.employeeType= employeeTypeCombobox.Text;
             newEmployee.remark = remarkTxtbox.Text;
 
             SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterEmployee(newEmployee);

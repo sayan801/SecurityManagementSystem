@@ -253,8 +253,8 @@ namespace SecurityManagementSystemStorage
                 //define the connection used by the command object
                 msqlCommand.Connection = msqlConnection;
 
-                msqlCommand.CommandText = "INSERT INTO employee(id,name,address,contact,joiningdate,email,homenumber,remark) "
-                                    + "VALUES(@id,@name,@address,@contact,@joiningdate,@email,@homenumber,@remark)";
+                msqlCommand.CommandText = "INSERT INTO employee(id,name,address,contact,joiningdate,email,homenumber,employeeType,remark) "
+                                    + "VALUES(@id,@name,@address,@contact,@joiningdate,@email,@homenumber,@employeeType,@remark)";
 
                 msqlCommand.Parameters.AddWithValue("@id", Newemployee.id);
                 msqlCommand.Parameters.AddWithValue("@name", Newemployee.name);
@@ -263,6 +263,7 @@ namespace SecurityManagementSystemStorage
                 msqlCommand.Parameters.AddWithValue("@joiningdate", Newemployee.joiningdate);
                 msqlCommand.Parameters.AddWithValue("@email", Newemployee.email);
                 msqlCommand.Parameters.AddWithValue("@homenumber", Newemployee.homeNumber);
+                msqlCommand.Parameters.AddWithValue("@employeeType", Newemployee.employeeType);
                 msqlCommand.Parameters.AddWithValue("@remark", Newemployee.remark);
 
                 msqlCommand.ExecuteNonQuery();
@@ -311,6 +312,7 @@ namespace SecurityManagementSystemStorage
                     Employee.joiningdate = msqlReader.GetDateTime("joiningdate");
                     Employee.email = msqlReader.GetString("email");
                     Employee.homeNumber = msqlReader.GetString("homenumber");
+                    Employee.employeeType = msqlReader.GetString("employeeType");
                     Employee.remark = msqlReader.GetString("remark");
 
                     EmployeeList.Add(Employee);
@@ -327,6 +329,103 @@ namespace SecurityManagementSystemStorage
             }
 
             return EmployeeList;
+        }
+        #endregion
+
+        #region Security
+
+        public static int DoEnterSecurity(SecurityInformation NewSecurity)
+        {
+            return DoRegisterNewSecurityindb(NewSecurity);
+        }
+
+        private static int DoRegisterNewSecurityindb(SecurityInformation Newsecurity)
+        {
+            int returnVal = 0;
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+
+                //define the connection used by the command object
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "INSERT INTO security(id,name,address,contact,joiningdate,email,homenumber,remark) "
+                                    + "VALUES(@id,@name,@address,@contact,@joiningdate,@email,@homenumber,@remark)";
+
+                msqlCommand.Parameters.AddWithValue("@id", Newsecurity.id);
+                msqlCommand.Parameters.AddWithValue("@name", Newsecurity.name);
+                msqlCommand.Parameters.AddWithValue("@address", Newsecurity.addres);
+                msqlCommand.Parameters.AddWithValue("@contact", Newsecurity.contact);
+                msqlCommand.Parameters.AddWithValue("@joiningdate", Newsecurity.joiningdate);
+                msqlCommand.Parameters.AddWithValue("@email", Newsecurity.email);
+                msqlCommand.Parameters.AddWithValue("@homenumber", Newsecurity.homeNumber);
+                msqlCommand.Parameters.AddWithValue("@remark", Newsecurity.remark);
+
+                msqlCommand.ExecuteNonQuery();
+
+                returnVal = 1;
+            }
+            catch (Exception er)
+            {
+                returnVal = 0;
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+            return returnVal;
+        }
+
+
+        public static List<SecurityInformation> GetAllSecurityList()
+        {
+            return QueryAllSecurityList();
+        }
+        private static List<SecurityInformation> QueryAllSecurityList()
+        {
+            List<SecurityInformation> SecurityList = new List<SecurityInformation>();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From security ;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    SecurityInformation Security = new SecurityInformation();
+
+                    Security.id = msqlReader.GetString("id");
+                    Security.name = msqlReader.GetString("name");
+                    Security.addres = msqlReader.GetString("address");
+                    Security.contact = msqlReader.GetString("contact");
+                    Security.joiningdate = msqlReader.GetDateTime("joiningdate");
+                    Security.email = msqlReader.GetString("email");
+                    Security.homeNumber = msqlReader.GetString("homenumber");
+                    Security.remark = msqlReader.GetString("remark");
+
+                    SecurityList.Add(Security);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return SecurityList;
         }
         #endregion
     }

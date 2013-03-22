@@ -16,20 +16,23 @@
     </UserControl.Resources>
     <UniformGrid>
         <TabControl>
-            <TabItem Header="All Employee" Style="{StaticResource TabItemStyle}">
+            <TabItem Header="All Security" Style="{StaticResource TabItemStyle}">
                 <DockPanel LastChildFill="True">
                     <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                        <Label Style="{StaticResource labelStyle}" >By Name:</Label>
+                        <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
+                        <Button Name="searchSecurityBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
                         <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
                         <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
-                        <ListView Name="employeeView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" Background="Transparent" ItemsSource="{Binding allemployeeCollection}" Loaded="Window_Loaded">
+                        <ListView Name="securityView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" Background="Transparent" ItemsSource="{Binding allsecurityCollection}" Loaded="Window_Loaded">
 
 
                             <ListView.View>
                                 <GridView>
-                                    <GridViewColumn Width="100" Header="Employee ID" DisplayMemberBinding="{Binding id}" />
-                                    <GridViewColumn Width="100" Header="Employee Name" DisplayMemberBinding="{Binding name}" />
+                                    <GridViewColumn Width="100" Header="Security ID" DisplayMemberBinding="{Binding id}" />
+                                    <GridViewColumn Width="100" Header="Security Name" DisplayMemberBinding="{Binding name}" />
                                     <GridViewColumn Width="150" Header="Address" DisplayMemberBinding="{Binding addres}" />
                                     <GridViewColumn Width="120" Header="Contact Number" DisplayMemberBinding="{Binding contact}" />
                                     <GridViewColumn Width="160" Header="Email" DisplayMemberBinding="{Binding email}" />
@@ -43,13 +46,13 @@
                 </DockPanel>
 
             </TabItem>
-            <TabItem Header="Add Employee" Style="{StaticResource TabItemStyle}">
+            <TabItem Header="Add Security" Style="{StaticResource TabItemStyle}">
                 <DockPanel>
                     <UniformGrid Columns="4" DockPanel.Dock="Bottom">
 
                         <Label></Label>
-                        <Label  Style="{StaticResource labelStyle}" >Employee Name</Label>
-                        <TextBox   Name="employeeNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label  Style="{StaticResource labelStyle}" >Security Name</Label>
+                        <TextBox   Name="securityNameTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
                         <Label></Label>
                         <Label></Label>
                         <Label  Style="{StaticResource labelStyle}" >Address</Label>

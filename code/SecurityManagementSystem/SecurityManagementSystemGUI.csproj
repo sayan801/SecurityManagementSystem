@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Notifications.xaml.cs">
+      <DependentUpon>Notifications.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrintVisitingCard.xaml.cs">
+      <DependentUpon>PrintVisitingCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SecurityGuardZone.xaml.cs">
       <DependentUpon>SecurityGuardZone.xaml</DependentUpon>
     </Compile>
@@ -79,6 +85,17 @@
     <Compile Include="VideoSurveillanceControl.xaml.cs">
       <DependentUpon>VideoSurveillanceControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Workorder.xaml.cs">
+      <DependentUpon>Workorder.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Notifications.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrintVisitingCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SecurityGuardZone.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -120,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VideoSurveillanceControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Workorder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

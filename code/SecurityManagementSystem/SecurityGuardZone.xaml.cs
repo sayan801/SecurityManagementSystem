@@ -19,7 +19,7 @@ using System.Collections.ObjectModel;
 namespace SecurityManagementSystem
 {
     /// <summary>
-    /// Interaction logic for EmployeeZone.xaml
+    /// Interaction logic for SecurityZone.xaml
     /// </summary>
     public partial class SecurityGuardZone : UserControl
     {
@@ -29,24 +29,24 @@ namespace SecurityManagementSystem
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            fetchEmployeeData();
+            fetchSecurityData();
         }
         private void doregBtn_Click(object sender, RoutedEventArgs e)
         {
 
-            SecurityManagementSystemEngine.EmployeeInformation newEmployee = new SecurityManagementSystemEngine.EmployeeInformation();
+            SecurityManagementSystemEngine.SecurityInformation newSecurity = new SecurityManagementSystemEngine.SecurityInformation();
 
-            newEmployee.id = GenerateId();
+            newSecurity.id = GenerateId();
 
-            newEmployee.name = employeeNameTxtbox.Text;
-            newEmployee.addres = AddressNameTxtbox.Text;
-            newEmployee.contact = contactTxtbox.Text;
-            newEmployee.email = emailTxtbox.Text;
-            newEmployee.homeNumber = homeNumberTxtbox.Text;
-            newEmployee.joiningdate = joiningdateP.SelectedDate.Value;
-            newEmployee.remark = remarkTxtbox.Text;
+            newSecurity.name = securityNameTxtbox.Text;
+            newSecurity.addres = AddressNameTxtbox.Text;
+            newSecurity.contact = contactTxtbox.Text;
+            newSecurity.email = emailTxtbox.Text;
+            newSecurity.homeNumber = homeNumberTxtbox.Text;
+            newSecurity.joiningdate = joiningdateP.SelectedDate.Value;
+            newSecurity.remark = remarkTxtbox.Text;
 
-            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterEmployee(newEmployee);
+            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterSecurity(newSecurity);
 
 
         }
@@ -59,26 +59,26 @@ namespace SecurityManagementSystem
 
 
 
-        ObservableCollection<EmployeeInformation> _allemployeeCollection = new ObservableCollection<EmployeeInformation>();
+        ObservableCollection<SecurityInformation> _allsecurityCollection = new ObservableCollection<SecurityInformation>();
 
 
-        public ObservableCollection<EmployeeInformation> allemployeeCollection
+        public ObservableCollection<SecurityInformation> allsecurityCollection
         {
             get
             {
-                return _allemployeeCollection;
+                return _allsecurityCollection;
             }
         }
 
-        private void fetchEmployeeData()
+        private void fetchSecurityData()
         {
-            List<EmployeeInformation> Employees = SecurityManagementSystemStorageInteraction.GetAllEmployeeList();
+            List<SecurityInformation> Securitys = SecurityManagementSystemStorageInteraction.GetAllSecurityList();
 
-            _allemployeeCollection.Clear();
+            _allsecurityCollection.Clear();
 
-            foreach (EmployeeInformation employee in Employees)
+            foreach (SecurityInformation security in Securitys)
             {
-                _allemployeeCollection.Add(employee);
+                _allsecurityCollection.Add(security);
             }
         }
 

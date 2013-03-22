@@ -77,13 +77,13 @@ namespace SecurityManagementSystem
         {
             if (userNameTxtbox.Text == "1" && passwordBox.Password == "1")
             {
-                regBtn.IsEnabled = permBtn.IsEnabled = visitorMngBtn.IsEnabled = residenceZoneBtn.IsEnabled = employeeZoneBtn.IsEnabled = vidBtn.IsEnabled = true;
-                loginBtn.Visibility = Visibility.Collapsed;
+                mainToolbar.IsEnabled = true;
+                //loginBtn.Visibility = Visibility.Collapsed;
                 SecurityManagementSystem.RegisterVisitor RegisterVisitorobj = new SecurityManagementSystem.RegisterVisitor();
                 mainUG.Children.Clear();
                 mainUG.Children.Add(RegisterVisitorobj);
                 logoutBtn.Visibility = Visibility.Visible;
-                fstsptr.Visibility = Visibility.Collapsed;
+                //fstsptr.Visibility = Visibility.Collapsed;
                 logoutsptr.Visibility = Visibility.Visible;
             }
             else
@@ -96,15 +96,15 @@ namespace SecurityManagementSystem
 
         private void logoutBtn_Click(object sender, RoutedEventArgs e)
         {
-            regBtn.IsEnabled = permBtn.IsEnabled = visitorMngBtn.IsEnabled = residenceZoneBtn.IsEnabled = employeeZoneBtn.IsEnabled = vidBtn.IsEnabled = false;
+            mainToolbar.IsEnabled = false;
             logoutBtn.Visibility = Visibility.Collapsed;
-            loginBtn.Visibility = Visibility.Visible;
+            //loginBtn.Visibility = Visibility.Visible;
             mainUG.Children.Clear();
             mainUG.Children.Add(mainLoginDoc);
             userTypeCombobox.SelectedIndex = 1;
             userNameTxtbox.Text = string.Empty;
             passwordBox.Password = string.Empty;
-            fstsptr.Visibility = Visibility.Visible;
+            //fstsptr.Visibility = Visibility.Visible;
             logoutsptr.Visibility = Visibility.Collapsed;
             msgShow.Content = "";
 
@@ -134,8 +134,31 @@ namespace SecurityManagementSystem
 
         private void securityGuardZone_Click(object sender, RoutedEventArgs e)
         {
-            SecurityGuardZone sgz = new SecurityGuardZone();
+            SecurityManagementSystem.SecurityGuardZone SecurityGuardZoneobj = new SecurityManagementSystem.SecurityGuardZone();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(SecurityGuardZoneobj);
             
+        }
+
+        private void NotificationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityManagementSystem.Notifications objNotifications = new SecurityManagementSystem.Notifications();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(objNotifications);
+        }
+
+        private void workorderZone_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityManagementSystem.Workorder objWorkorder = new SecurityManagementSystem.Workorder();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(objWorkorder);
+        }
+
+        private void printVisitingCardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityManagementSystem.PrintVisitingCard objPrintVisitingCard = new SecurityManagementSystem.PrintVisitingCard();
+            mainUG.Children.Clear();
+            mainUG.Children.Add(objPrintVisitingCard);
         }
 
         

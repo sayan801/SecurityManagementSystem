@@ -19,6 +19,9 @@
             <TabItem Header="All Employee" Style="{StaticResource TabItemStyle}">
                 <DockPanel LastChildFill="True">
                     <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                        <Label Style="{StaticResource labelStyle}" >By Name:</Label>
+                        <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
+                        <Button Name="searchEmployeeBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
                         <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
                         <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
                     </UniformGrid>
@@ -35,6 +38,7 @@
                                     <GridViewColumn Width="160" Header="Email" DisplayMemberBinding="{Binding email}" />
                                     <GridViewColumn Width="100" Header="Home Number" DisplayMemberBinding="{Binding homeNumber}"/>
                                     <GridViewColumn Width="160" Header="Joining Date" DisplayMemberBinding="{Binding joiningdate}"/>
+                                    <GridViewColumn Width="160" Header="JOb Type" DisplayMemberBinding="{Binding employeeType}"/>
                                     <GridViewColumn Width="160" Header="Remark" DisplayMemberBinding="{Binding remark}"/>
                                 </GridView>
                             </ListView.View>
@@ -72,6 +76,16 @@
                         <Label></Label>
                         <Label  Style="{StaticResource labelStyle}" >Home Number</Label>
                         <TextBox   Name="homeNumberTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Home Number</Label>
+                        <ComboBox Name="employeeTypeCombobox" IsEditable="True" Style="{StaticResource comboboxStyle}">
+
+                            <ComboBoxItem>Domestic Help</ComboBoxItem>
+                            
+                            <ComboBoxItem>Others</ComboBoxItem>
+                        </ComboBox>
+
                         <Label></Label>
                         <Label></Label>
                         

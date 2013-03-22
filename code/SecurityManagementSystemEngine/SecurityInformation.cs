@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SecurityManagementSystemEngine
 {
-    public class EmployeeInformation
+    public class SecurityInformation
     {
         public string id { get; set; }
         public string name { get; set; }
@@ -14,7 +14,7 @@ namespace SecurityManagementSystemEngine
         public string email { get; set; }
         public string homeNumber { get; set; }
         public DateTime joiningdate { get; set; }
-        public string employeeType { get; set; }
+
         public string remark { get; set; }
     }
 }

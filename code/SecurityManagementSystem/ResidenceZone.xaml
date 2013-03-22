@@ -18,6 +18,9 @@
             <TabItem Header="All Residence" Style="{StaticResource TabItemStyle}">
                 <DockPanel LastChildFill="True">
                     <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                        <Label Style="{StaticResource labelStyle}" >By Name:</Label>
+                        <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
+                        <Button Name="searchResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
                         <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
                         <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
                     </UniformGrid>
