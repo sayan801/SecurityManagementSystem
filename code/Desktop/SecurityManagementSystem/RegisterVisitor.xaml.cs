@@ -52,6 +52,12 @@ namespace SecurityManagementSystem
         {
             return DateTime.Now.ToOADate().ToString();
         }
+
+        private void takePhotoBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string filePath = System.Environment.CurrentDirectory + "\\TwoCamerasTest.exe";
+            System.Diagnostics.Process.Start(filePath);
+        }
         
     }
 }

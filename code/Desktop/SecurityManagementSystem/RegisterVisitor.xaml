@@ -68,7 +68,7 @@
 
         </UniformGrid>
         <DockPanel DockPanel.Dock="Right">
-            <Button Name="takePhotoBtn" Style="{StaticResource MainBtnStyle}" Width="200" Height="60" DockPanel.Dock="Top">Take a Photo</Button>
+            <Button Name="takePhotoBtn" Style="{StaticResource MainBtnStyle}" Width="200" Height="60" DockPanel.Dock="Top" Click="takePhotoBtn_Click">Take a Photo</Button>
             <Image Source="/SecurityManagementSystem;component/Images/add_your_image.jpg"></Image>
         </DockPanel>
     </DockPanel>

@@ -42,7 +42,7 @@
             <Button x:Name="btnMoveForward" Content="Forward" Click="btnMoveForward_Click"  
                     Height="25" FontSize="14" Style="{StaticResource MainBtnStyle}"/>
             <Button x:Name="btnOpen" Content="Open"   
-                    Height="25" FontSize="14" Style="{StaticResource MainBtnStyle}"/>
+                    Height="25" FontSize="14" Style="{StaticResource MainBtnStyle}" Click="btnOpen_Click" />
         </StackPanel>
     </Grid>
     </Border>

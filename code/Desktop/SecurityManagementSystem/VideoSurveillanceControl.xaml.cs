@@ -90,6 +90,11 @@ namespace SecurityManagementSystem
         }
         #endregion
 
+        private void btnOpen_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         
     }
 }
