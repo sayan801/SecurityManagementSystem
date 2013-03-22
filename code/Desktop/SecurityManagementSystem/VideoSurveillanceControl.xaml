@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="338" d:DesignWidth="402" Style="{DynamicResource UserCntrlStyle}">
+             d:DesignHeight="338" d:DesignWidth="402">
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -13,7 +13,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
-    <Border CornerRadius="25" Background="Bisque" BorderBrush="Chocolate" BorderThickness="4" >
+    <Border CornerRadius="25" Background="Transparent" Opacity=".7" BorderBrush="Chocolate" BorderThickness="4" >
     <Grid Height="270" >
         <Grid.RowDefinitions>
             <RowDefinition Height="36*" />

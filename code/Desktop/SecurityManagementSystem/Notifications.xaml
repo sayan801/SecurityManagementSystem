@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:my="clr-namespace:SecurityManagementSystem"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" Style="{DynamicResource UserCntrlStyle}">
+             d:DesignHeight="391" d:DesignWidth="578" Style="{DynamicResource UserCntrlStyle}">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -12,4 +13,21 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
+
+    <UniformGrid Columns="1">
+        <my:VisitorsInside/>
+        <my:VisitorsInside/>
+        <my:VisitorsInside/>
+        <my:VisitorsInside/>
+<my:VisitorsInside/>
+<my:VisitorsInside/>
+<my:VisitorsInside/>
+<my:VisitorsInside/>
+<my:VisitorsInside/>
+        <my:VisitorsInside/>
+            
+            
+        </UniformGrid>
+    
+    
 </UserControl>

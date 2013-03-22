@@ -154,12 +154,7 @@ namespace SecurityManagementSystem
             mainUG.Children.Add(objWorkorder);
         }
 
-        private void printVisitingCardBtn_Click(object sender, RoutedEventArgs e)
-        {
-            SecurityManagementSystem.PrintVisitingCard objPrintVisitingCard = new SecurityManagementSystem.PrintVisitingCard();
-            mainUG.Children.Clear();
-            mainUG.Children.Add(objPrintVisitingCard);
-        }
+       
 
         
 

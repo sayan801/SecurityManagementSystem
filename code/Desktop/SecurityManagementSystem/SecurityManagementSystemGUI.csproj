@@ -58,9 +58,6 @@
     <Compile Include="Notifications.xaml.cs">
       <DependentUpon>Notifications.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PrintVisitingCard.xaml.cs">
-      <DependentUpon>PrintVisitingCard.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SecurityGuardZone.xaml.cs">
       <DependentUpon>SecurityGuardZone.xaml</DependentUpon>
     </Compile>
@@ -85,14 +82,13 @@
     <Compile Include="VideoSurveillanceControl.xaml.cs">
       <DependentUpon>VideoSurveillanceControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VisitorsInside.xaml.cs">
+      <DependentUpon>VisitorsInside.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Workorder.xaml.cs">
       <DependentUpon>Workorder.xaml</DependentUpon>
     </Compile>
     <Page Include="Notifications.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PrintVisitingCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,6 +136,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="VisitorsInside.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Workorder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -182,6 +182,12 @@
       <Project>{C51CEAE6-FB23-4796-97D1-E01181B314F6}</Project>
       <Name>SecurityManagementSystemStyle</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_your_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\complex.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

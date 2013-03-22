@@ -15,7 +15,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
     <UniformGrid>
-        <TabControl>
+        <TabControl Background="Transparent">
             <TabItem Header="All Employee" Style="{StaticResource TabItemStyle}">
                 <DockPanel LastChildFill="True">
                     <UniformGrid DockPanel.Dock="Bottom" Rows="1">
@@ -26,7 +26,7 @@
                         <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
-                        <ListView Name="employeeView" Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" Background="Transparent" ItemsSource="{Binding allemployeeCollection}" Loaded="Window_Loaded">
+                        <ListView Name="employeeView" Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible"  ItemsSource="{Binding allemployeeCollection}" Loaded="Window_Loaded">
 
 
                             <ListView.View>

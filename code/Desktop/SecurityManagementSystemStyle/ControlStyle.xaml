@@ -3,6 +3,9 @@
     
     
     <Style x:Key="labelStyle" TargetType="Label">
+        <Setter Property="Background" Value="#FFADA4A4" />
+        <Setter Property="Opacity" Value="0.7"/>
+        <Setter Property="BorderBrush" Value="Black"/>
         <Setter Property="Foreground" Value="#FF0A2525" />
         <Setter Property="FontSize" Value="16" />
         <Setter Property="FontWeight" Value="Bold" />
@@ -14,7 +17,7 @@
         <Setter Property="Foreground" Value="Black" />
         <Setter Property="FontSize" Value="16" />
         <Setter Property="FontWeight" Value="Bold" />
-        <!--<Setter Property="Height" Value="60" />-->
+        <Setter Property="BorderBrush" Value="Black"/>
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Margin" Value="10"/>
     </Style>
@@ -97,14 +100,21 @@
     </Style>
 
     <Style x:Key="UserCntrlStyle" TargetType="UserControl">
-        <Setter Property="Background" Value="#FFCBB972" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/SecurityManagementSystem;component/Images/complex.jpg" />
+            </Setter.Value>
+        </Setter>
         
     </Style>
 
 
     <Style x:Key="wincntrlStyle" TargetType="Window">
-        <Setter Property="Background" Value="#FFCBB972" />
-
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/SecurityManagementSystem;component/Images/complex.jpg" />
+            </Setter.Value>
+        </Setter>
     </Style>
 
     <Style x:Key="TabItemStyle" TargetType="TabItem">
@@ -115,7 +125,7 @@
     <Setter Property="BorderBrush" Value="#FF001900" />
     </Style>
     <Style x:Key="ListViewStyle" TargetType="ListView">
-        <Setter Property="Background" Value="#FFDEDEC2" />
+       
         <Setter Property="Foreground" Value="#FF72633F" />
         <Setter Property="FontSize" Value="14" />
         <Setter Property="BorderBrush" Value="#FF001900" />

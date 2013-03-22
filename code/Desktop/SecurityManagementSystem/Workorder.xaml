@@ -12,4 +12,74 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
+
+    <UniformGrid>
+        <TabControl Background="Transparent">
+            <TabItem Header="All Work Order" Style="{StaticResource TabItemStyle}">
+                <DockPanel LastChildFill="True">
+                    <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                        <Label Style="{StaticResource labelStyle}" >By Name:</Label>
+                        <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
+                        <Button Name="searchWorkBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
+                        <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
+                        <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
+                    </UniformGrid>
+                    <UniformGrid DockPanel.Dock="Top">
+                        <ListView Name="orderView" Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding allworkCollection}" >
+
+
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Width="100" Header="Order By" />
+                                    <GridViewColumn Width="100" Header="Work Details" />
+                                    <GridViewColumn Width="150" Header="Assign To" />
+                                    <GridViewColumn Width="100" Header="Order Date" />
+                                    <GridViewColumn Width="120" Header="Status"  />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </UniformGrid>
+                </DockPanel>
+
+            </TabItem>
+            <TabItem Header="Add Work Order" Style="{StaticResource TabItemStyle}">
+                <DockPanel>
+                    <UniformGrid Columns="4" DockPanel.Dock="Bottom">
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Order By</Label>
+                        <ComboBox   Name="orderByCB"  Style="{StaticResource comboboxStyle}" ></ComboBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Work Details</Label>
+                        <TextBox   Name="workDetailsTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Assign To</Label>
+                        <ComboBox   Name="workOrderByCB"  Style="{StaticResource comboboxStyle}" ></ComboBox>
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Order Date</Label>
+                        <DatePicker   Name="orderdatedateP" Style="{StaticResource datePickerStyle}"  ></DatePicker>
+                        
+
+
+                        <Label></Label>
+                        <Label></Label>
+                        <Label  Style="{StaticResource labelStyle}" >Status</Label>
+                        <TextBox   Name="roomNoTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
+                        
+
+                        <Label></Label>
+                        
+                        <Label></Label>
+
+                        <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
+                        <Button Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Register</Button>
+                    </UniformGrid>
+
+                </DockPanel>
+            </TabItem>
+        </TabControl>
+    </UniformGrid>
+
 </UserControl>

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace SecurityManagementSystem
 {
     /// <summary>
-    /// Interaction logic for PrintVisitingCard.xaml
+    /// Interaction logic for VisitorsInside.xaml
     /// </summary>
-    public partial class PrintVisitingCard : UserControl
+    public partial class VisitorsInside : UserControl
     {
-        public PrintVisitingCard()
+        public VisitorsInside()
         {
             InitializeComponent();
         }
