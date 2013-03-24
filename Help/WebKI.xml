@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="addres property" Url="html/1812220676.htm" />
+  <HelpKINode Title="addres property" Url="html/2072072125.htm" />
+  <HelpKINode Title="addres property" Url="html/212748638.htm" />
+  <HelpKINode Title="address property" Url="html/1388146109.htm" />
+  <HelpKINode Title="address property" Url="html/1862878198.htm" />
+  <HelpKINode Title="address property" Url="html/290192732.htm" />
+  <HelpKINode Title="Admin enumeration member" Url="html/377480514.htm" />
+  <HelpKINode Title="Admin field" Url="html/392568656.htm" />
+  <HelpKINode Title="allowBy property" Url="html/661419067.htm" />
+  <HelpKINode Title="App class" Url="html/1576096117.htm" />
+  <HelpKINode Title="App class" Url="html/396371478.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="about App class" Url="html/396371478.htm" />
+    <HelpKINode Title="all members" Url="html/1576096117.htm" />
+    <HelpKINode Title="constructor" Url="html/554752499.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/554752499.htm" />
+  <HelpKINode Title="contact property" Url="html/1214711694.htm" />
+  <HelpKINode Title="contact property" Url="html/1566521930.htm" />
+  <HelpKINode Title="contact property" Url="html/2119254405.htm" />
+  <HelpKINode Title="contact property" Url="html/282179885.htm" />
+  <HelpKINode Title="contact property" Url="html/435578691.htm" />
+  <HelpKINode Title="contact property" Url="html/523194930.htm" />
+  <HelpKINode Title="contact property" Url="html/881017731.htm" />
+  <HelpKINode Title="Culture property" Url="html/111008413.htm" />
+  <HelpKINode Title="Culture property" Url="html/1761512976.htm" />
+  <HelpKINode Title="customerController field" Url="html/1487737618.htm" />
+  <HelpKINode Title="date field" Url="html/1328904509.htm" />
+  <HelpKINode Title="date field" Url="html/1330745730.htm" />
+  <HelpKINode Title="date property" Url="html/1828391606.htm" />
+  <HelpKINode Title="dbmsCurrent field" Url="html/1698910336.htm" />
+  <HelpKINode Title="Default property" Url="html/1533690821.htm" />
+  <HelpKINode Title="Default property" Url="html/863338277.htm" />
+  <HelpKINode Title="defaultInstance field" Url="html/1112348613.htm" />
+  <HelpKINode Title="defaultInstance field" Url="html/435638481.htm" />
+  <HelpKINode Title="department property" Url="html/284566531.htm" />
+  <HelpKINode Title="description field" Url="html/1173698233.htm" />
+  <HelpKINode Title="Description field" Url="html/70528522.htm" />
+  <HelpKINode Title="description property" Url="html/1192972344.htm" />
+  <HelpKINode Title="Distress enumeration member" Url="html/2124579274.htm" />
+  <HelpKINode Title="Distress field" Url="html/1470620402.htm" />
+  <HelpKINode Title="DoEnterEmployee method" Url="html/219415356.htm" />
+  <HelpKINode Title="DoEnterResidence method" Url="html/602009266.htm" />
+  <HelpKINode Title="DoEnterSecurity method" Url="html/754682405.htm" />
+  <HelpKINode Title="DoEnterVisetor method" Url="html/1412704021.htm" />
+  <HelpKINode Title="doj property" Url="html/1247823861.htm" />
+  <HelpKINode Title="DoRegisterNewEmployeeindb method" Url="html/1121798150.htm" />
+  <HelpKINode Title="DoRegisterNewResidenceindb method" Url="html/1363082005.htm" />
+  <HelpKINode Title="DoRegisterNewSecurityindb method" Url="html/872419893.htm" />
+  <HelpKINode Title="DoRegisterNewVisetorindb method" Url="html/1175484113.htm" />
+  <HelpKINode Title="duration property" Url="html/1274608966.htm" />
+  <HelpKINode Title="email property" Url="html/1874489949.htm" />
+  <HelpKINode Title="email property" Url="html/283098967.htm" />
+  <HelpKINode Title="email property" Url="html/996593804.htm" />
+  <HelpKINode Title="Emergency enumeration member" Url="html/2124579274.htm" />
+  <HelpKINode Title="Emergency field" Url="html/802807960.htm" />
+  <HelpKINode Title="empController field" Url="html/1364098368.htm" />
+  <HelpKINode Title="empId property" Url="html/1757072356.htm" />
+  <HelpKINode Title="employeeAuthroized property" Url="html/340085797.htm" />
+  <HelpKINode Title="employeeController field" Url="html/1408408397.htm" />
+  <HelpKINode Title="employeeEdited field" Url="html/266198534.htm" />
+  <HelpKINode Title="EmployeeInfo class" Url="html/240363170.htm" />
+  <HelpKINode Title="EmployeeInfo class" Url="html/654035475.htm" />
+  <HelpKINode Title="EmployeeInfo class">
+    <HelpKINode Title="about EmployeeInfo class" Url="html/240363170.htm" />
+    <HelpKINode Title="all members" Url="html/654035475.htm" />
+    <HelpKINode Title="properties" Url="html/377134942.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EmployeeInfo.address property" Url="html/1862878198.htm" />
+  <HelpKINode Title="EmployeeInfo.contact property" Url="html/282179885.htm" />
+  <HelpKINode Title="EmployeeInfo.department property" Url="html/284566531.htm" />
+  <HelpKINode Title="EmployeeInfo.doj property" Url="html/1247823861.htm" />
+  <HelpKINode Title="EmployeeInfo.id property" Url="html/1752396495.htm" />
+  <HelpKINode Title="EmployeeInfo.name property" Url="html/1943796834.htm" />
+  <HelpKINode Title="EmployeeInformation class" Url="html/1499411819.htm" />
+  <HelpKINode Title="EmployeeInformation class" Url="html/2078835190.htm" />
+  <HelpKINode Title="EmployeeInformation class">
+    <HelpKINode Title="about EmployeeInformation class" Url="html/1499411819.htm" />
+    <HelpKINode Title="all members" Url="html/2078835190.htm" />
+    <HelpKINode Title="properties" Url="html/5970925.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EmployeeInformation.addres property" Url="html/212748638.htm" />
+  <HelpKINode Title="EmployeeInformation.contact property" Url="html/881017731.htm" />
+  <HelpKINode Title="EmployeeInformation.email property" Url="html/283098967.htm" />
+  <HelpKINode Title="EmployeeInformation.employeeType property" Url="html/1863460615.htm" />
+  <HelpKINode Title="EmployeeInformation.homeNumber property" Url="html/1413647715.htm" />
+  <HelpKINode Title="EmployeeInformation.id property" Url="html/318924227.htm" />
+  <HelpKINode Title="EmployeeInformation.joiningdate property" Url="html/2001396855.htm" />
+  <HelpKINode Title="EmployeeInformation.name property" Url="html/620663239.htm" />
+  <HelpKINode Title="EmployeeInformation.remark property" Url="html/688368786.htm" />
+  <HelpKINode Title="EmployeeManager class" Url="html/1315406599.htm" />
+  <HelpKINode Title="EmployeeManager class" Url="html/1421830386.htm" />
+  <HelpKINode Title="EmployeeManager class">
+    <HelpKINode Title="about EmployeeManager class" Url="html/1421830386.htm" />
+    <HelpKINode Title="all members" Url="html/1315406599.htm" />
+    <HelpKINode Title="fields" Url="html/794377335.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EmployeeManager.employees field" Url="html/349732311.htm" />
+  <HelpKINode Title="EmployeeManager.reqHandled field" Url="html/783919338.htm" />
+  <HelpKINode Title="employees field" Url="html/349732311.htm" />
+  <HelpKINode Title="employeeType property" Url="html/1863460615.htm" />
+  <HelpKINode Title="EmployeeZone class" Url="html/836532748.htm" />
+  <HelpKINode Title="EmployeeZone class" Url="html/86473862.htm" />
+  <HelpKINode Title="EmployeeZone class">
+    <HelpKINode Title="about EmployeeZone class" Url="html/86473862.htm" />
+    <HelpKINode Title="all members" Url="html/836532748.htm" />
+    <HelpKINode Title="constructor" Url="html/934241278.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EmployeeZone.EmployeeZone constructor" Url="html/934241278.htm" />
+  <HelpKINode Title="expcttie property" Url="html/574286604.htm" />
+  <HelpKINode Title="fmlyMbrs property" Url="html/1349780165.htm" />
+  <HelpKINode Title="GetAllEmployeeList method" Url="html/1689867653.htm" />
+  <HelpKINode Title="GetAllResidenceList method" Url="html/204519226.htm" />
+  <HelpKINode Title="GetAllSecurityList method" Url="html/1897263932.htm" />
+  <HelpKINode Title="GetAllVisitorList method" Url="html/326221382.htm" />
+  <HelpKINode Title="homeNumber property" Url="html/1413647715.htm" />
+  <HelpKINode Title="homeNumber property" Url="html/288281741.htm" />
+  <HelpKINode Title="Household enumeration member" Url="html/2124579274.htm" />
+  <HelpKINode Title="Household field" Url="html/1608096505.htm" />
+  <HelpKINode Title="houseNo property" Url="html/552117667.htm" />
+  <HelpKINode Title="id property" Url="html/1061366626.htm" />
+  <HelpKINode Title="id property" Url="html/1494401303.htm" />
+  <HelpKINode Title="id property" Url="html/1541417422.htm" />
+  <HelpKINode Title="id property" Url="html/1752396495.htm" />
+  <HelpKINode Title="id property" Url="html/1836842917.htm" />
+  <HelpKINode Title="id property" Url="html/318924227.htm" />
+  <HelpKINode Title="id property" Url="html/604988341.htm" />
+  <HelpKINode Title="id property" Url="html/643685815.htm" />
+  <HelpKINode Title="id property" Url="html/862195487.htm" />
+  <HelpKINode Title="idinfo property" Url="html/101162285.htm" />
+  <HelpKINode Title="Issue enumeration member" Url="html/1892524425.htm" />
+  <HelpKINode Title="Issue field" Url="html/1867122779.htm" />
+  <HelpKINode Title="joiningdate property" Url="html/1282044641.htm" />
+  <HelpKINode Title="joiningdate property" Url="html/2001396855.htm" />
+  <HelpKINode Title="lastVisits field" Url="html/979334616.htm" />
+  <HelpKINode Title="MainWindow class" Url="html/1772753063.htm" />
+  <HelpKINode Title="MainWindow class" Url="html/956892278.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="about MainWindow class" Url="html/1772753063.htm" />
+    <HelpKINode Title="all members" Url="html/956892278.htm" />
+    <HelpKINode Title="constructor" Url="html/1554657143.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/1554657143.htm" />
+  <HelpKINode Title="ManageVisitors class" Url="html/1007970578.htm" />
+  <HelpKINode Title="ManageVisitors class" Url="html/226639426.htm" />
+  <HelpKINode Title="ManageVisitors class">
+    <HelpKINode Title="about ManageVisitors class" Url="html/1007970578.htm" />
+    <HelpKINode Title="all members" Url="html/226639426.htm" />
+    <HelpKINode Title="constructor" Url="html/1395757879.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ManageVisitors.ManageVisitors constructor" Url="html/1395757879.htm" />
+  <HelpKINode Title="MemberInfo class" Url="html/1943214324.htm" />
+  <HelpKINode Title="MemberInfo class" Url="html/74971646.htm" />
+  <HelpKINode Title="MemberInfo class">
+    <HelpKINode Title="about MemberInfo class" Url="html/74971646.htm" />
+    <HelpKINode Title="all members" Url="html/1943214324.htm" />
+    <HelpKINode Title="fields" Url="html/1204031216.htm" />
+    <HelpKINode Title="properties" Url="html/564331104.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MemberInfo.address property" Url="html/290192732.htm" />
+  <HelpKINode Title="MemberInfo.contact property" Url="html/435578691.htm" />
+  <HelpKINode Title="MemberInfo.id property" Url="html/862195487.htm" />
+  <HelpKINode Title="MemberInfo.name property" Url="html/1779342307.htm" />
+  <HelpKINode Title="MemberInfo.prefs field" Url="html/363492183.htm" />
+  <HelpKINode Title="MemberInfo.reqs field" Url="html/1790281482.htm" />
+  <HelpKINode Title="MemberManager class" Url="html/411137890.htm" />
+  <HelpKINode Title="MemberManager class" Url="html/809995051.htm" />
+  <HelpKINode Title="MemberManager class">
+    <HelpKINode Title="about MemberManager class" Url="html/809995051.htm" />
+    <HelpKINode Title="all members" Url="html/411137890.htm" />
+    <HelpKINode Title="fields" Url="html/1796300285.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MemberManager.members field" Url="html/1515301030.htm" />
+  <HelpKINode Title="MemberManager.prefs field" Url="html/1130092819.htm" />
+  <HelpKINode Title="members field" Url="html/1515301030.htm" />
+  <HelpKINode Title="memberTargeted field" Url="html/1679789095.htm" />
+  <HelpKINode Title="memberTargeted property" Url="html/756908260.htm" />
+  <HelpKINode Title="name field" Url="html/1828138581.htm" />
+  <HelpKINode Title="name field" Url="html/190125272.htm" />
+  <HelpKINode Title="name property" Url="html/1133737513.htm" />
+  <HelpKINode Title="name property" Url="html/1378433303.htm" />
+  <HelpKINode Title="name property" Url="html/1779342307.htm" />
+  <HelpKINode Title="name property" Url="html/1943796834.htm" />
+  <HelpKINode Title="name property" Url="html/542432783.htm" />
+  <HelpKINode Title="name property" Url="html/620663239.htm" />
+  <HelpKINode Title="name property" Url="html/740632277.htm" />
+  <HelpKINode Title="name property" Url="html/938845876.htm" />
+  <HelpKINode Title="NotificationController class" Url="html/294197890.htm" />
+  <HelpKINode Title="NotificationController class" Url="html/651012164.htm" />
+  <HelpKINode Title="NotificationController class">
+    <HelpKINode Title="about NotificationController class" Url="html/294197890.htm" />
+    <HelpKINode Title="all members" Url="html/651012164.htm" />
+    <HelpKINode Title="fields" Url="html/1310206347.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NotificationController.notifications field" Url="html/1631275427.htm" />
+  <HelpKINode Title="NotificationInfo class" Url="html/2138918892.htm" />
+  <HelpKINode Title="NotificationInfo class" Url="html/356377396.htm" />
+  <HelpKINode Title="NotificationInfo class">
+    <HelpKINode Title="about NotificationInfo class" Url="html/356377396.htm" />
+    <HelpKINode Title="all members" Url="html/2138918892.htm" />
+    <HelpKINode Title="fields" Url="html/161689337.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NotificationInfo.date field" Url="html/1328904509.htm" />
+  <HelpKINode Title="NotificationInfo.description field" Url="html/1173698233.htm" />
+  <HelpKINode Title="NotificationInfo.employeeEdited field" Url="html/266198534.htm" />
+  <HelpKINode Title="NotificationInfo.memberTargeted field" Url="html/1679789095.htm" />
+  <HelpKINode Title="NotificationInfo.name field" Url="html/190125272.htm" />
+  <HelpKINode Title="NotificationInfo.type field" Url="html/912904303.htm" />
+  <HelpKINode Title="NotificationInfo.visitorRelated field" Url="html/1527755312.htm" />
+  <HelpKINode Title="Notifications class" Url="html/350137988.htm" />
+  <HelpKINode Title="Notifications class" Url="html/900811823.htm" />
+  <HelpKINode Title="Notifications class">
+    <HelpKINode Title="about Notifications class" Url="html/350137988.htm" />
+    <HelpKINode Title="all members" Url="html/900811823.htm" />
+    <HelpKINode Title="constructor" Url="html/172800750.htm" />
+  </HelpKINode>
+  <HelpKINode Title="notifications field" Url="html/1631275427.htm" />
+  <HelpKINode Title="Notifications.Notifications constructor" Url="html/172800750.htm" />
+  <HelpKINode Title="NotificationType enumeration" Url="html/1892524425.htm" />
+  <HelpKINode Title="NotificationType.Issue field" Url="html/1867122779.htm" />
+  <HelpKINode Title="NotificationType.Other field" Url="html/537473675.htm" />
+  <HelpKINode Title="NotificationType.Timeout field" Url="html/721598913.htm" />
+  <HelpKINode Title="NotificationType.Visit field" Url="html/472726497.htm" />
+  <HelpKINode Title="notificator field" Url="html/352304744.htm" />
+  <HelpKINode Title="OpenDbConnection method" Url="html/1271691786.htm" />
+  <HelpKINode Title="Other enumeration member" Url="html/1892524425.htm" />
+  <HelpKINode Title="other enumeration member" Url="html/2124579274.htm" />
+  <HelpKINode Title="Other field" Url="html/537473675.htm" />
+  <HelpKINode Title="other field" Url="html/256036271.htm" />
+  <HelpKINode Title="Owner enumeration member" Url="html/377480514.htm" />
+  <HelpKINode Title="Owner field" Url="html/2047699293.htm" />
+  <HelpKINode Title="passwordCurrent field" Url="html/901913706.htm" />
+  <HelpKINode Title="permisionBy property" Url="html/1641653363.htm" />
+  <HelpKINode Title="Permission class" Url="html/617715709.htm" />
+  <HelpKINode Title="Permission class" Url="html/908842487.htm" />
+  <HelpKINode Title="Permission class">
+    <HelpKINode Title="about Permission class" Url="html/617715709.htm" />
+    <HelpKINode Title="all members" Url="html/908842487.htm" />
+    <HelpKINode Title="constructor" Url="html/191289868.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Permission.Permission constructor" Url="html/191289868.htm" />
+  <HelpKINode Title="photoFilePath property" Url="html/1912202149.htm" />
+  <HelpKINode Title="photoIdNo property" Url="html/2055258555.htm" />
+  <HelpKINode Title="postType property" Url="html/963684065.htm" />
+  <HelpKINode Title="PreferenceInfo class" Url="html/104676362.htm" />
+  <HelpKINode Title="PreferenceInfo class" Url="html/1075729497.htm" />
+  <HelpKINode Title="PreferenceInfo class">
+    <HelpKINode Title="about PreferenceInfo class" Url="html/1075729497.htm" />
+    <HelpKINode Title="all members" Url="html/104676362.htm" />
+    <HelpKINode Title="fields" Url="html/1218804210.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PreferenceInfo.date field" Url="html/1330745730.htm" />
+  <HelpKINode Title="PreferenceInfo.Description field" Url="html/70528522.htm" />
+  <HelpKINode Title="PreferenceInfo.name field" Url="html/1828138581.htm" />
+  <HelpKINode Title="PreferenceInfo.technicianTargeted field" Url="html/499442647.htm" />
+  <HelpKINode Title="prefs field" Url="html/1130092819.htm" />
+  <HelpKINode Title="prefs field" Url="html/363492183.htm" />
+  <HelpKINode Title="purpose property" Url="html/964638866.htm" />
+  <HelpKINode Title="QueryAllEmployeeList method" Url="html/1811313916.htm" />
+  <HelpKINode Title="QueryAllResidenceList method" Url="html/795622209.htm" />
+  <HelpKINode Title="QueryAllSecurityList method" Url="html/320485926.htm" />
+  <HelpKINode Title="QueryAllVisitorList method" Url="html/95354758.htm" />
+  <HelpKINode Title="RegisterVisitor class" Url="html/1060379016.htm" />
+  <HelpKINode Title="RegisterVisitor class" Url="html/1891127868.htm" />
+  <HelpKINode Title="RegisterVisitor class">
+    <HelpKINode Title="about RegisterVisitor class" Url="html/1060379016.htm" />
+    <HelpKINode Title="all members" Url="html/1891127868.htm" />
+    <HelpKINode Title="constructor" Url="html/43012984.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RegisterVisitor.RegisterVisitor constructor" Url="html/43012984.htm" />
+  <HelpKINode Title="remark property" Url="html/1697893880.htm" />
+  <HelpKINode Title="remark property" Url="html/2043031970.htm" />
+  <HelpKINode Title="remark property" Url="html/2112736220.htm" />
+  <HelpKINode Title="remark property" Url="html/688368786.htm" />
+  <HelpKINode Title="reqHandled field" Url="html/783919338.htm" />
+  <HelpKINode Title="reqs field" Url="html/1790281482.htm" />
+  <HelpKINode Title="RequestController class" Url="html/204423621.htm" />
+  <HelpKINode Title="RequestController class" Url="html/271429786.htm" />
+  <HelpKINode Title="RequestController class">
+    <HelpKINode Title="about RequestController class" Url="html/204423621.htm" />
+    <HelpKINode Title="all members" Url="html/271429786.htm" />
+    <HelpKINode Title="fields" Url="html/1047403688.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RequestController.requests field" Url="html/1289068590.htm" />
+  <HelpKINode Title="requestHandler field" Url="html/650364411.htm" />
+  <HelpKINode Title="RequestInfo class" Url="html/1886284853.htm" />
+  <HelpKINode Title="RequestInfo class" Url="html/661856587.htm" />
+  <HelpKINode Title="RequestInfo class">
+    <HelpKINode Title="about RequestInfo class" Url="html/661856587.htm" />
+    <HelpKINode Title="all members" Url="html/1886284853.htm" />
+    <HelpKINode Title="properties" Url="html/729642701.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RequestInfo.date property" Url="html/1828391606.htm" />
+  <HelpKINode Title="RequestInfo.description property" Url="html/1192972344.htm" />
+  <HelpKINode Title="RequestInfo.id property" Url="html/604988341.htm" />
+  <HelpKINode Title="RequestInfo.type property" Url="html/2092735010.htm" />
+  <HelpKINode Title="requests field" Url="html/1289068590.htm" />
+  <HelpKINode Title="RequestType enumeration" Url="html/2124579274.htm" />
+  <HelpKINode Title="RequestType.Distress field" Url="html/1470620402.htm" />
+  <HelpKINode Title="RequestType.Emergency field" Url="html/802807960.htm" />
+  <HelpKINode Title="RequestType.Household field" Url="html/1608096505.htm" />
+  <HelpKINode Title="RequestType.other field" Url="html/256036271.htm" />
+  <HelpKINode Title="ResidenceInformation class" Url="html/1896257898.htm" />
+  <HelpKINode Title="ResidenceInformation class" Url="html/531820142.htm" />
+  <HelpKINode Title="ResidenceInformation class">
+    <HelpKINode Title="about ResidenceInformation class" Url="html/1896257898.htm" />
+    <HelpKINode Title="all members" Url="html/531820142.htm" />
+    <HelpKINode Title="properties" Url="html/1100425471.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResidenceInformation.contact property" Url="html/523194930.htm" />
+  <HelpKINode Title="ResidenceInformation.email property" Url="html/1874489949.htm" />
+  <HelpKINode Title="ResidenceInformation.fmlyMbrs property" Url="html/1349780165.htm" />
+  <HelpKINode Title="ResidenceInformation.houseNo property" Url="html/552117667.htm" />
+  <HelpKINode Title="ResidenceInformation.id property" Url="html/1494401303.htm" />
+  <HelpKINode Title="ResidenceInformation.name property" Url="html/542432783.htm" />
+  <HelpKINode Title="ResidenceInformation.remark property" Url="html/1697893880.htm" />
+  <HelpKINode Title="ResidenceInformation.roomNo property" Url="html/1237512958.htm" />
+  <HelpKINode Title="ResidenceInformation.visitingHour property" Url="html/1971624364.htm" />
+  <HelpKINode Title="ResidenceZone class" Url="html/687487572.htm" />
+  <HelpKINode Title="ResidenceZone class" Url="html/776827977.htm" />
+  <HelpKINode Title="ResidenceZone class">
+    <HelpKINode Title="about ResidenceZone class" Url="html/687487572.htm" />
+    <HelpKINode Title="all members" Url="html/776827977.htm" />
+    <HelpKINode Title="constructor" Url="html/1259388534.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResidenceZone.ResidenceZone constructor" Url="html/1259388534.htm" />
+  <HelpKINode Title="resourceCulture field" Url="html/391861788.htm" />
+  <HelpKINode Title="resourceCulture field" Url="html/507468485.htm" />
+  <HelpKINode Title="resourceMan field" Url="html/1406776340.htm" />
+  <HelpKINode Title="resourceMan field" Url="html/2128564559.htm" />
+  <HelpKINode Title="ResourceManager property" Url="html/165997749.htm" />
+  <HelpKINode Title="ResourceManager property" Url="html/1990423221.htm" />
+  <HelpKINode Title="Resources class" Url="html/1142873751.htm" />
+  <HelpKINode Title="Resources class" Url="html/1381608571.htm" />
+  <HelpKINode Title="Resources class" Url="html/380891724.htm" />
+  <HelpKINode Title="Resources class" Url="html/640683864.htm" />
+  <HelpKINode Title="Resources class">
+    <HelpKINode Title="about Resources class" Url="html/1381608571.htm" />
+    <HelpKINode Title="about Resources class" Url="html/380891724.htm" />
+    <HelpKINode Title="all members" Url="html/1142873751.htm" />
+    <HelpKINode Title="all members" Url="html/640683864.htm" />
+    <HelpKINode Title="constructor" Url="html/1473926729.htm" />
+    <HelpKINode Title="constructor" Url="html/177132924.htm" />
+    <HelpKINode Title="fields" Url="html/1464837985.htm" />
+    <HelpKINode Title="fields" Url="html/423455820.htm" />
+    <HelpKINode Title="properties" Url="html/102981143.htm" />
+    <HelpKINode Title="properties" Url="html/1877872472.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Resources.Culture property" Url="html/111008413.htm" />
+  <HelpKINode Title="Resources.Culture property" Url="html/1761512976.htm" />
+  <HelpKINode Title="Resources.resourceCulture field" Url="html/391861788.htm" />
+  <HelpKINode Title="Resources.resourceCulture field" Url="html/507468485.htm" />
+  <HelpKINode Title="Resources.resourceMan field" Url="html/1406776340.htm" />
+  <HelpKINode Title="Resources.resourceMan field" Url="html/2128564559.htm" />
+  <HelpKINode Title="Resources.ResourceManager property" Url="html/165997749.htm" />
+  <HelpKINode Title="Resources.ResourceManager property" Url="html/1990423221.htm" />
+  <HelpKINode Title="Resources.Resources constructor" Url="html/1473926729.htm" />
+  <HelpKINode Title="Resources.Resources constructor" Url="html/177132924.htm" />
+  <HelpKINode Title="roomNo property" Url="html/1237512958.htm" />
+  <HelpKINode Title="SecurityGuardZone class" Url="html/490729504.htm" />
+  <HelpKINode Title="SecurityGuardZone class" Url="html/664978249.htm" />
+  <HelpKINode Title="SecurityGuardZone class">
+    <HelpKINode Title="about SecurityGuardZone class" Url="html/490729504.htm" />
+    <HelpKINode Title="all members" Url="html/664978249.htm" />
+    <HelpKINode Title="constructor" Url="html/219743892.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityGuardZone.SecurityGuardZone constructor" Url="html/219743892.htm" />
+  <HelpKINode Title="SecurityInformation class" Url="html/1430692446.htm" />
+  <HelpKINode Title="SecurityInformation class" Url="html/1792002742.htm" />
+  <HelpKINode Title="SecurityInformation class">
+    <HelpKINode Title="about SecurityInformation class" Url="html/1430692446.htm" />
+    <HelpKINode Title="all members" Url="html/1792002742.htm" />
+    <HelpKINode Title="properties" Url="html/1534458909.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityInformation.addres property" Url="html/1812220676.htm" />
+  <HelpKINode Title="SecurityInformation.contact property" Url="html/2119254405.htm" />
+  <HelpKINode Title="SecurityInformation.email property" Url="html/996593804.htm" />
+  <HelpKINode Title="SecurityInformation.homeNumber property" Url="html/288281741.htm" />
+  <HelpKINode Title="SecurityInformation.id property" Url="html/1541417422.htm" />
+  <HelpKINode Title="SecurityInformation.joiningdate property" Url="html/1282044641.htm" />
+  <HelpKINode Title="SecurityInformation.name property" Url="html/938845876.htm" />
+  <HelpKINode Title="SecurityInformation.remark property" Url="html/2043031970.htm" />
+  <HelpKINode Title="SecurityManagementController class" Url="html/1178374957.htm" />
+  <HelpKINode Title="SecurityManagementController class" Url="html/1249593192.htm" />
+  <HelpKINode Title="SecurityManagementController class">
+    <HelpKINode Title="about SecurityManagementController class" Url="html/1249593192.htm" />
+    <HelpKINode Title="all members" Url="html/1178374957.htm" />
+    <HelpKINode Title="fields" Url="html/1099328041.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityManagementController.customerController field" Url="html/1487737618.htm" />
+  <HelpKINode Title="SecurityManagementController.empController field" Url="html/1364098368.htm" />
+  <HelpKINode Title="SecurityManagementController.employeeController field" Url="html/1408408397.htm" />
+  <HelpKINode Title="SecurityManagementController.notificator field" Url="html/352304744.htm" />
+  <HelpKINode Title="SecurityManagementController.requestHandler field" Url="html/650364411.htm" />
+  <HelpKINode Title="SecurityManagementSystem namespace" Url="html/1919869543.htm" />
+  <HelpKINode Title="SecurityManagementSystem.App class" Url="html/1576096117.htm" />
+  <HelpKINode Title="SecurityManagementSystem.App class" Url="html/396371478.htm" />
+  <HelpKINode Title="SecurityManagementSystem.EmployeeZone class" Url="html/836532748.htm" />
+  <HelpKINode Title="SecurityManagementSystem.EmployeeZone class" Url="html/86473862.htm" />
+  <HelpKINode Title="SecurityManagementSystem.MainWindow class" Url="html/1772753063.htm" />
+  <HelpKINode Title="SecurityManagementSystem.MainWindow class" Url="html/956892278.htm" />
+  <HelpKINode Title="SecurityManagementSystem.ManageVisitors class" Url="html/1007970578.htm" />
+  <HelpKINode Title="SecurityManagementSystem.ManageVisitors class" Url="html/226639426.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Notifications class" Url="html/350137988.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Notifications class" Url="html/900811823.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Permission class" Url="html/617715709.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Permission class" Url="html/908842487.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Properties namespace" Url="html/1582263906.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Properties.Resources class" Url="html/380891724.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Properties.Resources class" Url="html/640683864.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Properties.Settings class" Url="html/360785546.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Properties.Settings class" Url="html/812659165.htm" />
+  <HelpKINode Title="SecurityManagementSystem.RegisterVisitor class" Url="html/1060379016.htm" />
+  <HelpKINode Title="SecurityManagementSystem.RegisterVisitor class" Url="html/1891127868.htm" />
+  <HelpKINode Title="SecurityManagementSystem.ResidenceZone class" Url="html/687487572.htm" />
+  <HelpKINode Title="SecurityManagementSystem.ResidenceZone class" Url="html/776827977.htm" />
+  <HelpKINode Title="SecurityManagementSystem.SecurityGuardZone class" Url="html/490729504.htm" />
+  <HelpKINode Title="SecurityManagementSystem.SecurityGuardZone class" Url="html/664978249.htm" />
+  <HelpKINode Title="SecurityManagementSystem.VideoSurveillance class" Url="html/1871061189.htm" />
+  <HelpKINode Title="SecurityManagementSystem.VideoSurveillance class" Url="html/456331978.htm" />
+  <HelpKINode Title="SecurityManagementSystem.VideoSurveillanceControl class" Url="html/1810321452.htm" />
+  <HelpKINode Title="SecurityManagementSystem.VideoSurveillanceControl class" Url="html/882142315.htm" />
+  <HelpKINode Title="SecurityManagementSystem.VisitorsInside class" Url="html/1620329095.htm" />
+  <HelpKINode Title="SecurityManagementSystem.VisitorsInside class" Url="html/405974642.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Workorder class" Url="html/451183183.htm" />
+  <HelpKINode Title="SecurityManagementSystem.Workorder class" Url="html/765168870.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine namespace" Url="html/1502354783.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.EmployeeInfo class" Url="html/240363170.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.EmployeeInfo class" Url="html/654035475.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.EmployeeInformation class" Url="html/1499411819.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.EmployeeInformation class" Url="html/2078835190.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.EmployeeManager class" Url="html/1315406599.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.EmployeeManager class" Url="html/1421830386.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.MemberInfo class" Url="html/1943214324.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.MemberInfo class" Url="html/74971646.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.MemberManager class" Url="html/411137890.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.MemberManager class" Url="html/809995051.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.NotificationController class" Url="html/294197890.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.NotificationController class" Url="html/651012164.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.NotificationInfo class" Url="html/2138918892.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.NotificationInfo class" Url="html/356377396.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.NotificationType enumeration" Url="html/1892524425.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.PreferenceInfo class" Url="html/104676362.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.PreferenceInfo class" Url="html/1075729497.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.RequestController class" Url="html/204423621.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.RequestController class" Url="html/271429786.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.RequestInfo class" Url="html/1886284853.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.RequestInfo class" Url="html/661856587.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.RequestType enumeration" Url="html/2124579274.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.ResidenceInformation class" Url="html/1896257898.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.ResidenceInformation class" Url="html/531820142.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.SecurityInformation class" Url="html/1430692446.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.SecurityInformation class" Url="html/1792002742.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.SecurityManagementController class" Url="html/1178374957.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.SecurityManagementController class" Url="html/1249593192.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitInfo class" Url="html/272202610.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitInfo class" Url="html/616313253.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitorInfo class" Url="html/2046260361.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitorInfo class" Url="html/852173206.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitorInformation class" Url="html/1852048014.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitorInformation class" Url="html/277981642.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitorManager class" Url="html/243654530.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitorManager class" Url="html/625547297.htm" />
+  <HelpKINode Title="SecurityManagementSystemEngine.VisitType enumeration" Url="html/377480514.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorage namespace" Url="html/1719124109.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction class" Url="html/1399147005.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction class" Url="html/336999373.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction class" Url="html/1399147005.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction class" Url="html/336999373.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction class">
+    <HelpKINode Title="about SecurityManagementSystemStorageInteraction class" Url="html/336999373.htm" />
+    <HelpKINode Title="all members" Url="html/1399147005.htm" />
+    <HelpKINode Title="fields" Url="html/1679441091.htm" />
+    <HelpKINode Title="methods" Url="html/873060194.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.dbmsCurrent field" Url="html/1698910336.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.DoEnterEmployee method" Url="html/219415356.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.DoEnterResidence method" Url="html/602009266.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.DoEnterSecurity method" Url="html/754682405.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.DoEnterVisetor method" Url="html/1412704021.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.DoRegisterNewEmployeeindb method" Url="html/1121798150.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.DoRegisterNewResidenceindb method" Url="html/1363082005.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.DoRegisterNewSecurityindb method" Url="html/872419893.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.DoRegisterNewVisetorindb method" Url="html/1175484113.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.GetAllEmployeeList method" Url="html/1689867653.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.GetAllResidenceList method" Url="html/204519226.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.GetAllSecurityList method" Url="html/1897263932.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.GetAllVisitorList method" Url="html/326221382.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.OpenDbConnection method" Url="html/1271691786.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.passwordCurrent field" Url="html/901913706.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.QueryAllEmployeeList method" Url="html/1811313916.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.QueryAllResidenceList method" Url="html/795622209.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.QueryAllSecurityList method" Url="html/320485926.htm" />
+  <HelpKINode Title="SecurityManagementSystemStorageInteraction.QueryAllVisitorList method" Url="html/95354758.htm" />
+  <HelpKINode Title="SecurityManagementSystemStyle.Properties namespace" Url="html/783694027.htm" />
+  <HelpKINode Title="SecurityManagementSystemStyle.Properties.Resources class" Url="html/1142873751.htm" />
+  <HelpKINode Title="SecurityManagementSystemStyle.Properties.Resources class" Url="html/1381608571.htm" />
+  <HelpKINode Title="SecurityManagementSystemStyle.Properties.Settings class" Url="html/163918508.htm" />
+  <HelpKINode Title="SecurityManagementSystemStyle.Properties.Settings class" Url="html/205283726.htm" />
+  <HelpKINode Title="Settings class" Url="html/163918508.htm" />
+  <HelpKINode Title="Settings class" Url="html/205283726.htm" />
+  <HelpKINode Title="Settings class" Url="html/360785546.htm" />
+  <HelpKINode Title="Settings class" Url="html/812659165.htm" />
+  <HelpKINode Title="Settings class">
+    <HelpKINode Title="about Settings class" Url="html/205283726.htm" />
+    <HelpKINode Title="about Settings class" Url="html/360785546.htm" />
+    <HelpKINode Title="all members" Url="html/163918508.htm" />
+    <HelpKINode Title="all members" Url="html/812659165.htm" />
+    <HelpKINode Title="fields" Url="html/1357317945.htm" />
+    <HelpKINode Title="fields" Url="html/1814437713.htm" />
+    <HelpKINode Title="properties" Url="html/1832411160.htm" />
+    <HelpKINode Title="properties" Url="html/1914084523.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Settings.Default property" Url="html/1533690821.htm" />
+  <HelpKINode Title="Settings.Default property" Url="html/863338277.htm" />
+  <HelpKINode Title="Settings.defaultInstance field" Url="html/1112348613.htm" />
+  <HelpKINode Title="Settings.defaultInstance field" Url="html/435638481.htm" />
+  <HelpKINode Title="signintime property" Url="html/530956852.htm" />
+  <HelpKINode Title="start property" Url="html/274859009.htm" />
+  <HelpKINode Title="Technician enumeration member" Url="html/377480514.htm" />
+  <HelpKINode Title="Technician field" Url="html/1067587888.htm" />
+  <HelpKINode Title="technicianTargeted field" Url="html/499442647.htm" />
+  <HelpKINode Title="Timeout enumeration member" Url="html/1892524425.htm" />
+  <HelpKINode Title="Timeout field" Url="html/721598913.htm" />
+  <HelpKINode Title="towhom property" Url="html/1116645071.htm" />
+  <HelpKINode Title="type field" Url="html/912904303.htm" />
+  <HelpKINode Title="type property" Url="html/2092735010.htm" />
+  <HelpKINode Title="VideoSurveillance class" Url="html/1871061189.htm" />
+  <HelpKINode Title="VideoSurveillance class" Url="html/456331978.htm" />
+  <HelpKINode Title="VideoSurveillance class">
+    <HelpKINode Title="about VideoSurveillance class" Url="html/1871061189.htm" />
+    <HelpKINode Title="all members" Url="html/456331978.htm" />
+    <HelpKINode Title="constructor" Url="html/105402129.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VideoSurveillance.VideoSurveillance constructor" Url="html/105402129.htm" />
+  <HelpKINode Title="VideoSurveillanceControl class" Url="html/1810321452.htm" />
+  <HelpKINode Title="VideoSurveillanceControl class" Url="html/882142315.htm" />
+  <HelpKINode Title="VideoSurveillanceControl class">
+    <HelpKINode Title="about VideoSurveillanceControl class" Url="html/1810321452.htm" />
+    <HelpKINode Title="all members" Url="html/882142315.htm" />
+    <HelpKINode Title="constructor" Url="html/1938890063.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VideoSurveillanceControl.VideoSurveillanceControl constructor" Url="html/1938890063.htm" />
+  <HelpKINode Title="viitortype property" Url="html/63065966.htm" />
+  <HelpKINode Title="Visit enumeration member" Url="html/1892524425.htm" />
+  <HelpKINode Title="Visit field" Url="html/472726497.htm" />
+  <HelpKINode Title="VisitInfo class" Url="html/272202610.htm" />
+  <HelpKINode Title="VisitInfo class" Url="html/616313253.htm" />
+  <HelpKINode Title="VisitInfo class">
+    <HelpKINode Title="about VisitInfo class" Url="html/616313253.htm" />
+    <HelpKINode Title="all members" Url="html/272202610.htm" />
+    <HelpKINode Title="properties" Url="html/1734860174.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VisitInfo.duration property" Url="html/1274608966.htm" />
+  <HelpKINode Title="VisitInfo.employeeAuthroized property" Url="html/340085797.htm" />
+  <HelpKINode Title="VisitInfo.id property" Url="html/643685815.htm" />
+  <HelpKINode Title="VisitInfo.memberTargeted property" Url="html/756908260.htm" />
+  <HelpKINode Title="VisitInfo.name property" Url="html/740632277.htm" />
+  <HelpKINode Title="VisitInfo.start property" Url="html/274859009.htm" />
+  <HelpKINode Title="visitingHour property" Url="html/1971624364.htm" />
+  <HelpKINode Title="VisitorInfo class" Url="html/2046260361.htm" />
+  <HelpKINode Title="VisitorInfo class" Url="html/852173206.htm" />
+  <HelpKINode Title="VisitorInfo class">
+    <HelpKINode Title="about VisitorInfo class" Url="html/2046260361.htm" />
+    <HelpKINode Title="all members" Url="html/852173206.htm" />
+    <HelpKINode Title="fields" Url="html/1897219247.htm" />
+    <HelpKINode Title="properties" Url="html/705379524.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VisitorInfo.address property" Url="html/1388146109.htm" />
+  <HelpKINode Title="VisitorInfo.contact property" Url="html/1214711694.htm" />
+  <HelpKINode Title="VisitorInfo.id property" Url="html/1061366626.htm" />
+  <HelpKINode Title="VisitorInfo.lastVisits field" Url="html/979334616.htm" />
+  <HelpKINode Title="VisitorInfo.name property" Url="html/1133737513.htm" />
+  <HelpKINode Title="VisitorInfo.photoFilePath property" Url="html/1912202149.htm" />
+  <HelpKINode Title="VisitorInfo.photoIdNo property" Url="html/2055258555.htm" />
+  <HelpKINode Title="VisitorInfo.postType property" Url="html/963684065.htm" />
+  <HelpKINode Title="VisitorInformation class" Url="html/1852048014.htm" />
+  <HelpKINode Title="VisitorInformation class" Url="html/277981642.htm" />
+  <HelpKINode Title="VisitorInformation class">
+    <HelpKINode Title="about VisitorInformation class" Url="html/277981642.htm" />
+    <HelpKINode Title="all members" Url="html/1852048014.htm" />
+    <HelpKINode Title="properties" Url="html/1610431238.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VisitorInformation.addres property" Url="html/2072072125.htm" />
+  <HelpKINode Title="VisitorInformation.allowBy property" Url="html/661419067.htm" />
+  <HelpKINode Title="VisitorInformation.contact property" Url="html/1566521930.htm" />
+  <HelpKINode Title="VisitorInformation.empId property" Url="html/1757072356.htm" />
+  <HelpKINode Title="VisitorInformation.expcttie property" Url="html/574286604.htm" />
+  <HelpKINode Title="VisitorInformation.id property" Url="html/1836842917.htm" />
+  <HelpKINode Title="VisitorInformation.idinfo property" Url="html/101162285.htm" />
+  <HelpKINode Title="VisitorInformation.name property" Url="html/1378433303.htm" />
+  <HelpKINode Title="VisitorInformation.permisionBy property" Url="html/1641653363.htm" />
+  <HelpKINode Title="VisitorInformation.purpose property" Url="html/964638866.htm" />
+  <HelpKINode Title="VisitorInformation.remark property" Url="html/2112736220.htm" />
+  <HelpKINode Title="VisitorInformation.signintime property" Url="html/530956852.htm" />
+  <HelpKINode Title="VisitorInformation.towhom property" Url="html/1116645071.htm" />
+  <HelpKINode Title="VisitorInformation.viitortype property" Url="html/63065966.htm" />
+  <HelpKINode Title="VisitorManager class" Url="html/243654530.htm" />
+  <HelpKINode Title="VisitorManager class" Url="html/625547297.htm" />
+  <HelpKINode Title="VisitorManager class">
+    <HelpKINode Title="about VisitorManager class" Url="html/243654530.htm" />
+    <HelpKINode Title="all members" Url="html/625547297.htm" />
+    <HelpKINode Title="fields" Url="html/1139667620.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VisitorManager.visitors field" Url="html/234259783.htm" />
+  <HelpKINode Title="VisitorManager.visits field" Url="html/636078543.htm" />
+  <HelpKINode Title="visitorRelated field" Url="html/1527755312.htm" />
+  <HelpKINode Title="visitors field" Url="html/234259783.htm" />
+  <HelpKINode Title="VisitorsInside class" Url="html/1620329095.htm" />
+  <HelpKINode Title="VisitorsInside class" Url="html/405974642.htm" />
+  <HelpKINode Title="VisitorsInside class">
+    <HelpKINode Title="about VisitorsInside class" Url="html/1620329095.htm" />
+    <HelpKINode Title="all members" Url="html/405974642.htm" />
+    <HelpKINode Title="constructor" Url="html/91879981.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VisitorsInside.VisitorsInside constructor" Url="html/91879981.htm" />
+  <HelpKINode Title="visits field" Url="html/636078543.htm" />
+  <HelpKINode Title="VisitType enumeration" Url="html/377480514.htm" />
+  <HelpKINode Title="VisitType.Admin field" Url="html/392568656.htm" />
+  <HelpKINode Title="VisitType.Owner field" Url="html/2047699293.htm" />
+  <HelpKINode Title="VisitType.Technician field" Url="html/1067587888.htm" />
+  <HelpKINode Title="Workorder class" Url="html/451183183.htm" />
+  <HelpKINode Title="Workorder class" Url="html/765168870.htm" />
+  <HelpKINode Title="Workorder class">
+    <HelpKINode Title="about Workorder class" Url="html/451183183.htm" />
+    <HelpKINode Title="all members" Url="html/765168870.htm" />
+    <HelpKINode Title="constructor" Url="html/188187005.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Workorder.Workorder constructor" Url="html/188187005.htm" />
+</HelpKI>

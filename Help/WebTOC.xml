@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="04734eed-9845-41b1-9dcf-865879faf386" Title="SecurityManagementSystemEngine Namespace" Url="html/1502354783.htm">
+    <HelpTOCNode Id="7a29b1e1-c8be-40f7-b80b-000e69725be1" Title="EmployeeInformation Class" Url="html/1499411819.htm">
+      <HelpTOCNode Title="EmployeeInformation Members" Url="html/2078835190.htm" />
+      <HelpTOCNode Id="a0be5bbe-b1a4-444c-82bf-7ca527c60635" Title="EmployeeInformation Properties" Url="html/5970925.htm">
+        <HelpTOCNode Title="id Property " Url="html/318924227.htm" />
+        <HelpTOCNode Title="name Property " Url="html/620663239.htm" />
+        <HelpTOCNode Title="addres Property " Url="html/212748638.htm" />
+        <HelpTOCNode Title="contact Property " Url="html/881017731.htm" />
+        <HelpTOCNode Title="email Property " Url="html/283098967.htm" />
+        <HelpTOCNode Title="homeNumber Property " Url="html/1413647715.htm" />
+        <HelpTOCNode Title="joiningdate Property " Url="html/2001396855.htm" />
+        <HelpTOCNode Title="employeeType Property " Url="html/1863460615.htm" />
+        <HelpTOCNode Title="remark Property " Url="html/688368786.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2e26dcbd-de03-48a7-80f2-ffd3c065e7b6" Title="ResidenceInformation Class" Url="html/1896257898.htm">
+      <HelpTOCNode Title="ResidenceInformation Members" Url="html/531820142.htm" />
+      <HelpTOCNode Id="c3a80bd4-5a1c-4cbd-9fe7-d6936af87a0c" Title="ResidenceInformation Properties" Url="html/1100425471.htm">
+        <HelpTOCNode Title="id Property " Url="html/1494401303.htm" />
+        <HelpTOCNode Title="name Property " Url="html/542432783.htm" />
+        <HelpTOCNode Title="houseNo Property " Url="html/552117667.htm" />
+        <HelpTOCNode Title="roomNo Property " Url="html/1237512958.htm" />
+        <HelpTOCNode Title="contact Property " Url="html/523194930.htm" />
+        <HelpTOCNode Title="email Property " Url="html/1874489949.htm" />
+        <HelpTOCNode Title="fmlyMbrs Property " Url="html/1349780165.htm" />
+        <HelpTOCNode Title="visitingHour Property " Url="html/1971624364.htm" />
+        <HelpTOCNode Title="remark Property " Url="html/1697893880.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5069f4ac-41cb-493f-998f-cd871d718177" Title="SecurityInformation Class" Url="html/1430692446.htm">
+      <HelpTOCNode Title="SecurityInformation Members" Url="html/1792002742.htm" />
+      <HelpTOCNode Id="e79ee4be-fee8-451a-a137-39f404f18101" Title="SecurityInformation Properties" Url="html/1534458909.htm">
+        <HelpTOCNode Title="id Property " Url="html/1541417422.htm" />
+        <HelpTOCNode Title="name Property " Url="html/938845876.htm" />
+        <HelpTOCNode Title="addres Property " Url="html/1812220676.htm" />
+        <HelpTOCNode Title="contact Property " Url="html/2119254405.htm" />
+        <HelpTOCNode Title="email Property " Url="html/996593804.htm" />
+        <HelpTOCNode Title="homeNumber Property " Url="html/288281741.htm" />
+        <HelpTOCNode Title="joiningdate Property " Url="html/1282044641.htm" />
+        <HelpTOCNode Title="remark Property " Url="html/2043031970.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0b5e3776-64f6-462c-a05f-a5e94a13e2ef" Title="SecurityManagementController Class" Url="html/1249593192.htm">
+      <HelpTOCNode Title="SecurityManagementController Members" Url="html/1178374957.htm" />
+      <HelpTOCNode Id="7385d994-1a24-4ff1-92c1-c280a2145800" Title="SecurityManagementController Fields" Url="html/1099328041.htm">
+        <HelpTOCNode Title="employeeController Field" Url="html/1408408397.htm" />
+        <HelpTOCNode Title="customerController Field" Url="html/1487737618.htm" />
+        <HelpTOCNode Title="empController Field" Url="html/1364098368.htm" />
+        <HelpTOCNode Title="notificator Field" Url="html/352304744.htm" />
+        <HelpTOCNode Title="requestHandler Field" Url="html/650364411.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="50167ba2-f066-4f7c-9941-91fa6791b3da" Title="EmployeeManager Class" Url="html/1421830386.htm">
+      <HelpTOCNode Title="EmployeeManager Members" Url="html/1315406599.htm" />
+      <HelpTOCNode Id="287db4cb-c6a9-4e8c-97c0-c50a7c1fde8c" Title="EmployeeManager Fields" Url="html/794377335.htm">
+        <HelpTOCNode Title="employees Field" Url="html/349732311.htm" />
+        <HelpTOCNode Title="reqHandled Field" Url="html/783919338.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="057ce7ec-f375-4112-88c3-8af1f08ad117" Title="MemberManager Class" Url="html/809995051.htm">
+      <HelpTOCNode Title="MemberManager Members" Url="html/411137890.htm" />
+      <HelpTOCNode Id="1acfd261-966d-480a-ae5c-f023492979da" Title="MemberManager Fields" Url="html/1796300285.htm">
+        <HelpTOCNode Title="members Field" Url="html/1515301030.htm" />
+        <HelpTOCNode Title="prefs Field" Url="html/1130092819.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5e141b02-455c-4d46-b7b4-eb9f07f66dae" Title="VisitorManager Class" Url="html/243654530.htm">
+      <HelpTOCNode Title="VisitorManager Members" Url="html/625547297.htm" />
+      <HelpTOCNode Id="19e683c5-1f8a-434f-9742-1ca229305080" Title="VisitorManager Fields" Url="html/1139667620.htm">
+        <HelpTOCNode Title="visitors Field" Url="html/234259783.htm" />
+        <HelpTOCNode Title="visits Field" Url="html/636078543.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2b03f213-832b-478c-b674-fb77b2eb9876" Title="NotificationController Class" Url="html/294197890.htm">
+      <HelpTOCNode Title="NotificationController Members" Url="html/651012164.htm" />
+      <HelpTOCNode Id="b56a1001-62c6-4b14-9817-077aaee085e0" Title="NotificationController Fields" Url="html/1310206347.htm">
+        <HelpTOCNode Title="notifications Field" Url="html/1631275427.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="76c22c16-0f28-4c7f-8ad2-2ca52648f34e" Title="RequestController Class" Url="html/204423621.htm">
+      <HelpTOCNode Title="RequestController Members" Url="html/271429786.htm" />
+      <HelpTOCNode Id="ebf68e73-6d71-4a86-8b18-09df281bf818" Title="RequestController Fields" Url="html/1047403688.htm">
+        <HelpTOCNode Title="requests Field" Url="html/1289068590.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8d6df763-137b-4895-bb27-cf4c0047576c" Title="MemberInfo Class" Url="html/74971646.htm">
+      <HelpTOCNode Title="MemberInfo Members" Url="html/1943214324.htm" />
+      <HelpTOCNode Id="b97b0684-1def-4c86-a8e1-c398380126b5" Title="MemberInfo Fields" Url="html/1204031216.htm">
+        <HelpTOCNode Title="prefs Field" Url="html/363492183.htm" />
+        <HelpTOCNode Title="reqs Field" Url="html/1790281482.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fe97a5a5-7e3a-4b65-a641-4e3defddb877" Title="MemberInfo Properties" Url="html/564331104.htm">
+        <HelpTOCNode Title="id Property " Url="html/862195487.htm" />
+        <HelpTOCNode Title="name Property " Url="html/1779342307.htm" />
+        <HelpTOCNode Title="address Property " Url="html/290192732.htm" />
+        <HelpTOCNode Title="contact Property " Url="html/435578691.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b176895f-2bbf-4c49-bb55-5e0a296e6a95" Title="EmployeeInfo Class" Url="html/240363170.htm">
+      <HelpTOCNode Title="EmployeeInfo Members" Url="html/654035475.htm" />
+      <HelpTOCNode Id="56777392-e8eb-4eea-b3b4-1fcecc63a9fe" Title="EmployeeInfo Properties" Url="html/377134942.htm">
+        <HelpTOCNode Title="id Property " Url="html/1752396495.htm" />
+        <HelpTOCNode Title="name Property " Url="html/1943796834.htm" />
+        <HelpTOCNode Title="address Property " Url="html/1862878198.htm" />
+        <HelpTOCNode Title="contact Property " Url="html/282179885.htm" />
+        <HelpTOCNode Title="doj Property " Url="html/1247823861.htm" />
+        <HelpTOCNode Title="department Property " Url="html/284566531.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e4beb49f-86e1-48e7-8da1-9096b285b05c" Title="VisitorInfo Class" Url="html/2046260361.htm">
+      <HelpTOCNode Title="VisitorInfo Members" Url="html/852173206.htm" />
+      <HelpTOCNode Id="9429e29d-48c5-4c93-ac44-c03989ac4efb" Title="VisitorInfo Fields" Url="html/1897219247.htm">
+        <HelpTOCNode Title="lastVisits Field" Url="html/979334616.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5fd0d100-5093-4446-b64c-b82eaf22e318" Title="VisitorInfo Properties" Url="html/705379524.htm">
+        <HelpTOCNode Title="id Property " Url="html/1061366626.htm" />
+        <HelpTOCNode Title="photoIdNo Property " Url="html/2055258555.htm" />
+        <HelpTOCNode Title="photoFilePath Property " Url="html/1912202149.htm" />
+        <HelpTOCNode Title="name Property " Url="html/1133737513.htm" />
+        <HelpTOCNode Title="address Property " Url="html/1388146109.htm" />
+        <HelpTOCNode Title="contact Property " Url="html/1214711694.htm" />
+        <HelpTOCNode Title="postType Property " Url="html/963684065.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6a5cf980-d76e-4acb-b280-5131792f8f59" Title="VisitInfo Class" Url="html/616313253.htm">
+      <HelpTOCNode Title="VisitInfo Members" Url="html/272202610.htm" />
+      <HelpTOCNode Id="f68ae461-b1a6-4a92-8de6-be744fca88ea" Title="VisitInfo Properties" Url="html/1734860174.htm">
+        <HelpTOCNode Title="id Property " Url="html/643685815.htm" />
+        <HelpTOCNode Title="name Property " Url="html/740632277.htm" />
+        <HelpTOCNode Title="memberTargeted Property " Url="html/756908260.htm" />
+        <HelpTOCNode Title="employeeAuthroized Property " Url="html/340085797.htm" />
+        <HelpTOCNode Title="start Property " Url="html/274859009.htm" />
+        <HelpTOCNode Title="duration Property " Url="html/1274608966.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8eea047b-35da-468c-b1a5-467fce4332ee" Title="PreferenceInfo Class" Url="html/1075729497.htm">
+      <HelpTOCNode Title="PreferenceInfo Members" Url="html/104676362.htm" />
+      <HelpTOCNode Id="9691675f-d3cd-401f-af2c-6ee52fbe4304" Title="PreferenceInfo Fields" Url="html/1218804210.htm">
+        <HelpTOCNode Title="name Field" Url="html/1828138581.htm" />
+        <HelpTOCNode Title="technicianTargeted Field" Url="html/499442647.htm" />
+        <HelpTOCNode Title="Description Field" Url="html/70528522.htm" />
+        <HelpTOCNode Title="date Field" Url="html/1330745730.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="38d9f075-1b87-4339-bca5-88d61d9200c3" Title="NotificationInfo Class" Url="html/356377396.htm">
+      <HelpTOCNode Title="NotificationInfo Members" Url="html/2138918892.htm" />
+      <HelpTOCNode Id="2ca79cb8-39ce-4da0-9ca3-23e48f0e1259" Title="NotificationInfo Fields" Url="html/161689337.htm">
+        <HelpTOCNode Title="name Field" Url="html/190125272.htm" />
+        <HelpTOCNode Title="employeeEdited Field" Url="html/266198534.htm" />
+        <HelpTOCNode Title="memberTargeted Field" Url="html/1679789095.htm" />
+        <HelpTOCNode Title="visitorRelated Field" Url="html/1527755312.htm" />
+        <HelpTOCNode Title="description Field" Url="html/1173698233.htm" />
+        <HelpTOCNode Title="date Field" Url="html/1328904509.htm" />
+        <HelpTOCNode Title="type Field" Url="html/912904303.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f65cab10-a3ed-49a6-9a54-d9c332d57cbc" Title="RequestInfo Class" Url="html/661856587.htm">
+      <HelpTOCNode Title="RequestInfo Members" Url="html/1886284853.htm" />
+      <HelpTOCNode Id="a5e89563-fc27-4dfa-b11a-417f37559ca6" Title="RequestInfo Properties" Url="html/729642701.htm">
+        <HelpTOCNode Title="id Property " Url="html/604988341.htm" />
+        <HelpTOCNode Title="date Property " Url="html/1828391606.htm" />
+        <HelpTOCNode Title="type Property " Url="html/2092735010.htm" />
+        <HelpTOCNode Title="description Property " Url="html/1192972344.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2441134f-f12a-4fca-a11c-d6f6431736eb" Title="VisitorInformation Class" Url="html/277981642.htm">
+      <HelpTOCNode Title="VisitorInformation Members" Url="html/1852048014.htm" />
+      <HelpTOCNode Id="d6f53202-d667-4ce1-b0c6-7add924aab90" Title="VisitorInformation Properties" Url="html/1610431238.htm">
+        <HelpTOCNode Title="id Property " Url="html/1836842917.htm" />
+        <HelpTOCNode Title="name Property " Url="html/1378433303.htm" />
+        <HelpTOCNode Title="addres Property " Url="html/2072072125.htm" />
+        <HelpTOCNode Title="contact Property " Url="html/1566521930.htm" />
+        <HelpTOCNode Title="idinfo Property " Url="html/101162285.htm" />
+        <HelpTOCNode Title="viitortype Property " Url="html/63065966.htm" />
+        <HelpTOCNode Title="purpose Property " Url="html/964638866.htm" />
+        <HelpTOCNode Title="towhom Property " Url="html/1116645071.htm" />
+        <HelpTOCNode Title="signintime Property " Url="html/530956852.htm" />
+        <HelpTOCNode Title="remark Property " Url="html/2112736220.htm" />
+        <HelpTOCNode Title="expcttie Property " Url="html/574286604.htm" />
+        <HelpTOCNode Title="permisionBy Property " Url="html/1641653363.htm" />
+        <HelpTOCNode Title="allowBy Property " Url="html/661419067.htm" />
+        <HelpTOCNode Title="empId Property " Url="html/1757072356.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="NotificationType Enumeration" Url="html/1892524425.htm" />
+    <HelpTOCNode Title="RequestType Enumeration" Url="html/2124579274.htm" />
+    <HelpTOCNode Title="VisitType Enumeration" Url="html/377480514.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="f0684a5f-c18b-47ee-8cd9-b0480173c479" Title="SecurityManagementSystem Namespace" Url="html/1919869543.htm">
+    <HelpTOCNode Id="c7873f6c-5909-419a-8ae9-a51519e66722" Title="App Class" Url="html/396371478.htm">
+      <HelpTOCNode Title="App Members" Url="html/1576096117.htm" />
+      <HelpTOCNode Title="App Members" Url="html/1576096117.htm" />
+      <HelpTOCNode Title="App Constructor " Url="html/554752499.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="4ce92e4c-6a5d-40ac-92ad-ee10ff7d4c73" Title="App Class" Url="html/396371478.htm">
+      <HelpTOCNode Title="App Members" Url="html/1576096117.htm" />
+      <HelpTOCNode Title="App Members" Url="html/1576096117.htm" />
+      <HelpTOCNode Title="App Constructor " Url="html/554752499.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="bb0d859d-16f8-45f1-ac71-edc6d933a4f6" Title="EmployeeZone Class" Url="html/86473862.htm">
+      <HelpTOCNode Title="EmployeeZone Members" Url="html/836532748.htm" />
+      <HelpTOCNode Title="EmployeeZone Members" Url="html/836532748.htm" />
+      <HelpTOCNode Title="EmployeeZone Constructor " Url="html/934241278.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="732919e0-7385-47f0-94dd-a15a67a4160e" Title="EmployeeZone Class" Url="html/86473862.htm">
+      <HelpTOCNode Title="EmployeeZone Members" Url="html/836532748.htm" />
+      <HelpTOCNode Title="EmployeeZone Members" Url="html/836532748.htm" />
+      <HelpTOCNode Title="EmployeeZone Constructor " Url="html/934241278.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="18f9cab7-3ea2-48f0-b19b-d9ddfcc7882e" Title="MainWindow Class" Url="html/1772753063.htm">
+      <HelpTOCNode Title="MainWindow Members" Url="html/956892278.htm" />
+      <HelpTOCNode Title="MainWindow Members" Url="html/956892278.htm" />
+      <HelpTOCNode Title="MainWindow Constructor " Url="html/1554657143.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1d9a476a-cc59-4a46-869b-00ea40e784b6" Title="MainWindow Class" Url="html/1772753063.htm">
+      <HelpTOCNode Title="MainWindow Members" Url="html/956892278.htm" />
+      <HelpTOCNode Title="MainWindow Members" Url="html/956892278.htm" />
+      <HelpTOCNode Title="MainWindow Constructor " Url="html/1554657143.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e77060f5-89fd-426f-9c29-89745a6f005e" Title="ManageVisitors Class" Url="html/1007970578.htm">
+      <HelpTOCNode Title="ManageVisitors Members" Url="html/226639426.htm" />
+      <HelpTOCNode Title="ManageVisitors Members" Url="html/226639426.htm" />
+      <HelpTOCNode Title="ManageVisitors Constructor " Url="html/1395757879.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="03b3acda-a0d8-4b2e-8677-66831364eb14" Title="ManageVisitors Class" Url="html/1007970578.htm">
+      <HelpTOCNode Title="ManageVisitors Members" Url="html/226639426.htm" />
+      <HelpTOCNode Title="ManageVisitors Members" Url="html/226639426.htm" />
+      <HelpTOCNode Title="ManageVisitors Constructor " Url="html/1395757879.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b7176d64-959d-40ed-a065-46b8dbae4a2d" Title="Notifications Class" Url="html/350137988.htm">
+      <HelpTOCNode Title="Notifications Members" Url="html/900811823.htm" />
+      <HelpTOCNode Title="Notifications Members" Url="html/900811823.htm" />
+      <HelpTOCNode Title="Notifications Constructor " Url="html/172800750.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f3f5d5f0-d091-489b-9ab6-54186a15cf34" Title="Notifications Class" Url="html/350137988.htm">
+      <HelpTOCNode Title="Notifications Members" Url="html/900811823.htm" />
+      <HelpTOCNode Title="Notifications Members" Url="html/900811823.htm" />
+      <HelpTOCNode Title="Notifications Constructor " Url="html/172800750.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b08e3bde-c8d1-4384-a6f5-d677d83b7e99" Title="Permission Class" Url="html/617715709.htm">
+      <HelpTOCNode Title="Permission Members" Url="html/908842487.htm" />
+      <HelpTOCNode Title="Permission Members" Url="html/908842487.htm" />
+      <HelpTOCNode Title="Permission Constructor " Url="html/191289868.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f7078920-b601-4474-9603-069aac19e1dd" Title="Permission Class" Url="html/617715709.htm">
+      <HelpTOCNode Title="Permission Members" Url="html/908842487.htm" />
+      <HelpTOCNode Title="Permission Members" Url="html/908842487.htm" />
+      <HelpTOCNode Title="Permission Constructor " Url="html/191289868.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="41083ac1-1219-4620-923f-19fc810914dc" Title="RegisterVisitor Class" Url="html/1060379016.htm">
+      <HelpTOCNode Title="RegisterVisitor Members" Url="html/1891127868.htm" />
+      <HelpTOCNode Title="RegisterVisitor Members" Url="html/1891127868.htm" />
+      <HelpTOCNode Title="RegisterVisitor Constructor " Url="html/43012984.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="068bb541-54f7-4b9f-be91-8d62908cf884" Title="RegisterVisitor Class" Url="html/1060379016.htm">
+      <HelpTOCNode Title="RegisterVisitor Members" Url="html/1891127868.htm" />
+      <HelpTOCNode Title="RegisterVisitor Members" Url="html/1891127868.htm" />
+      <HelpTOCNode Title="RegisterVisitor Constructor " Url="html/43012984.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="af2534b8-5c93-4bb4-9975-4853dd3e5a73" Title="ResidenceZone Class" Url="html/687487572.htm">
+      <HelpTOCNode Title="ResidenceZone Members" Url="html/776827977.htm" />
+      <HelpTOCNode Title="ResidenceZone Members" Url="html/776827977.htm" />
+      <HelpTOCNode Title="ResidenceZone Constructor " Url="html/1259388534.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="718e2ec9-8fea-4d14-99ad-3821c13f883d" Title="ResidenceZone Class" Url="html/687487572.htm">
+      <HelpTOCNode Title="ResidenceZone Members" Url="html/776827977.htm" />
+      <HelpTOCNode Title="ResidenceZone Members" Url="html/776827977.htm" />
+      <HelpTOCNode Title="ResidenceZone Constructor " Url="html/1259388534.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0d097cfc-3377-4860-a6a8-2213a9fd62ca" Title="SecurityGuardZone Class" Url="html/490729504.htm">
+      <HelpTOCNode Title="SecurityGuardZone Members" Url="html/664978249.htm" />
+      <HelpTOCNode Title="SecurityGuardZone Members" Url="html/664978249.htm" />
+      <HelpTOCNode Title="SecurityGuardZone Constructor " Url="html/219743892.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e094ce16-0a91-41c0-8e38-710136bf0393" Title="SecurityGuardZone Class" Url="html/490729504.htm">
+      <HelpTOCNode Title="SecurityGuardZone Members" Url="html/664978249.htm" />
+      <HelpTOCNode Title="SecurityGuardZone Members" Url="html/664978249.htm" />
+      <HelpTOCNode Title="SecurityGuardZone Constructor " Url="html/219743892.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6a6b0938-10d0-425f-b47c-e993c6c5e334" Title="VideoSurveillance Class" Url="html/1871061189.htm">
+      <HelpTOCNode Title="VideoSurveillance Members" Url="html/456331978.htm" />
+      <HelpTOCNode Title="VideoSurveillance Members" Url="html/456331978.htm" />
+      <HelpTOCNode Title="VideoSurveillance Constructor " Url="html/105402129.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b5655bf9-1517-4e9c-893e-b89fd1ce573e" Title="VideoSurveillance Class" Url="html/1871061189.htm">
+      <HelpTOCNode Title="VideoSurveillance Members" Url="html/456331978.htm" />
+      <HelpTOCNode Title="VideoSurveillance Members" Url="html/456331978.htm" />
+      <HelpTOCNode Title="VideoSurveillance Constructor " Url="html/105402129.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="782a5d12-e957-429d-8e76-d081ac0a65e2" Title="VideoSurveillanceControl Class" Url="html/1810321452.htm">
+      <HelpTOCNode Title="VideoSurveillanceControl Members" Url="html/882142315.htm" />
+      <HelpTOCNode Title="VideoSurveillanceControl Members" Url="html/882142315.htm" />
+      <HelpTOCNode Title="VideoSurveillanceControl Constructor " Url="html/1938890063.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="735b45bb-3864-4901-80a6-f74cd9efcdbd" Title="VideoSurveillanceControl Class" Url="html/1810321452.htm">
+      <HelpTOCNode Title="VideoSurveillanceControl Members" Url="html/882142315.htm" />
+      <HelpTOCNode Title="VideoSurveillanceControl Members" Url="html/882142315.htm" />
+      <HelpTOCNode Title="VideoSurveillanceControl Constructor " Url="html/1938890063.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="170691dc-275a-43c9-a72d-fc9c76c48994" Title="VisitorsInside Class" Url="html/1620329095.htm">
+      <HelpTOCNode Title="VisitorsInside Members" Url="html/405974642.htm" />
+      <HelpTOCNode Title="VisitorsInside Members" Url="html/405974642.htm" />
+      <HelpTOCNode Title="VisitorsInside Constructor " Url="html/91879981.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="2ede1d4b-fd33-4b62-b32a-781678235a53" Title="VisitorsInside Class" Url="html/1620329095.htm">
+      <HelpTOCNode Title="VisitorsInside Members" Url="html/405974642.htm" />
+      <HelpTOCNode Title="VisitorsInside Members" Url="html/405974642.htm" />
+      <HelpTOCNode Title="VisitorsInside Constructor " Url="html/91879981.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f66d3bfc-cfc1-4859-a5e8-528b36af7c27" Title="Workorder Class" Url="html/451183183.htm">
+      <HelpTOCNode Title="Workorder Members" Url="html/765168870.htm" />
+      <HelpTOCNode Title="Workorder Members" Url="html/765168870.htm" />
+      <HelpTOCNode Title="Workorder Constructor " Url="html/188187005.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0d3321af-dcb6-4f1d-9562-145b3de5a558" Title="Workorder Class" Url="html/451183183.htm">
+      <HelpTOCNode Title="Workorder Members" Url="html/765168870.htm" />
+      <HelpTOCNode Title="Workorder Members" Url="html/765168870.htm" />
+      <HelpTOCNode Title="Workorder Constructor " Url="html/188187005.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="05a5bb15-e278-4f21-a48d-d368af43e0ea" Title="SecurityManagementSystem.Properties Namespace" Url="html/1582263906.htm">
+    <HelpTOCNode Id="f49a8c2a-2f0c-4847-8350-c7296e46da7e" Title="Resources Class" Url="html/380891724.htm">
+      <HelpTOCNode Title="Resources Members" Url="html/640683864.htm" />
+      <HelpTOCNode Title="Resources Constructor " Url="html/1473926729.htm" />
+      <HelpTOCNode Id="12b2e940-602e-4677-955a-20e7f8314b21" Title="Resources Fields" Url="html/423455820.htm">
+        <HelpTOCNode Title="resourceMan Field" Url="html/1406776340.htm" />
+        <HelpTOCNode Title="resourceCulture Field" Url="html/391861788.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4c918cc7-1139-465e-b1d8-f743d02ea62d" Title="Resources Properties" Url="html/102981143.htm">
+        <HelpTOCNode Title="ResourceManager Property " Url="html/165997749.htm" />
+        <HelpTOCNode Title="Culture Property " Url="html/111008413.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f45524e9-d173-4624-a9e9-2d294d657ff5" Title="Settings Class" Url="html/360785546.htm">
+      <HelpTOCNode Title="Settings Members" Url="html/812659165.htm" />
+      <HelpTOCNode Id="1ae857db-23f9-4039-aab8-585a9129abfe" Title="Settings Fields" Url="html/1814437713.htm">
+        <HelpTOCNode Title="defaultInstance Field" Url="html/435638481.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0979ae28-4c93-45bb-ba54-2325d7b16bc7" Title="Settings Properties" Url="html/1832411160.htm">
+        <HelpTOCNode Title="Default Property " Url="html/863338277.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="4fa84f7e-da56-4901-aea5-3dcfed1802aa" Title="SecurityManagementSystemStyle.Properties Namespace" Url="html/783694027.htm">
+    <HelpTOCNode Id="15e556e3-d7f0-4d09-a0f4-2a5e1f8d34af" Title="Resources Class" Url="html/1381608571.htm">
+      <HelpTOCNode Title="Resources Members" Url="html/1142873751.htm" />
+      <HelpTOCNode Title="Resources Constructor " Url="html/177132924.htm" />
+      <HelpTOCNode Id="10f2270d-ecc5-4587-98af-ad40696b95db" Title="Resources Fields" Url="html/1464837985.htm">
+        <HelpTOCNode Title="resourceMan Field" Url="html/2128564559.htm" />
+        <HelpTOCNode Title="resourceCulture Field" Url="html/507468485.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="569ff5e0-59df-4f1e-a8a2-e1220542999e" Title="Resources Properties" Url="html/1877872472.htm">
+        <HelpTOCNode Title="ResourceManager Property " Url="html/1990423221.htm" />
+        <HelpTOCNode Title="Culture Property " Url="html/1761512976.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5cee2767-f2e5-4d4a-924c-506f9086ae57" Title="Settings Class" Url="html/205283726.htm">
+      <HelpTOCNode Title="Settings Members" Url="html/163918508.htm" />
+      <HelpTOCNode Id="7acf47ee-1f4e-4c6b-bd7f-6f96c0343f9a" Title="Settings Fields" Url="html/1357317945.htm">
+        <HelpTOCNode Title="defaultInstance Field" Url="html/1112348613.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cd1631e4-e253-453d-9061-d6dc939c0d9b" Title="Settings Properties" Url="html/1914084523.htm">
+        <HelpTOCNode Title="Default Property " Url="html/1533690821.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="45e2a97e-d3b4-4726-927c-8772b151a8ff" Title="SecurityManagementSystemStorage Namespace" Url="html/1719124109.htm">
+    <HelpTOCNode Id="7f585c50-a00c-48de-ab3a-a7333107cc46" Title="SecurityManagementSystemStorageInteraction Class" Url="html/336999373.htm">
+      <HelpTOCNode Title="SecurityManagementSystemStorageInteraction Members" Url="html/1399147005.htm" />
+      <HelpTOCNode Id="ba812bb5-4123-4ac0-b31d-66eaa94bdca3" Title="SecurityManagementSystemStorageInteraction Fields" Url="html/1679441091.htm">
+        <HelpTOCNode Title="passwordCurrent Field" Url="html/901913706.htm" />
+        <HelpTOCNode Title="dbmsCurrent Field" Url="html/1698910336.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4b726f4c-e6f3-49b7-8d7f-32e6569dcaf5" Title="SecurityManagementSystemStorageInteraction Methods" Url="html/873060194.htm">
+        <HelpTOCNode Title="GetAllVisitorList Method " Url="html/326221382.htm" />
+        <HelpTOCNode Title="QueryAllVisitorList Method " Url="html/95354758.htm" />
+        <HelpTOCNode Title="GetAllResidenceList Method " Url="html/204519226.htm" />
+        <HelpTOCNode Title="QueryAllResidenceList Method " Url="html/795622209.htm" />
+        <HelpTOCNode Title="GetAllEmployeeList Method " Url="html/1689867653.htm" />
+        <HelpTOCNode Title="QueryAllEmployeeList Method " Url="html/1811313916.htm" />
+        <HelpTOCNode Title="GetAllSecurityList Method " Url="html/1897263932.htm" />
+        <HelpTOCNode Title="QueryAllSecurityList Method " Url="html/320485926.htm" />
+        <HelpTOCNode Title="DoEnterVisetor Method " Url="html/1412704021.htm" />
+        <HelpTOCNode Title="DoRegisterNewVisetorindb Method " Url="html/1175484113.htm" />
+        <HelpTOCNode Title="DoEnterResidence Method " Url="html/602009266.htm" />
+        <HelpTOCNode Title="DoRegisterNewResidenceindb Method " Url="html/1363082005.htm" />
+        <HelpTOCNode Title="DoEnterEmployee Method " Url="html/219415356.htm" />
+        <HelpTOCNode Title="DoRegisterNewEmployeeindb Method " Url="html/1121798150.htm" />
+        <HelpTOCNode Title="DoEnterSecurity Method " Url="html/754682405.htm" />
+        <HelpTOCNode Title="DoRegisterNewSecurityindb Method " Url="html/872419893.htm" />
+        <HelpTOCNode Title="OpenDbConnection Method " Url="html/1271691786.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
