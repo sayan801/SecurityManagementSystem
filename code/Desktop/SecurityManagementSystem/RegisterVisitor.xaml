@@ -1,6 +1,7 @@
 ﻿<UserControl x:Class="SecurityManagementSystem.RegisterVisitor"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
@@ -51,7 +52,7 @@
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Sign In Time</Label>
-            <DatePicker Name="signinDp" Style="{StaticResource datePickerStyle}"></DatePicker>
+            <DatePicker Name="signinDp" SelectedDate="{x:Static sys:DateTime.Now}" Style="{StaticResource datePickerStyle}"></DatePicker>
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Remark</Label>
@@ -62,7 +63,7 @@
             <TextBox   Name="etwtTxtbox"  Style="{StaticResource textboxStyle}" ></TextBox>
             <Label></Label>
             <Label></Label>
-            <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
+            <Button Name="resetRegVisitorBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="resetRegVisitorBtn_Click">Reset</Button>
             <Button  Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="doregBtn_Click">Register</Button>
             
 

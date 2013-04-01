@@ -36,6 +36,7 @@ namespace SecurityManagementSystem
 
         }
 
+        
         private void permBtn_Click(object sender, RoutedEventArgs e)
         {
             SecurityManagementSystem.Permission objPermission = new SecurityManagementSystem.Permission();

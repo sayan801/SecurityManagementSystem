@@ -45,7 +45,7 @@ namespace SecurityManagementSystem
 
             SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterVisetor(newVisitor);
 
-            
+        
         }
 
         private string GenerateId()
@@ -57,6 +57,13 @@ namespace SecurityManagementSystem
         {
             string filePath = System.Environment.CurrentDirectory + "\\TwoCamerasTest.exe";
             System.Diagnostics.Process.Start(filePath);
+        }
+
+        private void resetRegVisitorBtn_Click(object sender, RoutedEventArgs e)
+        {
+            visitorNameTxtbox.Text = visitorAddressNameTxtbox.Text = contactTxtbox.Text = idproofwithNoTxtbox.Text = purposeTxtbox.Text = toWhomTxtbox.Text = remarkTxtbox.Text = etwtTxtbox.Text = "";
+            signinDp.SelectedDate = DateTime.Now;
+            VisitorTypeCombobox.SelectedIndex = 1;
         }
         
     }
