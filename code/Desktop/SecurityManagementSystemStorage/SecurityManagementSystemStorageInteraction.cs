@@ -516,6 +516,35 @@ namespace SecurityManagementSystemStorage
 
             return SecurityList;
         }
+
+        #region Delete Security
+
+        public static void DeleteSecurity(string securityToDelete)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "DELETE FROM security WHERE id=@securityToDelete";
+                msqlCommand.Parameters.AddWithValue("@securityToDelete", securityToDelete);
+
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
         #endregion
     }
 }

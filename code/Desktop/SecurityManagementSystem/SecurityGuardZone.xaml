@@ -23,7 +23,7 @@
                         <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
                         <Button Name="searchSecurityBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
                         <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
-                        <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
+                        <Button Name="deleteSecurityGuardBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="deleteSecurityGuardBtn_Click">Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
                         <ListView Name="securityView" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible"  ItemsSource="{Binding allsecurityCollection}" Loaded="Window_Loaded">
@@ -65,7 +65,7 @@
 
                         <Label></Label>
                         <Label></Label>
-                        <Label  Style="{StaticResource labelStyle}" >Home Number</Label>
+                        <Label  Style="{StaticResource labelStyle}" >Joining Date</Label>
                         <DatePicker   Name="joiningdateP" Style="{StaticResource datePickerStyle}"  ></DatePicker>
                         <Label></Label>
                         <Label></Label>
@@ -86,8 +86,8 @@
                         <Label></Label>
                         <Label></Label>
 
-                        <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
-                        <Button Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="doregBtn_Click">Register</Button>
+                        <Button Name="resetSecurityGuardBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
+                        <Button Name="addSecurityGuardBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="addSecurityGuardBtn_Click">Register</Button>
 
 
                     </UniformGrid>

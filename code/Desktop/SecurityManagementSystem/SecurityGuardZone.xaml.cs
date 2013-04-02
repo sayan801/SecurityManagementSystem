@@ -31,7 +31,7 @@ namespace SecurityManagementSystem
         {
             fetchSecurityData();
         }
-        private void doregBtn_Click(object sender, RoutedEventArgs e)
+        private void addSecurityGuardBtn_Click(object sender, RoutedEventArgs e)
         {
 
             SecurityManagementSystemEngine.SecurityInformation newSecurity = new SecurityManagementSystemEngine.SecurityInformation();
@@ -82,7 +82,35 @@ namespace SecurityManagementSystem
             }
         }
 
+      
 
+        private SecurityInformation GetSelectedContactItem()
+        {
+
+            SecurityInformation securityToDelete = null;
+
+            if (securityView.SelectedIndex == -1)
+                MessageBox.Show("Please Select an Item");
+            else
+            {
+                SecurityInformation i = (SecurityInformation)securityView.SelectedItem;
+
+                securityToDelete = _allsecurityCollection.Where(item => item.id.Equals(i.id)).First();
+            }
+
+            return securityToDelete;
+        }
+        private void deleteSecurityGuardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityInformation securityToDelete = GetSelectedContactItem();
+            if (securityToDelete != null)
+            {
+                _allsecurityCollection.Remove(securityToDelete);
+                SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DeleteSecurity(securityToDelete.id);
+               fetchSecurityData();
+
+            }
+        }
 
     }
 }
