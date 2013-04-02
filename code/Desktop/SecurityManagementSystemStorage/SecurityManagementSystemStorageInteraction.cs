@@ -419,6 +419,47 @@ namespace SecurityManagementSystemStorage
         }
 
         #endregion
+
+        #region edit employee
+
+        public static void EditEmployee(EmployeeInformation newUpdateEmployee)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "UPDATE employee SET name=@name,address=@address,contact=@contact,joiningdate=@joiningdate,email=@email,homenumber=@homenumber,employeeType=@employeeType,remark=@remark  WHERE id=@id";
+
+                
+                msqlCommand.Parameters.AddWithValue("@name", newUpdateEmployee.name);
+                msqlCommand.Parameters.AddWithValue("@address", newUpdateEmployee.addres);
+                msqlCommand.Parameters.AddWithValue("@contact", newUpdateEmployee.contact);
+                msqlCommand.Parameters.AddWithValue("@joiningdate", newUpdateEmployee.joiningdate);
+                msqlCommand.Parameters.AddWithValue("@email", newUpdateEmployee.email);
+                msqlCommand.Parameters.AddWithValue("@homenumber", newUpdateEmployee.homeNumber);
+                msqlCommand.Parameters.AddWithValue("@employeeType", newUpdateEmployee.employeeType);
+                msqlCommand.Parameters.AddWithValue("@remark", newUpdateEmployee.remark);
+                msqlCommand.Parameters.AddWithValue("@id", newUpdateEmployee.id);
+
+                msqlCommand.ExecuteNonQuery();
+
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
         #endregion
 
         #region Security

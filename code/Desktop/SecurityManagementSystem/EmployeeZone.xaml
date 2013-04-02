@@ -23,7 +23,7 @@
                         <Label Style="{StaticResource labelStyle}" >By Name:</Label>
                         <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
                         <Button Name="searchEmployeeBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
-                        <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
+                        <Button Name="editEmployeeBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="editEmployeeBtn_Click">Edit Info</Button>
                         <Button Name="deleteEmployeeBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="deleteEmployeeBtn_Click">Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
@@ -99,7 +99,8 @@
                         <Label></Label>
 
                         <Button Name="resetEmployeeBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="resetEmployeeBtn_Click">Reset</Button>
-                        <Button Name="addEmployeeBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="addEmployeeBtn_Click">Register</Button>
+                        <Button Name="addEmployeeBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Visibility="Visible" Click="addEmployeeBtn_Click">Register</Button>
+                        <Button Name="updateEmployeeBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Visibility="Collapsed" Click="updateEmployeeBtn_Click">Update</Button>
 
 
                     </UniformGrid>

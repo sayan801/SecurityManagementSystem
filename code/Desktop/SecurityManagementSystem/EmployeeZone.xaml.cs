@@ -87,7 +87,7 @@ namespace SecurityManagementSystem
 
       
 
-        private EmployeeInformation GetSelectedContactItem()
+        private EmployeeInformation GetSelectedEmployeeItem()
         {
 
             EmployeeInformation employeeToDelete = null;
@@ -105,7 +105,7 @@ namespace SecurityManagementSystem
         }
         private void deleteEmployeeBtn_Click(object sender, RoutedEventArgs e)
         {
-            EmployeeInformation employeeToDelete = GetSelectedContactItem();
+            EmployeeInformation employeeToDelete = GetSelectedEmployeeItem();
             if (employeeToDelete != null)
             {
                 _allemployeeCollection.Remove(employeeToDelete);
@@ -125,5 +125,48 @@ namespace SecurityManagementSystem
         {
             clearEmployeeFields();
         }
+
+
+
+        private void editEmployeeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeInformation employeeToEdit = GetSelectedEmployeeItem();
+            if (employeeToEdit != null)
+            {
+                EmployeeTC.SelectedIndex = 1;
+                addEmployeeBtn.Visibility = Visibility.Collapsed;
+                updateEmployeeBtn.Visibility = Visibility.Visible;
+                employeeNameTxtbox.Text = employeeToEdit.name;
+                AddressNameTxtbox.Text = employeeToEdit.addres;
+                contactTxtbox.Text = employeeToEdit.contact;
+                emailTxtbox.Text = employeeToEdit.email;
+                homeNumberTxtbox.Text = employeeToEdit.homeNumber;
+                joiningdateP.SelectedDate = employeeToEdit.joiningdate;
+                employeeTypeCombobox.Text = employeeToEdit.employeeType;
+                remarkTxtbox.Text = employeeToEdit.remark;
+            }
+        }
+
+        private void updateEmployeeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeInformation employeeToEdit = GetSelectedEmployeeItem();
+
+            employeeToEdit.name = employeeNameTxtbox.Text;
+            employeeToEdit.addres = AddressNameTxtbox.Text;
+            employeeToEdit.contact = contactTxtbox.Text;
+            employeeToEdit.email = emailTxtbox.Text;
+            employeeToEdit.homeNumber = homeNumberTxtbox.Text;
+            employeeToEdit.joiningdate = joiningdateP.SelectedDate.Value;
+            employeeToEdit.employeeType = employeeTypeCombobox.Text;
+            employeeToEdit.remark = remarkTxtbox.Text;
+
+            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.EditEmployee(employeeToEdit);
+            EmployeeTC.SelectedIndex = 0;
+            clearEmployeeFields();
+            updateEmployeeBtn.Visibility = Visibility.Collapsed;
+            addEmployeeBtn.Visibility = Visibility.Visible;
+        }
+
+
     }
 }
