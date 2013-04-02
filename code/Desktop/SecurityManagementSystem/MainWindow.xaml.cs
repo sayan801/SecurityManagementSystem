@@ -22,6 +22,7 @@ namespace SecurityManagementSystem
         public MainWindow()
         {
             InitializeComponent();
+            FocusManager.SetFocusedElement(this, userNameTxtbox);
         }
 
         private void visitorMngBtn_Click(object sender, RoutedEventArgs e)
