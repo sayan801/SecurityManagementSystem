@@ -133,6 +133,36 @@ namespace SecurityManagementSystemStorage
 
         }
 
+        #region Delete Visitor
+
+        public static void DeleteVisitor(string visitorToDelete)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "DELETE FROM regvisitor WHERE id=@visitorToDelete";
+                msqlCommand.Parameters.AddWithValue("@visitorToDelete", visitorToDelete);
+
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
+
+
         #endregion
 
         #region Residence

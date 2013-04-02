@@ -40,6 +40,11 @@ namespace SecurityManagementSystem
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            fetchVisitorData();
+        }
+
+        private void fetchVisitorData()
+        {
             List<VisitorInformation> visitors = SecurityManagementSystemStorageInteraction.GetAllVisitorList();
 
             _visitorCollection.Clear();
@@ -47,6 +52,37 @@ namespace SecurityManagementSystem
             foreach (VisitorInformation visitor in visitors)
             {
                 _visitorCollection.Add(visitor);
+            }
+        }
+
+
+
+
+        private VisitorInformation GetSelectedContactItem()
+        {
+
+            VisitorInformation visitorToDelete = null;
+
+            if (visitorView.SelectedIndex == -1)
+                MessageBox.Show("Please Select an Item");
+            else
+            {
+                VisitorInformation i = (VisitorInformation)visitorView.SelectedItem;
+
+                visitorToDelete = _visitorCollection.Where(item => item.id.Equals(i.id)).First();
+            }
+
+            return visitorToDelete;
+        }
+        private void deleteVisitorBtn_Click(object sender, RoutedEventArgs e)
+        {
+            VisitorInformation visitorToDelete = GetSelectedContactItem();
+            if (visitorToDelete != null)
+            {
+                _visitorCollection.Remove(visitorToDelete);
+                SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DeleteVisitor(visitorToDelete.id);
+                fetchVisitorData();
+
             }
         }
     }

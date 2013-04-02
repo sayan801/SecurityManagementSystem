@@ -19,11 +19,11 @@
             <Label Style="{StaticResource labelStyle}" >By Name:</Label>
             <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
             <Button Name="searchVisitorsBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
-            <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete</Button>
+            <Button Name="deleteVisitorBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="deleteVisitorBtn_Click">Delete</Button>
             <Button Name="updateBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Update</Button>
         </UniformGrid>
         <UniformGrid DockPanel.Dock="Top">
-            <ListView Name="passView"  Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding visitorCollection}" Loaded="Window_Loaded">
+            <ListView Name="visitorView"  Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding visitorCollection}" Loaded="Window_Loaded">
 
 
                 <ListView.View>
