@@ -84,7 +84,7 @@ namespace SecurityManagementSystem
 
 
 
-        private ResidenceInformation GetSelectedContactItem()
+        private ResidenceInformation GetSelectedResidenceItem()
         {
 
             ResidenceInformation residenceToDelete = null;
@@ -102,7 +102,7 @@ namespace SecurityManagementSystem
         }
         private void deleteResidenceBtn_Click(object sender, RoutedEventArgs e)
         {
-            ResidenceInformation residenceToDelete = GetSelectedContactItem();
+            ResidenceInformation residenceToDelete = GetSelectedResidenceItem();
             if (residenceToDelete != null)
             {
                 _allresidenceCollection.Remove(residenceToDelete);
@@ -121,6 +121,49 @@ namespace SecurityManagementSystem
         private void resetResidenceBtn_Click(object sender, RoutedEventArgs e)
         {
             clearResidenceFields();
+        }
+
+        private void editResidenceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ResidenceInformation residenceToEdit = GetSelectedResidenceItem();
+            if (residenceToEdit != null)
+            {
+                residenceMainTC.SelectedIndex = 1;
+                addResidenceBtn.Visibility = Visibility.Collapsed;
+                updateResidenceBtn.Visibility = Visibility.Visible;
+
+                headsNameTxtbox.Text = residenceToEdit.name;
+                houseNoNameTxtbox.Text = residenceToEdit.houseNo;
+                roomNoTxtbox.Text = residenceToEdit.roomNo;
+                contactTxtbox.Text = residenceToEdit.contact;
+                emailTxtbox.Text = residenceToEdit.email;
+                fmlyMbrsTxtbox.Text = residenceToEdit.fmlyMbrs;
+                visitingHourTxtbox.Text = residenceToEdit.visitingHour;
+                remarkTxtbox.Text = residenceToEdit.remark;
+
+            }
+        }
+
+        private void updateResidenceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ResidenceInformation residenceToEdit = GetSelectedResidenceItem();
+
+            
+            residenceToEdit.name = headsNameTxtbox.Text;
+            residenceToEdit.houseNo = houseNoNameTxtbox.Text;
+            residenceToEdit.roomNo = roomNoTxtbox.Text;
+            residenceToEdit.contact = contactTxtbox.Text;
+            residenceToEdit.email = emailTxtbox.Text;
+            residenceToEdit.fmlyMbrs = fmlyMbrsTxtbox.Text;
+            residenceToEdit.visitingHour = visitingHourTxtbox.Text;
+            residenceToEdit.remark = remarkTxtbox.Text;
+
+
+            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.EditResidence(residenceToEdit);
+            residenceMainTC.SelectedIndex = 0;
+            clearResidenceFields();
+            updateResidenceBtn.Visibility = Visibility.Collapsed;
+            addResidenceBtn.Visibility = Visibility.Visible;
         }
 
     }

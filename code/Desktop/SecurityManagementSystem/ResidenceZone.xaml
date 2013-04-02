@@ -21,7 +21,7 @@
                         <Label Style="{StaticResource labelStyle}" >By Name:</Label>
                         <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
                         <Button Name="searchResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
-                        <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
+                        <Button Name="editResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="editResidenceBtn_Click">Edit Info</Button>
                         <Button Name="deleteResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="deleteResidenceBtn_Click">Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
@@ -88,7 +88,8 @@
                         <Label></Label>
                        
                         <Button Name="resetResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="resetResidenceBtn_Click">Reset</Button>
-                        <Button Name="addResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="addResidenceBtn_Click">Register</Button>
+                        <Button Name="addResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Visibility="Visible" Click="addResidenceBtn_Click">Register</Button>
+                        <Button Name="updateResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Visibility="Collapsed" Click="updateResidenceBtn_Click">Update</Button>
                     </UniformGrid>
                     
                 </DockPanel>

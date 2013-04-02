@@ -291,6 +291,49 @@ namespace SecurityManagementSystemStorage
 
         #endregion
 
+
+        #region Edit Residence
+
+        public static void EditResidence(ResidenceInformation newUpdateResidence)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "UPDATE residence SET fmlyhadsname=@fmlyhadsname,houseno=@houseno,roomno=@roomno,contact=@contact,emailaddrs=@emailaddrs,fmlymebrs=@fmlymebrs,visitinghrs=@visitinghrs,remark=@remark  WHERE id=@id";
+
+
+                
+                msqlCommand.Parameters.AddWithValue("@fmlyhadsname", newUpdateResidence.name);
+                msqlCommand.Parameters.AddWithValue("@houseno", newUpdateResidence.houseNo);
+                msqlCommand.Parameters.AddWithValue("@roomno", newUpdateResidence.roomNo);
+                msqlCommand.Parameters.AddWithValue("@contact", newUpdateResidence.contact);
+                msqlCommand.Parameters.AddWithValue("@emailaddrs", newUpdateResidence.email);
+                msqlCommand.Parameters.AddWithValue("@fmlymebrs", newUpdateResidence.fmlyMbrs);
+                msqlCommand.Parameters.AddWithValue("@visitinghrs", newUpdateResidence.visitingHour);
+                msqlCommand.Parameters.AddWithValue("@remark", newUpdateResidence.remark);
+                msqlCommand.Parameters.AddWithValue("@id", newUpdateResidence.id);
+
+
+                msqlCommand.ExecuteNonQuery();
+
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
         #endregion
 
         #region Employee
@@ -420,7 +463,7 @@ namespace SecurityManagementSystemStorage
 
         #endregion
 
-        #region edit employee
+        #region Edit Employee
 
         public static void EditEmployee(EmployeeInformation newUpdateEmployee)
         {
