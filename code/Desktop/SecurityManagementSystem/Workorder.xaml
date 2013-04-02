@@ -24,7 +24,7 @@
                         <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
                         <Button Name="searchWorkBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
                         <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
-                        <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
+                        <Button Name="deleteWorkOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="deleteWorkOrderBtn_Click">Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
                         <ListView Name="orderView" Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding allworkCollection}" Loaded="Window_Loaded" >

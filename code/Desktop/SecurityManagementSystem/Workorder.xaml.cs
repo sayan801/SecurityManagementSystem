@@ -128,5 +128,35 @@ namespace SecurityManagementSystem
             }
         }
 
+
+        private WorkOrderInformation GetSelectedContactItem()
+        {
+
+            WorkOrderInformation workOrderToDelete = null;
+
+            if (orderView.SelectedIndex == -1)
+                MessageBox.Show("Please Select an Item");
+            else
+            {
+                WorkOrderInformation i = (WorkOrderInformation)orderView.SelectedItem;
+
+                workOrderToDelete = _allworkCollection.Where(item => item.id.Equals(i.id)).First();
+            }
+
+            return workOrderToDelete;
+        }
+        private void deleteWorkOrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+            WorkOrderInformation workOrderToDelete = GetSelectedContactItem();
+            if (workOrderToDelete != null)
+            {
+                _allworkCollection.Remove(workOrderToDelete);
+                SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DeleteWorkOrder(workOrderToDelete.id);
+                fetchWorkData();
+
+            }
+        }
+
+        
     }
 }

@@ -641,34 +641,34 @@ namespace SecurityManagementSystemStorage
             return WorkOrderList;
         }
 
-        //#region Delete WorkOrder
+        #region Delete WorkOrder
 
-        //public static void DeleteWorkOrder(string workOrderToDelete)
-        //{
-        //    MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+        public static void DeleteWorkOrder(string workOrderToDelete)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
 
-        //    try
-        //    {   //define the command reference
-        //        MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
-        //        msqlCommand.Connection = msqlConnection;
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
 
-        //        msqlCommand.CommandText = "DELETE FROM workOrder WHERE id=@workOrderToDelete";
-        //        msqlCommand.Parameters.AddWithValue("@workOrderToDelete", workOrderToDelete);
+                msqlCommand.CommandText = "DELETE FROM workOrder WHERE id=@workOrderToDelete";
+                msqlCommand.Parameters.AddWithValue("@workOrderToDelete", workOrderToDelete);
 
-        //        MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
 
-        //    }
-        //    catch (Exception er)
-        //    {
-        //    }
-        //    finally
-        //    {
-        //        //always close the connection
-        //        msqlConnection.Close();
-        //    }
-        //}
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
 
-        //#endregion
+        #endregion
         #endregion
     }
 }
