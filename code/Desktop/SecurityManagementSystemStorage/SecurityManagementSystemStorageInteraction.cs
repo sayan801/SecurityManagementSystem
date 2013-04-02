@@ -546,5 +546,131 @@ namespace SecurityManagementSystemStorage
 
         #endregion
         #endregion
+
+        #region WorkOrder
+
+        public static int DoEnterWorkOrder(WorkOrderInformation NewWorkOrder)
+        {
+            return DoRegisterNewWorkOrderindb(NewWorkOrder);
+        }
+
+        private static int DoRegisterNewWorkOrderindb(WorkOrderInformation NewworkOrder)
+        {
+            int returnVal = 0;
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+
+                //define the connection used by the command object
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "INSERT INTO workorder(id,orderBy,workDetails,assignTo,orderDate,status) "
+                                    + "VALUES(@id,@orderBy,@workDetails,@assignTo,@orderDate,@status)";
+
+                msqlCommand.Parameters.AddWithValue("@id", NewworkOrder.id);
+                msqlCommand.Parameters.AddWithValue("@orderBy", NewworkOrder.orderBy);
+                msqlCommand.Parameters.AddWithValue("@workDetails", NewworkOrder.workDetails);
+                msqlCommand.Parameters.AddWithValue("@assignTo", NewworkOrder.assignTo);
+                msqlCommand.Parameters.AddWithValue("@orderDate", NewworkOrder.orderdate);
+                msqlCommand.Parameters.AddWithValue("@status", NewworkOrder.roomNo);
+                
+
+                msqlCommand.ExecuteNonQuery();
+
+                returnVal = 1;
+            }
+            catch (Exception er)
+            {
+                returnVal = 0;
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+            return returnVal;
+        }
+
+
+        //public static List<WorkOrderInformation> GetAllWorkOrderList()
+        //{
+        //    return QueryAllWorkOrderList();
+        //}
+        //private static List<WorkOrderInformation> QueryAllWorkOrderList()
+        //{
+        //    List<WorkOrderInformation> WorkOrderList = new List<WorkOrderInformation>();
+
+        //    MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+        //    try
+        //    {   //define the command reference
+        //        MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+        //        msqlCommand.Connection = msqlConnection;
+
+        //        msqlCommand.CommandText = "Select * From workOrder ;";
+        //        MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+        //        while (msqlReader.Read())
+        //        {
+        //            WorkOrderInformation WorkOrder = new WorkOrderInformation();
+
+        //            WorkOrder.id = msqlReader.GetString("id");
+        //            WorkOrder.name = msqlReader.GetString("name");
+        //            WorkOrder.addres = msqlReader.GetString("address");
+        //            WorkOrder.contact = msqlReader.GetString("contact");
+        //            WorkOrder.joiningdate = msqlReader.GetDateTime("joiningdate");
+        //            WorkOrder.email = msqlReader.GetString("email");
+        //            WorkOrder.homeNumber = msqlReader.GetString("homenumber");
+        //            WorkOrder.workOrderType = msqlReader.GetString("workOrderType");
+        //            WorkOrder.remark = msqlReader.GetString("remark");
+
+        //            WorkOrderList.Add(WorkOrder);
+        //        }
+
+        //    }
+        //    catch (Exception er)
+        //    {
+        //    }
+        //    finally
+        //    {
+        //        //always close the connection
+        //        msqlConnection.Close();
+        //    }
+
+        //    return WorkOrderList;
+        //}
+
+        //#region Delete WorkOrder
+
+        //public static void DeleteWorkOrder(string workOrderToDelete)
+        //{
+        //    MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+        //    try
+        //    {   //define the command reference
+        //        MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+        //        msqlCommand.Connection = msqlConnection;
+
+        //        msqlCommand.CommandText = "DELETE FROM workOrder WHERE id=@workOrderToDelete";
+        //        msqlCommand.Parameters.AddWithValue("@workOrderToDelete", workOrderToDelete);
+
+        //        MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+        //    }
+        //    catch (Exception er)
+        //    {
+        //    }
+        //    finally
+        //    {
+        //        //always close the connection
+        //        msqlConnection.Close();
+        //    }
+        //}
+
+        //#endregion
+        #endregion
     }
 }

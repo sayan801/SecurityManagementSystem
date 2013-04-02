@@ -2,9 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" Style="{DynamicResource UserCntrlStyle}">
+             d:DesignHeight="300" d:DesignWidth="300" Style="{DynamicResource UserCntrlStyle}" Loaded="Window_Loaded">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -14,7 +16,7 @@
     </UserControl.Resources>
 
     <UniformGrid>
-        <TabControl Background="Transparent">
+        <TabControl Name="workorderTC" Background="Transparent">
             <TabItem Header="All Work Order" Style="{StaticResource TabItemStyle}">
                 <DockPanel LastChildFill="True">
                     <UniformGrid DockPanel.Dock="Bottom" Rows="1">
@@ -47,7 +49,7 @@
                     <UniformGrid Columns="4" DockPanel.Dock="Bottom">
                         <Label></Label>
                         <Label  Style="{StaticResource labelStyle}" >Order By</Label>
-                        <ComboBox   Name="orderByCB"  Style="{StaticResource comboboxStyle}" ></ComboBox>
+                        <ComboBox   Name="orderByCB"  Style="{StaticResource comboboxStyle}" ItemsSource="{Binding allresidenceCollection}" DisplayMemberPath="name"  SelectedValuePath="id" ></ComboBox>
                         <Label></Label>
                         <Label></Label>
                         <Label  Style="{StaticResource labelStyle}" >Work Details</Label>
@@ -55,11 +57,11 @@
                         <Label></Label>
                         <Label></Label>
                         <Label  Style="{StaticResource labelStyle}" >Assign To</Label>
-                        <ComboBox   Name="workOrderByCB"  Style="{StaticResource comboboxStyle}" ></ComboBox>
+                        <ComboBox   Name="assignToCB"  Style="{StaticResource comboboxStyle}" ItemsSource="{Binding allemployeeCollection}" DisplayMemberPath="name"  SelectedValuePath="id" ></ComboBox>
                         <Label></Label>
                         <Label></Label>
                         <Label  Style="{StaticResource labelStyle}" >Order Date</Label>
-                        <DatePicker   Name="orderdatedateP" Style="{StaticResource datePickerStyle}"  ></DatePicker>
+                        <DatePicker   Name="orderdatedateP" Style="{StaticResource datePickerStyle}" SelectedDate="{x:Static sys:DateTime.Now}" ></DatePicker>
                         
 
 
@@ -73,8 +75,8 @@
                         
                         <Label></Label>
 
-                        <Button Name="resetBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
-                        <Button Name="doregBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Register</Button>
+                        <Button Name="resetOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
+                        <Button Name="GetOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="GetOrderBtn_Click">Register</Button>
                     </UniformGrid>
 
                 </DockPanel>
