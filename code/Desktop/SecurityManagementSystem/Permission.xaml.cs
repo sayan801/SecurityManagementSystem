@@ -48,8 +48,55 @@ namespace SecurityManagementSystem
             {
                 _visitorCollection.Add(visitor);
             }
+
+
+
+            List<ResidenceInformation> Residences = SecurityManagementSystemStorageInteraction.GetAllResidenceList();
+
+            _allresidenceCollection.Clear();
+
+            foreach (ResidenceInformation residence in Residences)
+            {
+                _allresidenceCollection.Add(residence);
+            }
+
+
+            List<EmployeeInformation> Employees = SecurityManagementSystemStorageInteraction.GetAllEmployeeList();
+
+            _allemployeeCollection.Clear();
+
+            foreach (EmployeeInformation employee in Employees)
+            {
+                _allemployeeCollection.Add(employee);
+            }
         }
 
 
+
+
+        ObservableCollection<ResidenceInformation> _allresidenceCollection = new ObservableCollection<ResidenceInformation>();
+
+
+        public ObservableCollection<ResidenceInformation> allresidenceCollection
+        {
+            get
+            {
+                return _allresidenceCollection;
+            }
+        }
+
+
+
+        ObservableCollection<EmployeeInformation> _allemployeeCollection = new ObservableCollection<EmployeeInformation>();
+
+
+        public ObservableCollection<EmployeeInformation> allemployeeCollection
+        {
+            get
+            {
+                return _allemployeeCollection;
+            }
+        }
+       
     }
 }
