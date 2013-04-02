@@ -32,7 +32,7 @@ namespace SecurityManagementSystem
             fetchResidenceData();
         }
 
-        private void doregBtn_Click(object sender, RoutedEventArgs e)
+        private void addResidenceBtn_Click(object sender, RoutedEventArgs e)
         {
             SecurityManagementSystemEngine.ResidenceInformation newResidence = new SecurityManagementSystemEngine.ResidenceInformation();
 
@@ -48,6 +48,9 @@ namespace SecurityManagementSystem
             newResidence.remark = remarkTxtbox.Text;
 
             SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterResidence(newResidence);
+
+            residenceMainTC.SelectedIndex = 0;
+            clearResidenceFields();
         }
         private string GenerateId()
         {
@@ -107,6 +110,17 @@ namespace SecurityManagementSystem
                 fetchResidenceData();
 
             }
+        }
+
+
+        private void clearResidenceFields()
+        {
+            headsNameTxtbox.Text = houseNoNameTxtbox.Text = roomNoTxtbox.Text = contactTxtbox.Text = emailTxtbox.Text = fmlyMbrsTxtbox.Text = visitingHourTxtbox.Text = remarkTxtbox.Text = "";
+        }
+
+        private void resetResidenceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            clearResidenceFields();
         }
 
     }

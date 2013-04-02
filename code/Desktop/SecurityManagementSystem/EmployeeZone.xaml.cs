@@ -117,7 +117,7 @@ namespace SecurityManagementSystem
 
         private void clearEmployeeFields()
         {
-            employeeNameTxtbox.Text = AddressNameTxtbox.Text = contactTxtbox.Text = emailTxtbox.Text = homeNumberTxtbox.Text = employeeTypeCombobox.Text = remarkTxtbox.Text;
+            employeeNameTxtbox.Text = AddressNameTxtbox.Text = contactTxtbox.Text = emailTxtbox.Text = homeNumberTxtbox.Text = employeeTypeCombobox.Text = remarkTxtbox.Text = "";
             joiningdateP.SelectedDate = DateTime.Now;
         }
 

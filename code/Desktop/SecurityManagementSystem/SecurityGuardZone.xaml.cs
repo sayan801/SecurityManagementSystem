@@ -48,7 +48,8 @@ namespace SecurityManagementSystem
 
             SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterSecurity(newSecurity);
 
-
+            securityTC.SelectedIndex = 0;
+            clearSecurityFields();
         }
 
         private string GenerateId()
@@ -110,6 +111,17 @@ namespace SecurityManagementSystem
                fetchSecurityData();
 
             }
+        }
+
+
+        private void clearSecurityFields()
+        {
+            securityNameTxtbox.Text = AddressNameTxtbox.Text = contactTxtbox.Text = emailTxtbox.Text = homeNumberTxtbox.Text =remarkTxtbox.Text = "";
+            joiningdateP.SelectedDate = DateTime.Now;
+        }
+        private void resetSecurityGuardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            clearSecurityFields();
         }
 
     }
