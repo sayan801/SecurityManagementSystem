@@ -595,53 +595,51 @@ namespace SecurityManagementSystemStorage
         }
 
 
-        //public static List<WorkOrderInformation> GetAllWorkOrderList()
-        //{
-        //    return QueryAllWorkOrderList();
-        //}
-        //private static List<WorkOrderInformation> QueryAllWorkOrderList()
-        //{
-        //    List<WorkOrderInformation> WorkOrderList = new List<WorkOrderInformation>();
+        public static List<WorkOrderInformation> GetAllWorkOrderList()
+        {
+            return QueryAllWorkOrderList();
+        }
+        private static List<WorkOrderInformation> QueryAllWorkOrderList()
+        {
+            List<WorkOrderInformation> WorkOrderList = new List<WorkOrderInformation>();
 
-        //    MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
 
-        //    try
-        //    {   //define the command reference
-        //        MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
-        //        msqlCommand.Connection = msqlConnection;
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
 
-        //        msqlCommand.CommandText = "Select * From workOrder ;";
-        //        MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+                msqlCommand.CommandText = "Select * From workOrder ;";
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
 
-        //        while (msqlReader.Read())
-        //        {
-        //            WorkOrderInformation WorkOrder = new WorkOrderInformation();
+                while (msqlReader.Read())
+                {
+                    WorkOrderInformation WorkOrder = new WorkOrderInformation();
 
-        //            WorkOrder.id = msqlReader.GetString("id");
-        //            WorkOrder.name = msqlReader.GetString("name");
-        //            WorkOrder.addres = msqlReader.GetString("address");
-        //            WorkOrder.contact = msqlReader.GetString("contact");
-        //            WorkOrder.joiningdate = msqlReader.GetDateTime("joiningdate");
-        //            WorkOrder.email = msqlReader.GetString("email");
-        //            WorkOrder.homeNumber = msqlReader.GetString("homenumber");
-        //            WorkOrder.workOrderType = msqlReader.GetString("workOrderType");
-        //            WorkOrder.remark = msqlReader.GetString("remark");
+                    WorkOrder.id = msqlReader.GetString("id");
+                    WorkOrder.orderBy = msqlReader.GetString("orderBy");
+                    WorkOrder.workDetails = msqlReader.GetString("workDetails");
+                    WorkOrder.assignTo = msqlReader.GetString("assignTo");
+                    WorkOrder.orderdate = msqlReader.GetDateTime("orderDate");
+                    WorkOrder.roomNo = msqlReader.GetString("status");
+                    
 
-        //            WorkOrderList.Add(WorkOrder);
-        //        }
+                    WorkOrderList.Add(WorkOrder);
+                }
 
-        //    }
-        //    catch (Exception er)
-        //    {
-        //    }
-        //    finally
-        //    {
-        //        //always close the connection
-        //        msqlConnection.Close();
-        //    }
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
 
-        //    return WorkOrderList;
-        //}
+            return WorkOrderList;
+        }
 
         //#region Delete WorkOrder
 

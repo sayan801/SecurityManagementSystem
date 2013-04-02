@@ -27,16 +27,16 @@
                         <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
-                        <ListView Name="orderView" Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding allworkCollection}" >
+                        <ListView Name="orderView" Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding allworkCollection}" Loaded="Window_Loaded" >
 
 
                             <ListView.View>
                                 <GridView>
-                                    <GridViewColumn Width="100" Header="Order By" />
-                                    <GridViewColumn Width="100" Header="Work Details" />
-                                    <GridViewColumn Width="150" Header="Assign To" />
-                                    <GridViewColumn Width="100" Header="Order Date" />
-                                    <GridViewColumn Width="120" Header="Status"  />
+                                    <GridViewColumn Width="100" Header="Order By" DisplayMemberBinding="{Binding orderBy}"/>
+                                    <GridViewColumn Width="100" Header="Work Details" DisplayMemberBinding="{Binding workDetails}"/>
+                                    <GridViewColumn Width="150" Header="Assign To" DisplayMemberBinding="{Binding assignTo}"/>
+                                    <GridViewColumn Width="100" Header="Order Date" DisplayMemberBinding="{Binding orderdate}"/>
+                                    <GridViewColumn Width="120" Header="Status"  DisplayMemberBinding="{Binding roomNo}"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>

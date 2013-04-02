@@ -74,6 +74,8 @@ namespace SecurityManagementSystem
             {
                 _allemployeeCollection.Add(employee);
             }
+
+            fetchWorkData();
         }
 
         private void GetOrderBtn_Click(object sender, RoutedEventArgs e)
@@ -99,5 +101,32 @@ namespace SecurityManagementSystem
         {
             return DateTime.Now.ToOADate().ToString();
         }
+
+
+
+
+        ObservableCollection<WorkOrderInformation> _allworkCollection = new ObservableCollection<WorkOrderInformation>();
+
+
+        public ObservableCollection<WorkOrderInformation> allworkCollection
+        {
+            get
+            {
+                return _allworkCollection;
+            }
+        }
+
+        private void fetchWorkData()
+        {
+            List<WorkOrderInformation> WorkOrders = SecurityManagementSystemStorageInteraction.GetAllWorkOrderList();
+
+            _allworkCollection.Clear();
+
+            foreach (WorkOrderInformation WorkOrder in WorkOrders)
+            {
+                _allworkCollection.Add(WorkOrder);
+            }
+        }
+
     }
 }
