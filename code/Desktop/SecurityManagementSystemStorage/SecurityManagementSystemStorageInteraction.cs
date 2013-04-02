@@ -261,6 +261,36 @@ namespace SecurityManagementSystemStorage
 
             return ResidenceList;
         }
+
+        #region Delete Residence
+
+        public static void DeleteResidence(string residenceToDelete)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "DELETE FROM residence WHERE id=@residenceToDelete";
+                msqlCommand.Parameters.AddWithValue("@residenceToDelete", residenceToDelete);
+
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
+
         #endregion
 
         #region Employee

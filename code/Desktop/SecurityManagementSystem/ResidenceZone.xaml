@@ -22,10 +22,10 @@
                         <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
                         <Button Name="searchResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
                         <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
-                        <Button Name="deleteBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Delete Info</Button>
+                        <Button Name="deleteResidenceBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="deleteResidenceBtn_Click">Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
-                        <ListView Name="passView" Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding allresidenceCollection}" Loaded="Window_Loaded" >
+                        <ListView Name="residenceView" Style="{StaticResource ListViewStyle}" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding allresidenceCollection}" Loaded="Window_Loaded" >
 
 
                             <ListView.View>

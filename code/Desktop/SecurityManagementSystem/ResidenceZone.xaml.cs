@@ -80,5 +80,34 @@ namespace SecurityManagementSystem
         }
 
 
+
+        private ResidenceInformation GetSelectedContactItem()
+        {
+
+            ResidenceInformation residenceToDelete = null;
+
+            if (residenceView.SelectedIndex == -1)
+                MessageBox.Show("Please Select an Item");
+            else
+            {
+                ResidenceInformation i = (ResidenceInformation)residenceView.SelectedItem;
+
+                residenceToDelete = _allresidenceCollection.Where(item => item.id.Equals(i.id)).First();
+            }
+
+            return residenceToDelete;
+        }
+        private void deleteResidenceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ResidenceInformation residenceToDelete = GetSelectedContactItem();
+            if (residenceToDelete != null)
+            {
+                _allresidenceCollection.Remove(residenceToDelete);
+                SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DeleteResidence(residenceToDelete.id);
+                fetchResidenceData();
+
+            }
+        }
+
     }
 }
