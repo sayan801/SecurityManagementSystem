@@ -31,7 +31,7 @@ namespace SecurityManagementSystem
         {
             fetchEmployeeData();
         }
-        private void doregBtn_Click(object sender, RoutedEventArgs e)
+        private void addEmployeeBtn_Click(object sender, RoutedEventArgs e)
         {
 
             SecurityManagementSystemEngine.EmployeeInformation newEmployee = new SecurityManagementSystemEngine.EmployeeInformation();
@@ -48,9 +48,11 @@ namespace SecurityManagementSystem
             newEmployee.remark = remarkTxtbox.Text;
 
             SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DoEnterEmployee(newEmployee);
-
+            EmployeeTC.SelectedIndex = 0;
+            clearEmployeeFields();
 
         }
+
 
         private string GenerateId()
         {
@@ -83,7 +85,45 @@ namespace SecurityManagementSystem
             }
         }
 
+      
 
+        private EmployeeInformation GetSelectedContactItem()
+        {
 
+            EmployeeInformation employeeToDelete = null;
+
+            if (employeeView.SelectedIndex == -1)
+                MessageBox.Show("Please Select an Item");
+            else
+            {
+                EmployeeInformation i = (EmployeeInformation)employeeView.SelectedItem;
+
+                employeeToDelete = _allemployeeCollection.Where(item => item.id.Equals(i.id)).First();
+            }
+
+            return employeeToDelete;
+        }
+        private void deleteEmployeeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeInformation employeeToDelete = GetSelectedContactItem();
+            if (employeeToDelete != null)
+            {
+                _allemployeeCollection.Remove(employeeToDelete);
+                SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.DeleteEmployee(employeeToDelete.id);
+                fetchEmployeeData();
+
+            }
+        }
+
+        private void clearEmployeeFields()
+        {
+            employeeNameTxtbox.Text = AddressNameTxtbox.Text = contactTxtbox.Text = emailTxtbox.Text = homeNumberTxtbox.Text = employeeTypeCombobox.Text = remarkTxtbox.Text;
+            joiningdateP.SelectedDate = DateTime.Now;
+        }
+
+        private void resetEmployeeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            clearEmployeeFields();
+        }
     }
 }

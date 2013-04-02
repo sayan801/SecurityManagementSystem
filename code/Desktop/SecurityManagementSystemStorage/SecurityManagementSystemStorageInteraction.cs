@@ -390,6 +390,35 @@ namespace SecurityManagementSystemStorage
 
             return EmployeeList;
         }
+
+        #region Delete Employee
+
+        public static void DeleteEmployee(string employeeToDelete)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "DELETE FROM employee WHERE id=@employeeToDelete";
+                msqlCommand.Parameters.AddWithValue("@employeeToDelete", employeeToDelete);
+
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
         #endregion
 
         #region Security
