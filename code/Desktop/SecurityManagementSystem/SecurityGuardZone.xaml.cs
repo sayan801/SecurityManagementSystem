@@ -83,9 +83,9 @@ namespace SecurityManagementSystem
             }
         }
 
-      
 
-        private SecurityInformation GetSelectedContactItem()
+
+        private SecurityInformation GetSelectedSecurityItem()
         {
 
             SecurityInformation securityToDelete = null;
@@ -103,7 +103,7 @@ namespace SecurityManagementSystem
         }
         private void deleteSecurityGuardBtn_Click(object sender, RoutedEventArgs e)
         {
-            SecurityInformation securityToDelete = GetSelectedContactItem();
+            SecurityInformation securityToDelete = GetSelectedSecurityItem();
             if (securityToDelete != null)
             {
                 _allsecurityCollection.Remove(securityToDelete);
@@ -122,6 +122,46 @@ namespace SecurityManagementSystem
         private void resetSecurityGuardBtn_Click(object sender, RoutedEventArgs e)
         {
             clearSecurityFields();
+        }
+
+        private void editSecurityBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityInformation securityToEdit = GetSelectedSecurityItem();
+            if (securityToEdit != null)
+            {
+                securityTC.SelectedIndex = 1;
+                addSecurityGuardBtn.Visibility = Visibility.Collapsed;
+                updateSecurityGuardBtn.Visibility = Visibility.Visible;
+
+                securityNameTxtbox.Text = securityToEdit.name;
+                AddressNameTxtbox.Text = securityToEdit.addres;
+                contactTxtbox.Text = securityToEdit.contact;
+                emailTxtbox.Text = securityToEdit.email;
+                homeNumberTxtbox.Text = securityToEdit.homeNumber;
+                joiningdateP.SelectedDate = securityToEdit.joiningdate;
+                remarkTxtbox.Text = securityToEdit.remark;
+
+
+            }
+        }
+
+        private void updateSecurityGuardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SecurityInformation securityToEdit = GetSelectedSecurityItem();
+
+            securityToEdit.name = securityNameTxtbox.Text;
+            securityToEdit.addres = AddressNameTxtbox.Text;
+            securityToEdit.contact = contactTxtbox.Text;
+            securityToEdit.email = emailTxtbox.Text;
+            securityToEdit.homeNumber = homeNumberTxtbox.Text;
+            securityToEdit.joiningdate = joiningdateP.SelectedDate.Value;
+            securityToEdit.remark = remarkTxtbox.Text;
+
+            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.EditSecurity(securityToEdit);
+            securityTC.SelectedIndex = 0;
+            clearSecurityFields();
+            updateSecurityGuardBtn.Visibility = Visibility.Collapsed;
+            addSecurityGuardBtn.Visibility = Visibility.Visible;
         }
 
     }

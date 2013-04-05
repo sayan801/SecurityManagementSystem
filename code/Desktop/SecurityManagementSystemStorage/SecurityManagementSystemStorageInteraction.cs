@@ -585,6 +585,7 @@ namespace SecurityManagementSystemStorage
                     Security.homeNumber = msqlReader.GetString("homenumber");
                     Security.remark = msqlReader.GetString("remark");
 
+
                     SecurityList.Add(Security);
                 }
 
@@ -616,6 +617,47 @@ namespace SecurityManagementSystemStorage
                 msqlCommand.Parameters.AddWithValue("@securityToDelete", securityToDelete);
 
                 MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
+
+        #region Edit Security
+
+        public static void EditSecurity(SecurityInformation newUpdateSecurity)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "UPDATE security SET name=@name,address=@address,contact=@contact,joiningdate=@joiningdate,email=@email,homenumber=@homenumber,remark=@remark WHERE id=@id";
+
+
+
+                msqlCommand.Parameters.AddWithValue("@name", newUpdateSecurity.name);
+                msqlCommand.Parameters.AddWithValue("@address", newUpdateSecurity.addres);
+                msqlCommand.Parameters.AddWithValue("@contact", newUpdateSecurity.contact);
+                msqlCommand.Parameters.AddWithValue("@joiningdate", newUpdateSecurity.joiningdate);
+                msqlCommand.Parameters.AddWithValue("@email", newUpdateSecurity.email);
+                msqlCommand.Parameters.AddWithValue("@homenumber", newUpdateSecurity.homeNumber);
+                msqlCommand.Parameters.AddWithValue("@remark", newUpdateSecurity.remark);
+                msqlCommand.Parameters.AddWithValue("@id", newUpdateSecurity.id);
+
+                msqlCommand.ExecuteNonQuery();
+
 
             }
             catch (Exception er)
