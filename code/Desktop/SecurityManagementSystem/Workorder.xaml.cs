@@ -129,7 +129,7 @@ namespace SecurityManagementSystem
         }
 
 
-        private WorkOrderInformation GetSelectedContactItem()
+        private WorkOrderInformation GetSelectedWorkOrderItem()
         {
 
             WorkOrderInformation workOrderToDelete = null;
@@ -147,7 +147,7 @@ namespace SecurityManagementSystem
         }
         private void deleteWorkOrderBtn_Click(object sender, RoutedEventArgs e)
         {
-            WorkOrderInformation workOrderToDelete = GetSelectedContactItem();
+            WorkOrderInformation workOrderToDelete = GetSelectedWorkOrderItem();
             if (workOrderToDelete != null)
             {
                 _allworkCollection.Remove(workOrderToDelete);
@@ -155,6 +155,41 @@ namespace SecurityManagementSystem
                 fetchWorkData();
 
             }
+        }
+
+        private void editWorkOrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+            WorkOrderInformation workOrderToEdit = GetSelectedWorkOrderItem();
+            if (workOrderToEdit != null)
+            {
+                workorderTC.SelectedIndex = 1;
+                GetOrderBtn.Visibility = Visibility.Collapsed;
+                updateOrderBtn.Visibility = Visibility.Visible;
+
+                orderByCB.Text = workOrderToEdit.orderBy;
+                workDetailsTxtbox.Text = workOrderToEdit.workDetails;
+                assignToCB.Text = workOrderToEdit.assignTo;
+                orderdatedateP.SelectedDate = workOrderToEdit.orderdate;
+                roomNoTxtbox.Text =workOrderToEdit.roomNo;
+
+            }
+        }
+
+        private void updateOrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+            WorkOrderInformation workOrderToEdit = GetSelectedWorkOrderItem();
+
+            workOrderToEdit.orderBy = orderByCB.Text;
+            workOrderToEdit.workDetails = workDetailsTxtbox.Text;
+            workOrderToEdit.assignTo = assignToCB.Text;
+            workOrderToEdit.orderdate = orderdatedateP.SelectedDate.Value;
+            workOrderToEdit.roomNo = roomNoTxtbox.Text;
+
+            SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.EditWorkOrder(workOrderToEdit);
+            workorderTC.SelectedIndex = 0;
+
+            updateOrderBtn.Visibility = Visibility.Collapsed;
+            GetOrderBtn.Visibility = Visibility.Visible;
         }
 
         

@@ -795,6 +795,45 @@ namespace SecurityManagementSystemStorage
         }
 
         #endregion
+
+
+        #region Edit WorkOrder
+
+        public static void EditWorkOrder(WorkOrderInformation newUpdateWorkOrder)
+        {
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {
+                //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "UPDATE workorder SET orderBy=@orderBy,workDetails=@workDetails,assignTo=@assignTo,orderDate=@orderDate,status=@status WHERE id=@id";
+
+                
+                msqlCommand.Parameters.AddWithValue("@orderBy", newUpdateWorkOrder.orderBy);
+                msqlCommand.Parameters.AddWithValue("@workDetails", newUpdateWorkOrder.workDetails);
+                msqlCommand.Parameters.AddWithValue("@assignTo", newUpdateWorkOrder.assignTo);
+                msqlCommand.Parameters.AddWithValue("@orderDate", newUpdateWorkOrder.orderdate);
+                msqlCommand.Parameters.AddWithValue("@status", newUpdateWorkOrder.roomNo);
+                msqlCommand.Parameters.AddWithValue("@id", newUpdateWorkOrder.id);
+
+                msqlCommand.ExecuteNonQuery();
+
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+        }
+
+        #endregion
         #endregion
     }
 }

@@ -23,7 +23,7 @@
                         <Label Style="{StaticResource labelStyle}" >By Name:</Label>
                         <TextBox  Style="{StaticResource textboxStyle}"></TextBox>
                         <Button Name="searchWorkBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Search</Button>
-                        <Button Name="editBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Edit Info</Button>
+                        <Button Name="editWorkOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="editWorkOrderBtn_Click">Edit Info</Button>
                         <Button Name="deleteWorkOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="deleteWorkOrderBtn_Click">Delete Info</Button>
                     </UniformGrid>
                     <UniformGrid DockPanel.Dock="Top">
@@ -76,7 +76,8 @@
                         <Label></Label>
 
                         <Button Name="resetOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" >Reset</Button>
-                        <Button Name="GetOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Click="GetOrderBtn_Click">Register</Button>
+                        <Button Name="GetOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Visibility="Visible" Click="GetOrderBtn_Click">Register</Button>
+                        <Button Name="updateOrderBtn" Style="{StaticResource MainBtnStyle}" Margin="5" Visibility="Collapsed" Click="updateOrderBtn_Click">Update</Button>
                     </UniformGrid>
 
                 </DockPanel>
