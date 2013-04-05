@@ -835,5 +835,84 @@ namespace SecurityManagementSystemStorage
 
         #endregion
         #endregion
+
+        #region Permission
+
+        public static VisitorInformation GetVisitorInfo(string visitorId)
+        {
+            VisitorInformation visitor = new VisitorInformation();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From regvisitor WHERE id=@id;";
+                msqlCommand.Parameters.AddWithValue("@id", visitorId);
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                msqlReader.Read();
+
+                visitor.name = msqlReader.GetString("name");
+                visitor.idinfo = msqlReader.GetString("idcardno");
+                
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return visitor;
+
+        }
+
+        #region EmployeeInfo
+
+        public static EmployeeInformation GetEmployeeInfo(string employeeId)
+        {
+            EmployeeInformation employee = new EmployeeInformation();
+
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From employee WHERE id=@id;";
+                msqlCommand.Parameters.AddWithValue("@id", employeeId);
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                msqlReader.Read();
+
+                employee.id = msqlReader.GetString("id");
+
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return employee;
+
+        }
+        #endregion
+        #endregion
+
     }
 }
+
+
+
+        

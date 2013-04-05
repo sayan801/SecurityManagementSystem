@@ -97,6 +97,39 @@ namespace SecurityManagementSystem
                 return _allemployeeCollection;
             }
         }
+
+        private void visitorNameCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string currentVisitorId = (e.AddedItems[0] as VisitorInformation).id;
+            PopulateItemsFromVisitorReg(currentVisitorId);
+        }
+        private void allowbyCBCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string currentEmployeeId = (e.AddedItems[0] as EmployeeInformation).id;
+            PopulateItemsFromEmployeeReg(currentEmployeeId);
+        }
+
+        private void PopulateItemsFromVisitorReg(string visitorId)
+        {
+            VisitorInformation visitorinfo = SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.GetVisitorInfo(visitorId);
+
+            visitorAddressNameTxtbox.Text = visitorinfo.name;
+            idproofwithNoTxtbox.Text = visitorinfo.idinfo;
+
+
+            //EmployeeInformation employeeinfo = SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.GetEmployeeInfo(visitorinfo.id);
+
+            //employeeIdTxtbox.Text = employeeinfo.id;
+            
+        }
+
+        private void PopulateItemsFromEmployeeReg(string employeeId)
+        {
+            EmployeeInformation employeeinfo = SecurityManagementSystemStorage.SecurityManagementSystemStorageInteraction.GetEmployeeInfo(employeeId);
+
+            employeeIdTxtbox.Text = employeeinfo.id;
+
+        }
        
     }
 }

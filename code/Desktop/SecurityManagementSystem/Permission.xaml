@@ -19,7 +19,7 @@
 
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}" >Visitor Name</Label>
-            <ComboBox   Name="visitorNameCB"  Style="{StaticResource comboboxStyle}" ItemsSource="{Binding visitorCollection}" DisplayMemberPath="name"  SelectedValuePath="id"></ComboBox>
+            <ComboBox   Name="visitorNameCB"  Style="{StaticResource comboboxStyle}" ItemsSource="{Binding visitorCollection}" DisplayMemberPath="name"  SelectedValuePath="id" SelectionChanged="visitorNameCB_SelectionChanged"></ComboBox>
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}" >Visitor Address</Label>
@@ -39,7 +39,7 @@
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Allow Visit By</Label>
-            <ComboBox   Name="allowbyCBCB"  Style="{StaticResource comboboxStyle}" ItemsSource="{Binding allemployeeCollection}" DisplayMemberPath="name"  SelectedValuePath="id"></ComboBox>
+            <ComboBox   Name="allowbyCBCB"  Style="{StaticResource comboboxStyle}" ItemsSource="{Binding allemployeeCollection}" DisplayMemberPath="name"  SelectedValuePath="id" SelectionChanged="allowbyCBCB_SelectionChanged"></ComboBox>
             <Label></Label>
             <Label></Label>
             <Label  Style="{StaticResource labelStyle}">Employee Id</Label>
